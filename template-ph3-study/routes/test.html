@@ -1,0 +1,51 @@
+return <<<EOF
+<html>
+  <head>
+    <title>Hello</title>
+    <style>
+      body {
+        font-size: 16px;;
+        color:#999;
+      }
+      h1 {
+        font-size: 100px;
+        text-align: right;
+        color: #eee;
+        margin: -40px 0px -50px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <p>This is sample page.</p>
+    <p>これは、サンプルで作ったページです。</p>
+    <ul>
+      <li>ID:{id}</li>
+      <li>PASS:{$pass}</li>
+    </ul>
+    <ul>
+      <li>ID:{id}</li>
+      <li>PASS:{$pass}</li>
+    </ul>
+    <ul>
+      <li>ID:{id}</li>
+      <li>PASS:{$pass}</li>
+      <li>ID:{id}</li>
+    </ul>
+    <ul>
+      <li>PASS:{$pass}</li>
+    </ul>
+  </body>
+</html>
+EOF;
+
+let name1 = 'イチゴ';
+
+if(true) {
+  var name2 = 'バナナ';
+  
+  name1 = 'メロン';
+}
+
+console.log(name1);
+console.log(name2);
