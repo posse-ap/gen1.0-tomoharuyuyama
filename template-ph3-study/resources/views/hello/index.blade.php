@@ -3,13 +3,14 @@
 @section('title', 'Indexだよ')
 @section('menubar')
   @parent
-  インデックスページll
+  インデックスページ
 @endsection
 
 @section('content')
   <p>ここが本文のコンテンツです。</p>
-  <p>必要なだけ記述できますよ。</p>
-  @include('components.message', ['msg_title'=>'OK','msg_content'=>'サブビューです。'])
+  <ul>
+    @each('components.item', $data, 'item')
+  </ul>
 @endsection
 
 @section('footer')
