@@ -18,3 +18,6 @@ Route::get('/', function () {
 
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
+Route::get('quiz', 'quizyController@index');
+Route::get('quiz/1', 'quizyController@quizy1');
+Route::get('quiz/2', 'quizyController@quizy2');
