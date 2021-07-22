@@ -8,6 +8,7 @@ use Illuminate\Http\Response;
 use App\Http\Middleware\HelloMiddleware;
 use App\Http\Requests\HelloRequest;
 use Validator;
+use Illuminate\Support\Facades\DB;
 
 global $head, $style, $body, $end;
 
@@ -17,13 +18,16 @@ class HelloController extends Controller
     
     public function index(Request $request)
     {
-        if ($request->hasCookie('msg'))
-        {
-            $msg = 'Cookie: ' . $request->cookie('msg');
-        } else {
-            $msg = '※クッキーはありません。';
+        // $items = DB::select('select * from people');
+        // return view('hello.index', ['items' => $items]);
+
+        if (isset($request->id)) {
+            $param = ['id' => $request->id];
+            $items = DB::select('select * from people where id = :id', $param);
+        }else{
+            $items = DB::select('select * from people');
         }
-        return view('hello.index', ['msg'=> $msg]);
+        return view('hello.index', ['items' => $items]);
     }
 
     public function post(Request $request)
