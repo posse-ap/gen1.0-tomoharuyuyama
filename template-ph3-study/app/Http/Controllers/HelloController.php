@@ -40,50 +40,47 @@ class HelloController extends Controller
             'mail' => $request->mail,
             'age' => $request->age,
         ];
-        DB::insert('insert into people (name, mail, age) values (:name, :mail, :age)', $param);
+        DB::table('people')->insert($param);
         return redirect('/hello');
     }
     public function edit(Request $request)
     {
-        $param = [
-            'id' => $request->id,
-        ];
-        $item = DB::select('select * from people where id = :id', $param);
-        return view('hello.edit', ['form' => $item[0]]);
+        $item = DB::table('people')
+            ->where('id', $repuest->id)
+            ->first();
+        return view('hello.edit', ['form' => $item]);
     }
     public function update(Request $request)
     {
         $param = [
-            'id' => $request->id,
             'name' => $request->name,
             'mail' => $request->mail,
             'age' => $request->age,
         ];
-        DB::update('update people set name =:name, mail = :mail, age = :age where id = :id', $param);
+        DB::table('people')
+            ->where('id', $repuest->id)
+            ->update($param);
         return redirect('/hello');
     }
     public function del(Request $request)
     {
-        $param = [
-            'id' => $request->id,
-        ];
-        $item = DB::select('select * from people where id = :id', $param);
-        return view('hello.del', ['form' => $item[0]]);
+        $item = DB::table('people')
+        ->where('id', $request->id)
+        ->first();
+        return view('hello.del', ['form' => $item]);
     }
     public function remove(Request $request)
     {
-        $param = [
-            'id' => $request->id,
-        ];
-        DB::delete('delete from people where id = :id', $param);
+        DB::table('people')
+            ->where('id', $request->id);
         return redirect('/hello');
     }
     public function show(Request $request)
     {
-        $min = $request->min;
-        $max = $request->max;
+        $page = $request->page;
         $items = DB::table('people')
-            ->whereRaw('age >= ? and age <= ?', [$min, $max])
+            ->offset($page * 3)
+            ->limit(3)
             ->get();
         return view('hello.show', ['items' => $items]);
     }
