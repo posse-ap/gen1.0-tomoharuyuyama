@@ -13,6 +13,11 @@
     <div id="main" class="main">
         <script src="../js/quizy3.js"></script>
     </div>
+<p>
+    @php
+        print_r($items);
+    @endphp
+</p>
 </body>
 
 </html>
