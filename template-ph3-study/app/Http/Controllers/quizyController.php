@@ -36,12 +36,8 @@ class quizyController extends Controller
                 shuffle($question_list[$index]);
                 // 選択肢セットの末尾に回答を追加
                 $question_list[$index][] = array_search($answer, $question_list[$index]);
-                // // 選択肢セットの先頭に問題番号を追加
-                // array_unshift($question_list[$index], $index);
-                // 今まで処理したものを収納
-                array_push($question_list, $question_list[$index]);
             }
-            
+            $dd = $question_list;
         return view('quizy.quizy1', compact('question_list', 'dd'));
 
         // return view('quizy.quizy1');

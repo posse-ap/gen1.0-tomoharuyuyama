@@ -23,7 +23,7 @@
                     {{-- ループ終了 --}}
                     @break
                 @endif
-                <li id="answerlist_{{$loop->parent->index+1}}_{{$loop->index+1}}" name="answerlist_{{$loop->parent->index+1}}" class="answerlist" onclick="check({{$loop->parent->index+1}}, {{$loop->index+1}}, {{end($question)}})">{{$item}}</li>
+                <li id="answerlist_{{$loop->parent->index+1}}_{{$loop->index+1}}" name="answerlist_{{$loop->parent->index+1}}" class="answerlist" onclick="check({{$loop->parent->index+1}}, {{$loop->index+1}}, {{end($question)+1}})">{{$item}}</li>
                 @endforeach
                 <li id="answerbox_{{$loop->index+1}}" class="answerbox">
                     <span id="answertext_{{$loop->index+1}}"></span><br>
