@@ -10,6 +10,7 @@ use App\Http\Requests\HelloRequest;
 use Validator;
 use Illuminate\Support\Facades\DB;
 use App\Person;
+use Illuminate\Support\Facades\Auth;
 
 global $head, $style, $body, $end;
 
@@ -19,10 +20,11 @@ class HelloController extends Controller
     
     public function index(Request $request)
     {
+        $user = Auth::user();
         $sort = $request->sort;
         $items = Person::orderBy($sort, 'asc')
-            ->paginate(5);
-        $param = ['items' => $items, 'sort' => $sort];
+            ->simplePaginate(5);
+        $param = ['items' => $items, 'sort' => $sort, 'user' => $user];
         return view('hello.index', $param);
     }
     

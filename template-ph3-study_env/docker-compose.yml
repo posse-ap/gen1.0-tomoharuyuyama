@@ -27,3 +27,11 @@ services:
     volumes:
       - ../template-ph3-study:/work/backend
     depends_on: ["phpfpm"]
+
+  app:
+    image: node:lts # バージョン指定も可能 ex. node:12.16.1
+    container_name: node.js
+    tty: true
+    volumes:
+      - ./src:/src
+    working_dir: "/src"

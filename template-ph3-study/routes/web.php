@@ -46,3 +46,6 @@ Route::resource('rest', 'RestappController');
 Route::get('quiz', 'quizyController@index');
 Route::get('quiz/1', 'quizyController@quizy1');
 Route::get('quiz/2', 'quizyController@quizy2');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
