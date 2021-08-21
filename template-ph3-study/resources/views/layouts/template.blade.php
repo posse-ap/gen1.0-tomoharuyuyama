@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    {{-- {{dd($dd)}} --}}
+    {{dd($dd)}}
     @yield('title')へようこそ
     <div class="main">
         @foreach ($question_list as $question)

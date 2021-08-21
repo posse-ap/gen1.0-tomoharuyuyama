@@ -20,15 +20,25 @@ class quizyController extends Controller
     }
     
     public function quizy1() {
-        // $items = DB::table('quizy')
-        // ->where('prefecture', 1)
-        // ->get();
+        $items = DB::table('quizy')
+        ->where('prefecture', 0)
+        ->get();
         $question_list = array();
-        array_push($question_list, ['たかなわ', 'こうわ', 'たかわ']);
-        array_push($question_list, ['かめいど', 'かめと', 'かめど']);
-        array_push($question_list, ['こうじまち', 'おかとまち', 'かゆまち']);
+        $test = array();
 
-            $dd = array();
+        foreach ($items as $parent_index => $value) {
+            // $dd = $value;
+            $test[$parent_index][] = $value->name;
+            // foreach ($value as $index => $value) {
+            // }
+        }
+        
+        array_push($question_list, $test);
+        // array_push($question_list, ['たかなわ', 'こうわ', 'たかわ']);
+        // array_push($question_list, ['かめいど', 'かめと', 'かめど']);
+        // array_push($question_list, ['こうじまち', 'おかとまち', 'かゆまち']);
+
+            // $dd = array();
             foreach($question_list as $index => $question){
                 // 回答を保存
                 $answer = $question[0];
@@ -37,7 +47,8 @@ class quizyController extends Controller
                 // 選択肢セットの末尾に回答を追加
                 $question_list[$index][] = array_search($answer, $question_list[$index]);
             }
-            $dd = $question_list;
+            
+            $dd = $items;
         return view('quizy.quizy1', compact('question_list', 'dd'));
 
         // return view('quizy.quizy1');
