@@ -9,10 +9,10 @@
 <body>
   <ul>
     <li>
-      <a href="quiz/1">東京</a>
+      <a href="./1">東京</a>
     </li>
     <li>
-      <a href="quiz/2">広島</a>
+      <a href="./2">広島</a>
     </li>
   </ul>
 </body>

@@ -15,16 +15,15 @@
         @foreach ($question_list[0] as $question)
         <div class="quiz">
             <h1>{{$loop->index+1}}. この地名はなんて読む？</h1>
-            <img src="../img/{{$loop->index+1}}.png">
+            <img src="../img/{{$prefecture + 1}}/{{$loop->index+1}}.png">
+            {{-- {{dd($prefecture)}} --}}
             <ul>
-                
                 @foreach ($question as $item)
                 @if ($loop->last)
                 {{-- ループ終了 --}}
                 @break
                 @endif
                 <li id="answerlist_{{$loop->parent->index+1}}_{{$loop->index+1}}" name="answerlist_{{$loop->parent->index+1}}" class="answerlist" onclick="check({{$loop->parent->index+1}}, {{$loop->index+1}}, {{$question[3]+1}})">{{$item}}</li>
-                {{-- {{dd($question)}} --}}
                 @endforeach
                 <li id="answerbox_{{$loop->index+1}}" class="answerbox">
                     <span id="answertext_{{$loop->index+1}}"></span><br>
@@ -39,4 +38,3 @@
     </body>
     
     </html>
-    
