@@ -16,7 +16,7 @@
         <div class="quiz">
             <h1>{{$loop->index+1}}. この地名はなんて読む？</h1>
             <img src="../img/{{$prefecture + 1}}/{{$loop->index+1}}.png">
-            {{-- {{dd($prefecture)}} --}}
+            {{dd($prefecture02)}}
             <ul>
                 @foreach ($question as $item)
                 @if ($loop->last)

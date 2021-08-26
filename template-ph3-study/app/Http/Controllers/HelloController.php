@@ -21,9 +21,13 @@ class HelloController extends Controller
     public function index(Request $request)
     {
         $user = Auth::user();
-        $sort = $request->sort;
+        if(!$request->sort) {
+            $sort = 'id';
+        } else {
+            $sort = $request->sort;
+        }
         $items = Person::orderBy($sort, 'asc')
-            ->simplePaginate(5);
+            ->simplePaginate(1);
         $param = ['items' => $items, 'sort' => $sort, 'user' => $user];
         return view('hello.index', $param);
     }
@@ -102,5 +106,23 @@ class HelloController extends Controller
         $msg = $request->input;
         $request->session()->put('msg', $msg);
         return redirect('hello/session');
+    }
+    public function getAuth(Request $request)
+    {
+        $param = ['message' => 'ログインして下さい。'];
+        return view('hello.auth', $param);
+    }
+
+    public function postAuth(Request $request)
+    {
+        $email = $request->email;
+        $password = $request->password;
+        if (Auth::attempt(['email' => $email,
+                'password' => $password])) {
+            $msg = 'ログインしました。（' . Auth::user()->name . '）';
+        } else {
+            $msg = 'ログインに失敗しました。';
+        }
+        return view('hello.auth', ['message' => $msg]);
     }
 }

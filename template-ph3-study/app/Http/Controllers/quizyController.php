@@ -9,6 +9,7 @@ use App\Http\Requests\HelloRequest;
 use Validator;
 use Illuminate\Support\Facades\DB;
 use App\quiz;
+use App\quiz02;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Collection;
 
@@ -21,6 +22,9 @@ class quizyController extends Controller
     public function quiz($prefecture) {
         
                 // データを取得
+                $prefecture02 = DB::table('QuizyPrefectures')
+                ->get();
+
                 $items = DB::table('quizy')
                 ->where('prefecture', $prefecture)
                 ->get();
@@ -47,7 +51,7 @@ class quizyController extends Controller
                         $dd[] = $index;
                     }
                     
-                return view('quizy.quizy1', compact('question_list', 'dd', 'prefecture'));
+                return view('quizy.quizy1', compact('question_list', 'dd', 'prefecture', 'prefecture02'));
 
     }
     public function quizy1() {
