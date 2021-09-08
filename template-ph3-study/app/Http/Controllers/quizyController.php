@@ -12,6 +12,7 @@ use App\quiz;
 use App\quiz02;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
 
 
 class quizyController extends Controller
@@ -20,7 +21,7 @@ class quizyController extends Controller
         return view('quizy.index');
     }
     public function quiz($prefecture) {
-        
+                $user = Auth::user();
                 // データを取得
                 $prefecture02 = DB::table('QuizyPrefectures')
                 ->get();
@@ -51,7 +52,7 @@ class quizyController extends Controller
                         $dd[] = $index;
                     }
                     
-                return view('quizy.quizy1', compact('question_list', 'dd', 'prefecture', 'prefecture02'));
+                return view('quizy.quizy1', compact('question_list', 'dd', 'prefecture', 'prefecture02', 'user'));
 
     }
     public function quizy1() {
