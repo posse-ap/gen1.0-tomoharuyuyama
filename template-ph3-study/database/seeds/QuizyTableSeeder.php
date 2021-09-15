@@ -156,5 +156,75 @@ class QuizyTableSeeder extends Seeder
         ];
         DB::table('quizy')->insert($param);
         
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 0,
+            'name' => 'マサチューセッツ州（答え）',
+            'valid' => 1,
+        ];
+        DB::table('quizy')->insert($param);
+        
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 0,
+            'name' => 'コロラド州',
+            'valid' => 0,
+        ];
+        DB::table('quizy')->insert($param);
+
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 0,
+            'name' => 'ニュージャージー州',
+            'valid' => 0,
+        ];
+        DB::table('quizy')->insert($param);
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 1,
+            'name' => 'ロサンゼルス（答え）',
+            'valid' => 1,
+        ];
+        DB::table('quizy')->insert($param);
+
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 1,
+            'name' => 'レキシントン',
+            'valid' => 0,
+        ];
+        DB::table('quizy')->insert($param);
+
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 1,
+            'name' => 'ボストン',
+            'valid' => 0,
+        ];
+        DB::table('quizy')->insert($param);
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 2,
+            'name' => 'ペンシルベニア州（答え）',
+            'valid' => 1,
+        ];
+        DB::table('quizy')->insert($param);
+
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 2,
+            'name' => 'ミネソタ州',
+            'valid' => 0,
+        ];
+        DB::table('quizy')->insert($param);
+
+        $param = [
+            'prefecture' => 2,
+            'question_id' => 2,
+            'name' => 'ミズーリ州',
+            'valid' => 0,
+        ];
+        DB::table('quizy')->insert($param);
+        
     }
 }

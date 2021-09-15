@@ -21,5 +21,10 @@ class QuizyPrefectureTableSeeder extends Seeder
             'name' => '広島',
         ];
         DB::table('QuizyPrefectures')->insert($param);
+
+        $param = [
+            'name' => 'アメリカ合衆国',
+        ];
+        DB::table('QuizyPrefectures')->insert($param);
     }
 }

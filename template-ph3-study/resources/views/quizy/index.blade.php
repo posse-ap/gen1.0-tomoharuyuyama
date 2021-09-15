@@ -15,6 +15,7 @@
                 <a href="./quiz/{{ $loop->iteration }}">{{ $prefecture->name }}</a>
             </li>
         @endforeach
+        {{-- {{ dd($prefectures) }} --}}
     </ul>
 </body>
 
