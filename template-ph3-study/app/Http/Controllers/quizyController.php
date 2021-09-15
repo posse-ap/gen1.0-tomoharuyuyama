@@ -10,6 +10,7 @@ use Validator;
 use Illuminate\Support\Facades\DB;
 use App\quiz;
 use App\quiz02;
+use App\QuizyPrefecture;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
@@ -18,13 +19,15 @@ use Illuminate\Support\Facades\Auth;
 class quizyController extends Controller
 {
     public function index() {
-        return view('quizy.index');
+        $prefectures = DB::table('QuizyPrefectures')
+        ->select(['name'])
+        // ->where('id', $prefecture)
+        ->get();
+        return view('quizy.index', compact('prefectures'));
     }
     public function quiz($prefecture) {
                 $user = Auth::user();
-                // データを取得
-                $prefecture02 = DB::table('QuizyPrefectures')
-                ->get();
+                
 
                 $items = DB::table('quizy')
                 ->where('prefecture', $prefecture)
@@ -52,7 +55,7 @@ class quizyController extends Controller
                         $dd[] = $index;
                     }
                     
-                return view('quizy.quizy1', compact('question_list', 'dd', 'prefecture', 'prefecture02', 'user'));
+                return view('quizy.quizy'.($prefecture+1), compact('question_list', 'dd', 'prefecture','user'));
 
     }
     public function quizy1() {
