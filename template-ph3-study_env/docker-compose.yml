@@ -4,8 +4,6 @@ services:
   mysql:
     build:
       context: ./db
-    ports:
-      - 3307:3306
     volumes:
       - ./db/var/lib/mysql:/var/lib/mysql
     environment:
