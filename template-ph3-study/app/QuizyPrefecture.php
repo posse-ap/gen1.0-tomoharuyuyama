@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class QuizyPrefecture extends Model
 {
     protected $table = 'QuizyPrefectures';
+
+    protected $fillable = ['name'];
 }

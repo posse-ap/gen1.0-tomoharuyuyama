@@ -47,11 +47,23 @@ Route::resource('rest', 'RestappController');
 
 
 Route::get('quiz', 'quizyController@index');
+Route::get('quiz/admin', 'quizyController@admin');
+Route::post('/add', 'quizyController@add');
 Route::get('quiz/{prefecture}', 'quizyController@quiz');
+Route::post('/remove', 'quizyController@remove');
+Route::post('/update', 'quizyController@update');
+Route::get('/quiz/edit/{prefecture}', 'quizyController@quiz_edit');
+Route::post('/choice/update', 'quizyController@choice_update');
+Route::post('/choice/add', 'quizyController@choice_add');
+Route::post('/choice/remove', 'quizyController@choice_remove');
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/img_update_test', 'quizyController@imgUpdateTest');
+Route::post('/img_update_test/{prefecture_num}/{question_num}', 'quizyController@store');

@@ -14,10 +14,12 @@ class CreateQuizyTable extends Migration
     public function up()
     {
         Schema::create('quizy', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->integer('prefecture');
             $table->integer('question_id');
             $table->string('name');
             $table->integer('valid');
+            $table->timestamps();
         });
     }
 
