@@ -166,7 +166,7 @@ class quizyController extends Controller
         $user = new ImgTestUser();
 
         //imgpathカラムに画像パスを挿入
-        $data = $user->create(['imgpath' => $img]);
+        $data = $user->create(['imgpath' => $img, 'question_id' => $question_num]);
         return view('imgTest', compact('data'));
     }
 }

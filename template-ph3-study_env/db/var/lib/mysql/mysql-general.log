@@ -5190,3 +5190,1209 @@ Time                 Id Command    Argument
 2021-11-07T07:35:05.632913-00:00	   79 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiOTE1RmlGdWliNUs2blNsa0N4aDUyUG91VnlNSHRWQmVMSHNnQkZLTiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjM6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei80Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', `last_activity` = 1636270505, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = 'T9CJYUWxvT9qi8zY9BI3WzdRfP8oZoJK1ZWhPich'
 2021-11-07T07:35:05.634595-00:00	   79 Close stmt	
 2021-11-07T07:35:05.646007-00:00	   79 Quit	
+/usr/sbin/mysqld, Version: 8.0.27 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-11-11T04:09:24.718304-00:00	    8 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:24.719239-00:00	    8 Query	use `laravel`
+2021-11-11T04:09:24.720347-00:00	    8 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:24.720681-00:00	    8 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:24.721165-00:00	    8 Close stmt	
+2021-11-11T04:09:24.721460-00:00	    8 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:24.721702-00:00	    8 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:24.722108-00:00	    8 Close stmt	
+2021-11-11T04:09:24.727799-00:00	    8 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:24.733536-00:00	    8 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:24.737767-00:00	    8 Close stmt	
+2021-11-11T04:09:24.880764-00:00	    8 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:24.881052-00:00	    8 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:24.881635-00:00	    8 Close stmt	
+2021-11-11T04:09:24.882019-00:00	    8 Prepare	insert into `sessions` (`payload`, `last_activity`, `user_id`, `ip_address`, `user_agent`, `id`) values (?, ?, ?, ?, ?, ?)
+2021-11-11T04:09:24.882278-00:00	    8 Execute	insert into `sessions` (`payload`, `last_activity`, `user_id`, `ip_address`, `user_agent`, `id`) values ('YToyOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1636603764, NULL, '172.19.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36', '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP')
+2021-11-11T04:09:24.883686-00:00	    8 Close stmt	
+2021-11-11T04:09:24.892089-00:00	    8 Quit	
+2021-11-11T04:09:27.780980-00:00	    9 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:27.781567-00:00	    9 Query	use `laravel`
+2021-11-11T04:09:27.783130-00:00	    9 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:27.783449-00:00	    9 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:27.783903-00:00	    9 Close stmt	
+2021-11-11T04:09:27.784248-00:00	    9 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:27.784506-00:00	    9 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:27.784884-00:00	    9 Close stmt	
+2021-11-11T04:09:27.785307-00:00	    9 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:27.789385-00:00	    9 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:27.789981-00:00	    9 Close stmt	
+2021-11-11T04:09:27.846185-00:00	    9 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:09:27.846597-00:00	    9 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:09:27.850105-00:00	    9 Close stmt	
+2021-11-11T04:09:27.860523-00:00	    9 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:27.860868-00:00	    9 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:09:27.864501-00:00	    9 Close stmt	
+2021-11-11T04:09:27.870997-00:00	    9 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:27.871301-00:00	    9 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:09:27.871809-00:00	    9 Close stmt	
+2021-11-11T04:09:27.872152-00:00	    9 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:27.872402-00:00	    9 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:09:27.872881-00:00	    9 Close stmt	
+2021-11-11T04:09:27.873206-00:00	    9 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:27.873421-00:00	    9 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:09:27.873871-00:00	    9 Close stmt	
+2021-11-11T04:09:27.882053-00:00	    9 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:09:27.882504-00:00	    9 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:09:27.887556-00:00	    9 Close stmt	
+2021-11-11T04:09:27.958032-00:00	    9 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:27.958362-00:00	    9 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636603767, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:27.960126-00:00	    9 Close stmt	
+2021-11-11T04:09:27.964088-00:00	    9 Quit	
+2021-11-11T04:09:29.087563-00:00	   10 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:29.088066-00:00	   10 Query	use `laravel`
+2021-11-11T04:09:29.088608-00:00	   10 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:29.088832-00:00	   10 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:29.089165-00:00	   10 Close stmt	
+2021-11-11T04:09:29.089403-00:00	   10 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:29.089571-00:00	   10 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:29.089850-00:00	   10 Close stmt	
+2021-11-11T04:09:29.090283-00:00	   10 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:29.093103-00:00	   10 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:29.093594-00:00	   10 Close stmt	
+2021-11-11T04:09:29.134253-00:00	   10 Prepare	select * from `QuizyPrefectures`
+2021-11-11T04:09:29.134585-00:00	   10 Execute	select * from `QuizyPrefectures`
+2021-11-11T04:09:29.135249-00:00	   10 Close stmt	
+2021-11-11T04:09:29.195104-00:00	   10 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:29.195459-00:00	   10 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9hZG1pbiI7fX0=', `last_activity` = 1636603769, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:29.197261-00:00	   10 Close stmt	
+2021-11-11T04:09:29.202230-00:00	   10 Quit	
+2021-11-11T04:09:32.315604-00:00	   11 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:32.316234-00:00	   11 Query	use `laravel`
+2021-11-11T04:09:32.316886-00:00	   11 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:32.317237-00:00	   11 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:32.317783-00:00	   11 Close stmt	
+2021-11-11T04:09:32.318202-00:00	   11 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:32.318626-00:00	   11 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:32.319123-00:00	   11 Close stmt	
+2021-11-11T04:09:32.319651-00:00	   11 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:32.322242-00:00	   11 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:32.322947-00:00	   11 Close stmt	
+2021-11-11T04:09:32.375964-00:00	   11 Prepare	select * from `QuizyPrefectures`
+2021-11-11T04:09:32.376354-00:00	   11 Execute	select * from `QuizyPrefectures`
+2021-11-11T04:09:32.377202-00:00	   11 Close stmt	
+2021-11-11T04:09:32.439318-00:00	   11 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:32.439763-00:00	   11 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpeiI7fX0=', `last_activity` = 1636603772, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:32.441973-00:00	   11 Close stmt	
+2021-11-11T04:09:32.446274-00:00	   11 Quit	
+2021-11-11T04:09:34.729115-00:00	   12 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:34.729743-00:00	   12 Query	use `laravel`
+2021-11-11T04:09:34.730354-00:00	   12 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:34.730722-00:00	   12 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:34.731284-00:00	   12 Close stmt	
+2021-11-11T04:09:34.731747-00:00	   12 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:34.732084-00:00	   12 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:34.732578-00:00	   12 Close stmt	
+2021-11-11T04:09:34.733114-00:00	   12 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:34.736373-00:00	   12 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:34.737104-00:00	   12 Close stmt	
+2021-11-11T04:09:34.810193-00:00	   12 Prepare	select * from `quizy` where `prefecture` = ?
+2021-11-11T04:09:34.810608-00:00	   12 Execute	select * from `quizy` where `prefecture` = 3
+2021-11-11T04:09:34.811272-00:00	   12 Close stmt	
+2021-11-11T04:09:34.811779-00:00	   12 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:09:34.812141-00:00	   12 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:09:34.812856-00:00	   12 Close stmt	
+2021-11-11T04:09:34.851421-00:00	   12 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:34.851822-00:00	   12 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjM6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei80Ijt9fQ==', `last_activity` = 1636603774, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:34.853643-00:00	   12 Close stmt	
+2021-11-11T04:09:34.859160-00:00	   12 Quit	
+2021-11-11T04:09:42.145642-00:00	   13 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:42.146439-00:00	   13 Query	use `laravel`
+2021-11-11T04:09:42.147143-00:00	   13 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:42.147527-00:00	   13 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:42.148052-00:00	   13 Close stmt	
+2021-11-11T04:09:42.148465-00:00	   13 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:42.148802-00:00	   13 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:42.149450-00:00	   13 Close stmt	
+2021-11-11T04:09:42.150024-00:00	   13 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:42.154373-00:00	   13 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:42.154967-00:00	   13 Close stmt	
+2021-11-11T04:09:42.205794-00:00	   13 Prepare	select * from `QuizyPrefectures`
+2021-11-11T04:09:42.206153-00:00	   13 Execute	select * from `QuizyPrefectures`
+2021-11-11T04:09:42.206783-00:00	   13 Close stmt	
+2021-11-11T04:09:42.269182-00:00	   13 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:42.269550-00:00	   13 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpeiI7fX0=', `last_activity` = 1636603782, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:42.271397-00:00	   13 Close stmt	
+2021-11-11T04:09:42.275171-00:00	   13 Quit	
+2021-11-11T04:09:46.092646-00:00	   14 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:46.093195-00:00	   14 Query	use `laravel`
+2021-11-11T04:09:46.093628-00:00	   14 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:46.093865-00:00	   14 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:46.094250-00:00	   14 Close stmt	
+2021-11-11T04:09:46.094573-00:00	   14 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:46.094806-00:00	   14 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:46.095204-00:00	   14 Close stmt	
+2021-11-11T04:09:46.095627-00:00	   14 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:46.098571-00:00	   14 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:46.099073-00:00	   14 Close stmt	
+2021-11-11T04:09:46.144183-00:00	   14 Prepare	select * from `QuizyPrefectures`
+2021-11-11T04:09:46.144542-00:00	   14 Execute	select * from `QuizyPrefectures`
+2021-11-11T04:09:46.145204-00:00	   14 Close stmt	
+2021-11-11T04:09:46.204109-00:00	   14 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:46.204383-00:00	   14 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9hZG1pbiI7fX0=', `last_activity` = 1636603786, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:46.206251-00:00	   14 Close stmt	
+2021-11-11T04:09:46.210007-00:00	   14 Quit	
+2021-11-11T04:09:51.012251-00:00	   15 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:09:51.012775-00:00	   15 Query	use `laravel`
+2021-11-11T04:09:51.013301-00:00	   15 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:51.013621-00:00	   15 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:09:51.013996-00:00	   15 Close stmt	
+2021-11-11T04:09:51.014374-00:00	   15 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:51.014828-00:00	   15 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:09:51.015401-00:00	   15 Close stmt	
+2021-11-11T04:09:51.015894-00:00	   15 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:09:51.019150-00:00	   15 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:09:51.019743-00:00	   15 Close stmt	
+2021-11-11T04:09:51.066375-00:00	   15 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:09:51.066716-00:00	   15 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:09:51.067435-00:00	   15 Close stmt	
+2021-11-11T04:09:51.075538-00:00	   15 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:51.075847-00:00	   15 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:09:51.076495-00:00	   15 Close stmt	
+2021-11-11T04:09:51.080385-00:00	   15 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:51.080691-00:00	   15 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:09:51.081240-00:00	   15 Close stmt	
+2021-11-11T04:09:51.081647-00:00	   15 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:51.081963-00:00	   15 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:09:51.082534-00:00	   15 Close stmt	
+2021-11-11T04:09:51.082936-00:00	   15 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:09:51.083274-00:00	   15 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:09:51.083829-00:00	   15 Close stmt	
+2021-11-11T04:09:51.085767-00:00	   15 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:09:51.086069-00:00	   15 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:09:51.086632-00:00	   15 Close stmt	
+2021-11-11T04:09:51.145048-00:00	   15 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:09:51.145541-00:00	   15 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636603791, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:09:51.147085-00:00	   15 Close stmt	
+2021-11-11T04:09:51.151727-00:00	   15 Quit	
+2021-11-11T04:10:43.953034-00:00	   16 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:10:43.953637-00:00	   16 Query	use `laravel`
+2021-11-11T04:10:43.954198-00:00	   16 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:10:43.954491-00:00	   16 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:10:43.954867-00:00	   16 Close stmt	
+2021-11-11T04:10:43.955245-00:00	   16 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:10:43.955532-00:00	   16 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:10:43.956065-00:00	   16 Close stmt	
+2021-11-11T04:10:43.956691-00:00	   16 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:10:43.960392-00:00	   16 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:10:43.961112-00:00	   16 Close stmt	
+2021-11-11T04:10:44.485938-00:00	   16 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:10:44.486490-00:00	   16 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/31/blog_04.jpg', '2021-11-11 04:10:44', '2021-11-11 04:10:44')
+2021-11-11T04:10:44.493198-00:00	   16 Close stmt	
+2021-11-11T04:10:44.587331-00:00	   16 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:10:44.587823-00:00	   16 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636603844, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:10:44.589401-00:00	   16 Close stmt	
+2021-11-11T04:10:44.596468-00:00	   16 Quit	
+2021-11-11T04:11:07.661921-00:00	   17 Connect	root@localhost on  using Socket
+2021-11-11T04:11:07.662382-00:00	   17 Connect	Access denied for user 'root'@'localhost' (using password: YES)
+2021-11-11T04:11:22.085178-00:00	   18 Connect	root@localhost on  using Socket
+2021-11-11T04:11:22.085964-00:00	   18 Query	select @@version_comment limit 1
+2021-11-11T04:11:26.473336-00:00	   18 Query	SELECT DATABASE()
+2021-11-11T04:11:26.474133-00:00	   18 Init DB	laravel
+2021-11-11T04:11:26.475766-00:00	   18 Query	show databases
+2021-11-11T04:11:26.479624-00:00	   18 Query	show tables
+2021-11-11T04:11:26.483555-00:00	   18 Field List	ImgTestUsers 
+2021-11-11T04:11:26.484586-00:00	   18 Field List	QuizyData 
+2021-11-11T04:11:26.486845-00:00	   18 Field List	QuizyPrefectures 
+2021-11-11T04:11:26.487458-00:00	   18 Field List	QuizyQuaestionTable 
+2021-11-11T04:11:26.488127-00:00	   18 Field List	boards 
+2021-11-11T04:11:26.490026-00:00	   18 Field List	failed_jobs 
+2021-11-11T04:11:26.491988-00:00	   18 Field List	images 
+2021-11-11T04:11:26.494175-00:00	   18 Field List	migrations 
+2021-11-11T04:11:26.496154-00:00	   18 Field List	password_resets 
+2021-11-11T04:11:26.498474-00:00	   18 Field List	people 
+2021-11-11T04:11:26.500660-00:00	   18 Field List	quizy 
+2021-11-11T04:11:26.501425-00:00	   18 Field List	restdata 
+2021-11-11T04:11:26.503185-00:00	   18 Field List	sessions 
+2021-11-11T04:11:26.503842-00:00	   18 Field List	tests 
+2021-11-11T04:11:26.505514-00:00	   18 Field List	users 
+2021-11-11T04:11:37.559146-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T04:15:40.406429-00:00	   19 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:15:40.407155-00:00	   19 Query	use `laravel`
+2021-11-11T04:15:40.407758-00:00	   19 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:15:40.408028-00:00	   19 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:15:40.408450-00:00	   19 Close stmt	
+2021-11-11T04:15:40.408767-00:00	   19 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:15:40.409029-00:00	   19 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:15:40.409451-00:00	   19 Close stmt	
+2021-11-11T04:15:40.409893-00:00	   19 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:15:40.413755-00:00	   19 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:15:40.414358-00:00	   19 Close stmt	
+2021-11-11T04:15:40.474194-00:00	   19 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:15:40.474549-00:00	   19 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:15:40.475141-00:00	   19 Close stmt	
+2021-11-11T04:15:40.484235-00:00	   19 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:40.484566-00:00	   19 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:15:40.485117-00:00	   19 Close stmt	
+2021-11-11T04:15:40.489936-00:00	   19 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:40.490216-00:00	   19 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:15:40.490870-00:00	   19 Close stmt	
+2021-11-11T04:15:40.491433-00:00	   19 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:40.491872-00:00	   19 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:15:40.492773-00:00	   19 Close stmt	
+2021-11-11T04:15:40.493245-00:00	   19 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:40.493630-00:00	   19 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:15:40.494395-00:00	   19 Close stmt	
+2021-11-11T04:15:40.497917-00:00	   19 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:15:40.498247-00:00	   19 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:15:40.498849-00:00	   19 Close stmt	
+2021-11-11T04:15:40.570118-00:00	   19 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:15:40.570546-00:00	   19 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636604140, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:15:40.572031-00:00	   19 Close stmt	
+2021-11-11T04:15:40.576759-00:00	   19 Quit	
+2021-11-11T04:15:42.266849-00:00	   20 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:15:42.267599-00:00	   20 Query	use `laravel`
+2021-11-11T04:15:42.268162-00:00	   20 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:15:42.268490-00:00	   20 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:15:42.268957-00:00	   20 Close stmt	
+2021-11-11T04:15:42.269374-00:00	   20 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:15:42.269665-00:00	   20 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:15:42.270135-00:00	   20 Close stmt	
+2021-11-11T04:15:42.270632-00:00	   20 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:15:42.276247-00:00	   20 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:15:42.277060-00:00	   20 Close stmt	
+2021-11-11T04:15:42.341914-00:00	   20 Prepare	select * from `QuizyPrefectures`
+2021-11-11T04:15:42.342328-00:00	   20 Execute	select * from `QuizyPrefectures`
+2021-11-11T04:15:42.342965-00:00	   20 Close stmt	
+2021-11-11T04:15:42.424450-00:00	   20 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:15:42.424813-00:00	   20 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9hZG1pbiI7fX0=', `last_activity` = 1636604142, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:15:42.426716-00:00	   20 Close stmt	
+2021-11-11T04:15:42.433906-00:00	   20 Quit	
+2021-11-11T04:15:44.900820-00:00	   21 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:15:44.901642-00:00	   21 Query	use `laravel`
+2021-11-11T04:15:44.902637-00:00	   21 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:15:44.902968-00:00	   21 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:15:44.903543-00:00	   21 Close stmt	
+2021-11-11T04:15:44.903928-00:00	   21 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:15:44.904509-00:00	   21 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:15:44.905025-00:00	   21 Close stmt	
+2021-11-11T04:15:44.905590-00:00	   21 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:15:44.908108-00:00	   21 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:15:44.908816-00:00	   21 Close stmt	
+2021-11-11T04:15:44.951561-00:00	   21 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:15:44.951950-00:00	   21 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:15:44.952621-00:00	   21 Close stmt	
+2021-11-11T04:15:44.962072-00:00	   21 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:44.962488-00:00	   21 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:15:44.963167-00:00	   21 Close stmt	
+2021-11-11T04:15:44.968623-00:00	   21 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:44.968940-00:00	   21 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:15:44.969604-00:00	   21 Close stmt	
+2021-11-11T04:15:44.970009-00:00	   21 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:44.970361-00:00	   21 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:15:44.970907-00:00	   21 Close stmt	
+2021-11-11T04:15:44.971377-00:00	   21 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:15:44.971739-00:00	   21 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:15:44.972336-00:00	   21 Close stmt	
+2021-11-11T04:15:44.974803-00:00	   21 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:15:44.975116-00:00	   21 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:15:44.975703-00:00	   21 Close stmt	
+2021-11-11T04:15:45.031689-00:00	   21 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:15:45.032196-00:00	   21 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636604145, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:15:45.034418-00:00	   21 Close stmt	
+2021-11-11T04:15:45.038866-00:00	   21 Quit	
+2021-11-11T04:31:13.841296-00:00	   22 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:31:13.841859-00:00	   22 Query	use `laravel`
+2021-11-11T04:31:13.842311-00:00	   22 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:31:13.842586-00:00	   22 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:31:13.842923-00:00	   22 Close stmt	
+2021-11-11T04:31:13.843240-00:00	   22 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:31:13.843523-00:00	   22 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:31:13.843891-00:00	   22 Close stmt	
+2021-11-11T04:31:13.844288-00:00	   22 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:31:13.847572-00:00	   22 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:31:13.848205-00:00	   22 Close stmt	
+2021-11-11T04:31:13.963798-00:00	   22 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:31:13.964247-00:00	   22 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/31/blog_04.jpg', '2021-11-11 04:31:13', '2021-11-11 04:31:13')
+2021-11-11T04:31:13.965731-00:00	   22 Close stmt	
+2021-11-11T04:31:14.026242-00:00	   22 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:31:14.026559-00:00	   22 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636605073, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:31:14.028096-00:00	   22 Close stmt	
+2021-11-11T04:31:14.033452-00:00	   22 Quit	
+2021-11-11T04:31:18.276735-00:00	   18 Query	SELECT DATABASE()
+2021-11-11T04:31:18.277582-00:00	   18 Init DB	laravel
+2021-11-11T04:31:25.050120-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T04:32:01.525635-00:00	   23 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:32:01.526417-00:00	   23 Query	use `laravel`
+2021-11-11T04:32:01.527074-00:00	   23 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:32:01.527466-00:00	   23 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:32:01.528046-00:00	   23 Close stmt	
+2021-11-11T04:32:01.528461-00:00	   23 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:32:01.528775-00:00	   23 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:32:01.529312-00:00	   23 Close stmt	
+2021-11-11T04:32:01.529841-00:00	   23 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:32:01.535435-00:00	   23 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:32:01.536317-00:00	   23 Close stmt	
+2021-11-11T04:32:01.607935-00:00	   23 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:32:01.608368-00:00	   23 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:32:01.609027-00:00	   23 Close stmt	
+2021-11-11T04:32:01.621757-00:00	   23 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:32:01.622119-00:00	   23 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:32:01.622782-00:00	   23 Close stmt	
+2021-11-11T04:32:01.630456-00:00	   23 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:32:01.630792-00:00	   23 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:32:01.631430-00:00	   23 Close stmt	
+2021-11-11T04:32:01.631971-00:00	   23 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:32:01.632547-00:00	   23 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:32:01.633290-00:00	   23 Close stmt	
+2021-11-11T04:32:01.634031-00:00	   23 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:32:01.634379-00:00	   23 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:32:01.635011-00:00	   23 Close stmt	
+2021-11-11T04:32:01.638336-00:00	   23 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:32:01.638650-00:00	   23 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:32:01.639285-00:00	   23 Close stmt	
+2021-11-11T04:32:01.725594-00:00	   23 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:32:01.726016-00:00	   23 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636605121, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:32:01.727892-00:00	   23 Close stmt	
+2021-11-11T04:32:01.735326-00:00	   23 Quit	
+2021-11-11T04:32:05.140866-00:00	   24 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:32:05.141557-00:00	   24 Query	use `laravel`
+2021-11-11T04:32:05.142126-00:00	   24 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:32:05.142427-00:00	   24 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:32:05.142815-00:00	   24 Close stmt	
+2021-11-11T04:32:05.143182-00:00	   24 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:32:05.143446-00:00	   24 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:32:05.143822-00:00	   24 Close stmt	
+2021-11-11T04:32:05.144173-00:00	   24 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:32:05.146580-00:00	   24 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:32:05.147105-00:00	   24 Close stmt	
+2021-11-11T04:32:05.219757-00:00	   24 Quit	
+2021-11-11T04:33:22.040787-00:00	   25 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:33:22.041374-00:00	   25 Query	use `laravel`
+2021-11-11T04:33:22.041953-00:00	   25 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:33:22.042257-00:00	   25 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:33:22.042645-00:00	   25 Close stmt	
+2021-11-11T04:33:22.043073-00:00	   25 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:33:22.043442-00:00	   25 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:33:22.043956-00:00	   25 Close stmt	
+2021-11-11T04:33:22.044393-00:00	   25 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:33:22.046727-00:00	   25 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:33:22.047336-00:00	   25 Close stmt	
+2021-11-11T04:33:22.088077-00:00	   25 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:33:22.088427-00:00	   25 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:33:22.089001-00:00	   25 Close stmt	
+2021-11-11T04:33:22.097194-00:00	   25 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:33:22.097517-00:00	   25 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:33:22.098115-00:00	   25 Close stmt	
+2021-11-11T04:33:22.102371-00:00	   25 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:33:22.102745-00:00	   25 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:33:22.103479-00:00	   25 Close stmt	
+2021-11-11T04:33:22.103901-00:00	   25 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:33:22.104203-00:00	   25 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:33:22.104843-00:00	   25 Close stmt	
+2021-11-11T04:33:22.105238-00:00	   25 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:33:22.105570-00:00	   25 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:33:22.106164-00:00	   25 Close stmt	
+2021-11-11T04:33:22.108288-00:00	   25 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:33:22.108638-00:00	   25 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:33:22.109235-00:00	   25 Close stmt	
+2021-11-11T04:33:22.166195-00:00	   25 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:33:22.166575-00:00	   25 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636605202, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:33:22.168342-00:00	   25 Close stmt	
+2021-11-11T04:33:22.172085-00:00	   25 Quit	
+2021-11-11T04:33:25.465453-00:00	   26 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:33:25.466053-00:00	   26 Query	use `laravel`
+2021-11-11T04:33:25.466863-00:00	   26 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:33:25.467139-00:00	   26 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:33:25.467658-00:00	   26 Close stmt	
+2021-11-11T04:33:25.468084-00:00	   26 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:33:25.468406-00:00	   26 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:33:25.468902-00:00	   26 Close stmt	
+2021-11-11T04:33:25.469388-00:00	   26 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:33:25.472753-00:00	   26 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:33:25.473324-00:00	   26 Close stmt	
+2021-11-11T04:33:25.577950-00:00	   26 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:33:25.578351-00:00	   26 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/31/blog_04.jpg', '2021-11-11 04:33:25', '2021-11-11 04:33:25')
+2021-11-11T04:33:25.580044-00:00	   26 Close stmt	
+2021-11-11T04:33:25.640392-00:00	   26 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:33:25.640746-00:00	   26 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636605205, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:33:25.642435-00:00	   26 Close stmt	
+2021-11-11T04:33:25.647503-00:00	   26 Quit	
+2021-11-11T04:33:28.634536-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T04:47:02.819148-00:00	   27 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:47:02.819715-00:00	   27 Query	use `laravel`
+2021-11-11T04:47:02.820185-00:00	   27 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:02.820426-00:00	   27 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:02.820810-00:00	   27 Close stmt	
+2021-11-11T04:47:02.821154-00:00	   27 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:02.821406-00:00	   27 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:02.821836-00:00	   27 Close stmt	
+2021-11-11T04:47:02.822388-00:00	   27 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:47:02.826086-00:00	   27 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:47:02.826736-00:00	   27 Close stmt	
+2021-11-11T04:47:02.881413-00:00	   27 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:47:02.881721-00:00	   27 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:47:02.882222-00:00	   27 Close stmt	
+2021-11-11T04:47:02.891837-00:00	   27 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:02.892179-00:00	   27 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:47:02.892795-00:00	   27 Close stmt	
+2021-11-11T04:47:02.897873-00:00	   27 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:02.898115-00:00	   27 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:47:02.898585-00:00	   27 Close stmt	
+2021-11-11T04:47:02.898994-00:00	   27 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:02.899238-00:00	   27 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:47:02.899711-00:00	   27 Close stmt	
+2021-11-11T04:47:02.900044-00:00	   27 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:02.900296-00:00	   27 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:47:02.900784-00:00	   27 Close stmt	
+2021-11-11T04:47:02.903710-00:00	   27 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:47:02.903968-00:00	   27 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:47:02.904475-00:00	   27 Close stmt	
+2021-11-11T04:47:02.973020-00:00	   27 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:47:02.973419-00:00	   27 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606022, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:47:02.975041-00:00	   27 Close stmt	
+2021-11-11T04:47:02.981451-00:00	   27 Quit	
+2021-11-11T04:47:06.403028-00:00	   28 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:47:06.403554-00:00	   28 Query	use `laravel`
+2021-11-11T04:47:06.404073-00:00	   28 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:06.404338-00:00	   28 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:06.404728-00:00	   28 Close stmt	
+2021-11-11T04:47:06.405043-00:00	   28 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:06.405326-00:00	   28 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:06.405790-00:00	   28 Close stmt	
+2021-11-11T04:47:06.406174-00:00	   28 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:47:06.409663-00:00	   28 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:47:06.410233-00:00	   28 Close stmt	
+2021-11-11T04:47:06.605942-00:00	   28 Prepare	SELECT 1
+2021-11-11T04:47:06.606301-00:00	   28 Execute	SELECT 1
+2021-11-11T04:47:06.606760-00:00	   28 Close stmt	
+2021-11-11T04:47:06.641195-00:00	   28 Prepare	SELECT 1
+2021-11-11T04:47:06.641477-00:00	   28 Execute	SELECT 1
+2021-11-11T04:47:06.641968-00:00	   28 Close stmt	
+2021-11-11T04:47:06.795881-00:00	   28 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:47:06.796222-00:00	   28 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606026, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:47:06.798073-00:00	   28 Close stmt	
+2021-11-11T04:47:06.810241-00:00	   28 Quit	
+2021-11-11T04:47:09.435860-00:00	   29 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:47:09.436515-00:00	   29 Query	use `laravel`
+2021-11-11T04:47:09.437112-00:00	   29 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:09.437410-00:00	   29 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:09.437834-00:00	   29 Close stmt	
+2021-11-11T04:47:09.438193-00:00	   29 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:09.438693-00:00	   29 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:09.439116-00:00	   29 Close stmt	
+2021-11-11T04:47:09.439521-00:00	   29 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:47:09.442441-00:00	   29 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:47:09.443090-00:00	   29 Close stmt	
+2021-11-11T04:47:09.497500-00:00	   29 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:47:09.497878-00:00	   29 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:47:09.498500-00:00	   29 Close stmt	
+2021-11-11T04:47:09.508490-00:00	   29 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:09.508859-00:00	   29 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:47:09.509480-00:00	   29 Close stmt	
+2021-11-11T04:47:09.514263-00:00	   29 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:09.514648-00:00	   29 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:47:09.515273-00:00	   29 Close stmt	
+2021-11-11T04:47:09.515728-00:00	   29 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:09.516106-00:00	   29 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:47:09.516632-00:00	   29 Close stmt	
+2021-11-11T04:47:09.517087-00:00	   29 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:09.517435-00:00	   29 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:47:09.518051-00:00	   29 Close stmt	
+2021-11-11T04:47:09.521026-00:00	   29 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:47:09.521472-00:00	   29 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:47:09.522080-00:00	   29 Close stmt	
+2021-11-11T04:47:09.588284-00:00	   29 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:47:09.588698-00:00	   29 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606029, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:47:09.590457-00:00	   29 Close stmt	
+2021-11-11T04:47:09.596150-00:00	   29 Quit	
+2021-11-11T04:47:12.618735-00:00	   30 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:47:12.619307-00:00	   30 Query	use `laravel`
+2021-11-11T04:47:12.619817-00:00	   30 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:12.620236-00:00	   30 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:12.620693-00:00	   30 Close stmt	
+2021-11-11T04:47:12.621102-00:00	   30 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:12.621399-00:00	   30 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:12.621856-00:00	   30 Close stmt	
+2021-11-11T04:47:12.622269-00:00	   30 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:47:12.625971-00:00	   30 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:47:12.626615-00:00	   30 Close stmt	
+2021-11-11T04:47:12.745023-00:00	   30 Prepare	insert into `ImgTestUsers` (`updated_at`, `created_at`) values (?, ?)
+2021-11-11T04:47:12.745393-00:00	   30 Execute	insert into `ImgTestUsers` (`updated_at`, `created_at`) values ('2021-11-11 04:47:12', '2021-11-11 04:47:12')
+2021-11-11T04:47:12.746056-00:00	   30 Close stmt	
+2021-11-11T04:47:12.927271-00:00	   30 Prepare	SELECT 1
+2021-11-11T04:47:12.927622-00:00	   30 Execute	SELECT 1
+2021-11-11T04:47:12.928082-00:00	   30 Close stmt	
+2021-11-11T04:47:12.964489-00:00	   30 Prepare	SELECT 1
+2021-11-11T04:47:12.964865-00:00	   30 Execute	SELECT 1
+2021-11-11T04:47:12.965479-00:00	   30 Close stmt	
+2021-11-11T04:47:13.186654-00:00	   30 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:47:13.186945-00:00	   30 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606033, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:47:13.188480-00:00	   30 Close stmt	
+2021-11-11T04:47:13.196232-00:00	   30 Quit	
+2021-11-11T04:47:22.930086-00:00	   31 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:47:22.930690-00:00	   31 Query	use `laravel`
+2021-11-11T04:47:22.931237-00:00	   31 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:22.931545-00:00	   31 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:22.932003-00:00	   31 Close stmt	
+2021-11-11T04:47:22.932366-00:00	   31 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:22.932652-00:00	   31 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:22.933100-00:00	   31 Close stmt	
+2021-11-11T04:47:22.933492-00:00	   31 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:47:22.937384-00:00	   31 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:47:22.937986-00:00	   31 Close stmt	
+2021-11-11T04:47:22.990120-00:00	   31 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:47:22.990545-00:00	   31 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:47:22.991077-00:00	   31 Close stmt	
+2021-11-11T04:47:23.000325-00:00	   31 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:23.000708-00:00	   31 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:47:23.001302-00:00	   31 Close stmt	
+2021-11-11T04:47:23.005666-00:00	   31 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:23.006144-00:00	   31 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:47:23.006675-00:00	   31 Close stmt	
+2021-11-11T04:47:23.007097-00:00	   31 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:23.007436-00:00	   31 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:47:23.008048-00:00	   31 Close stmt	
+2021-11-11T04:47:23.008500-00:00	   31 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:47:23.008834-00:00	   31 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:47:23.009361-00:00	   31 Close stmt	
+2021-11-11T04:47:23.011672-00:00	   31 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:47:23.012020-00:00	   31 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:47:23.012501-00:00	   31 Close stmt	
+2021-11-11T04:47:23.076488-00:00	   31 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:47:23.077011-00:00	   31 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606043, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:47:23.078534-00:00	   31 Close stmt	
+2021-11-11T04:47:23.082645-00:00	   31 Quit	
+2021-11-11T04:47:33.495185-00:00	   32 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:47:33.495824-00:00	   32 Query	use `laravel`
+2021-11-11T04:47:33.496329-00:00	   32 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:33.496611-00:00	   32 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:47:33.497113-00:00	   32 Close stmt	
+2021-11-11T04:47:33.497469-00:00	   32 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:33.497765-00:00	   32 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:47:33.498280-00:00	   32 Close stmt	
+2021-11-11T04:47:33.498674-00:00	   32 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:47:33.501416-00:00	   32 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:47:33.501982-00:00	   32 Close stmt	
+2021-11-11T04:47:33.678523-00:00	   32 Prepare	insert into `ImgTestUsers` (`updated_at`, `created_at`) values (?, ?)
+2021-11-11T04:47:33.678805-00:00	   32 Execute	insert into `ImgTestUsers` (`updated_at`, `created_at`) values ('2021-11-11 04:47:33', '2021-11-11 04:47:33')
+2021-11-11T04:47:33.679364-00:00	   32 Close stmt	
+2021-11-11T04:47:33.783199-00:00	   32 Prepare	SELECT 1
+2021-11-11T04:47:33.783518-00:00	   32 Execute	SELECT 1
+2021-11-11T04:47:33.784087-00:00	   32 Close stmt	
+2021-11-11T04:47:33.817151-00:00	   32 Prepare	SELECT 1
+2021-11-11T04:47:33.817468-00:00	   32 Execute	SELECT 1
+2021-11-11T04:47:33.817838-00:00	   32 Close stmt	
+2021-11-11T04:47:33.956756-00:00	   32 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:47:33.957081-00:00	   32 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606053, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:47:33.958345-00:00	   32 Close stmt	
+2021-11-11T04:47:33.968412-00:00	   32 Quit	
+2021-11-11T04:50:57.042615-00:00	   33 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:50:57.043251-00:00	   33 Query	use `laravel`
+2021-11-11T04:50:57.043753-00:00	   33 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:50:57.044001-00:00	   33 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:50:57.044414-00:00	   33 Close stmt	
+2021-11-11T04:50:57.044745-00:00	   33 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:50:57.045042-00:00	   33 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:50:57.045445-00:00	   33 Close stmt	
+2021-11-11T04:50:57.045911-00:00	   33 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:50:57.049625-00:00	   33 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:50:57.050177-00:00	   33 Close stmt	
+2021-11-11T04:50:57.111914-00:00	   33 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:50:57.112421-00:00	   33 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:50:57.113433-00:00	   33 Close stmt	
+2021-11-11T04:50:57.124708-00:00	   33 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:50:57.125024-00:00	   33 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:50:57.125584-00:00	   33 Close stmt	
+2021-11-11T04:50:57.130596-00:00	   33 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:50:57.130863-00:00	   33 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:50:57.131376-00:00	   33 Close stmt	
+2021-11-11T04:50:57.131737-00:00	   33 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:50:57.132030-00:00	   33 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:50:57.132701-00:00	   33 Close stmt	
+2021-11-11T04:50:57.133126-00:00	   33 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:50:57.133436-00:00	   33 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:50:57.133971-00:00	   33 Close stmt	
+2021-11-11T04:50:57.136659-00:00	   33 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:50:57.136963-00:00	   33 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:50:57.137509-00:00	   33 Close stmt	
+2021-11-11T04:50:57.216383-00:00	   33 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:50:57.216769-00:00	   33 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606257, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:50:57.218476-00:00	   33 Close stmt	
+2021-11-11T04:50:57.224580-00:00	   33 Quit	
+2021-11-11T04:51:06.899171-00:00	   34 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:51:06.899767-00:00	   34 Query	use `laravel`
+2021-11-11T04:51:06.900272-00:00	   34 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:06.900707-00:00	   34 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:06.901176-00:00	   34 Close stmt	
+2021-11-11T04:51:06.901594-00:00	   34 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:06.901946-00:00	   34 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:06.902469-00:00	   34 Close stmt	
+2021-11-11T04:51:06.902916-00:00	   34 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:51:06.907603-00:00	   34 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:51:06.908205-00:00	   34 Close stmt	
+2021-11-11T04:51:07.033102-00:00	   34 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:51:07.033513-00:00	   34 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/31/blog_04.jpg', '2021-11-11 04:51:07', '2021-11-11 04:51:07')
+2021-11-11T04:51:07.035156-00:00	   34 Close stmt	
+2021-11-11T04:51:07.071565-00:00	   34 Quit	
+2021-11-11T04:51:17.766201-00:00	   35 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:51:17.766882-00:00	   35 Query	use `laravel`
+2021-11-11T04:51:17.767419-00:00	   35 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:17.767797-00:00	   35 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:17.768198-00:00	   35 Close stmt	
+2021-11-11T04:51:17.768565-00:00	   35 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:17.768857-00:00	   35 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:17.769243-00:00	   35 Close stmt	
+2021-11-11T04:51:17.769694-00:00	   35 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:51:17.772262-00:00	   35 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:51:17.772813-00:00	   35 Close stmt	
+2021-11-11T04:51:17.821974-00:00	   35 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:51:17.822283-00:00	   35 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:51:17.822812-00:00	   35 Close stmt	
+2021-11-11T04:51:17.832330-00:00	   35 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:17.832681-00:00	   35 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:51:17.833226-00:00	   35 Close stmt	
+2021-11-11T04:51:17.837398-00:00	   35 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:17.837735-00:00	   35 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:51:17.838327-00:00	   35 Close stmt	
+2021-11-11T04:51:17.838748-00:00	   35 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:17.839046-00:00	   35 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:51:17.839623-00:00	   35 Close stmt	
+2021-11-11T04:51:17.840046-00:00	   35 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:17.840326-00:00	   35 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:51:17.840779-00:00	   35 Close stmt	
+2021-11-11T04:51:17.842838-00:00	   35 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:51:17.843097-00:00	   35 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:51:17.843667-00:00	   35 Close stmt	
+2021-11-11T04:51:17.906945-00:00	   35 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:51:17.907667-00:00	   35 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606277, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:51:17.909253-00:00	   35 Close stmt	
+2021-11-11T04:51:17.914519-00:00	   35 Quit	
+2021-11-11T04:51:34.083136-00:00	   36 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:51:34.083787-00:00	   36 Query	use `laravel`
+2021-11-11T04:51:34.084262-00:00	   36 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:34.084587-00:00	   36 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:34.085057-00:00	   36 Close stmt	
+2021-11-11T04:51:34.085685-00:00	   36 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:34.086097-00:00	   36 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:34.086684-00:00	   36 Close stmt	
+2021-11-11T04:51:34.087105-00:00	   36 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:51:34.090832-00:00	   36 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:51:34.091421-00:00	   36 Close stmt	
+2021-11-11T04:51:34.325865-00:00	   36 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:51:34.326419-00:00	   36 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/就活の教科書さんに取材していただきました！.png', '2021-11-11 04:51:34', '2021-11-11 04:51:34')
+2021-11-11T04:51:34.328192-00:00	   36 Close stmt	
+2021-11-11T04:51:34.357381-00:00	   36 Quit	
+2021-11-11T04:51:39.708084-00:00	   37 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:51:39.708759-00:00	   37 Query	use `laravel`
+2021-11-11T04:51:39.709414-00:00	   37 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:39.709752-00:00	   37 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:51:39.710260-00:00	   37 Close stmt	
+2021-11-11T04:51:39.710676-00:00	   37 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:39.711029-00:00	   37 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:51:39.711505-00:00	   37 Close stmt	
+2021-11-11T04:51:39.711979-00:00	   37 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:51:39.715184-00:00	   37 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:51:39.715961-00:00	   37 Close stmt	
+2021-11-11T04:51:39.761332-00:00	   37 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:51:39.761641-00:00	   37 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:51:39.762278-00:00	   37 Close stmt	
+2021-11-11T04:51:39.769751-00:00	   37 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:39.770083-00:00	   37 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:51:39.770685-00:00	   37 Close stmt	
+2021-11-11T04:51:39.775394-00:00	   37 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:39.775786-00:00	   37 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:51:39.776580-00:00	   37 Close stmt	
+2021-11-11T04:51:39.777014-00:00	   37 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:39.777331-00:00	   37 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:51:39.777992-00:00	   37 Close stmt	
+2021-11-11T04:51:39.778391-00:00	   37 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:51:39.778650-00:00	   37 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:51:39.779225-00:00	   37 Close stmt	
+2021-11-11T04:51:39.780947-00:00	   37 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:51:39.781226-00:00	   37 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:51:39.781760-00:00	   37 Close stmt	
+2021-11-11T04:51:39.837463-00:00	   37 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:51:39.837916-00:00	   37 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606299, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:51:39.839398-00:00	   37 Close stmt	
+2021-11-11T04:51:39.844405-00:00	   37 Quit	
+2021-11-11T04:51:42.608612-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T04:57:28.682923-00:00	   38 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:57:28.683541-00:00	   38 Query	use `laravel`
+2021-11-11T04:57:28.684517-00:00	   38 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:57:28.684823-00:00	   38 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:57:28.685234-00:00	   38 Close stmt	
+2021-11-11T04:57:28.685626-00:00	   38 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:57:28.685925-00:00	   38 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:57:28.686441-00:00	   38 Close stmt	
+2021-11-11T04:57:28.686905-00:00	   38 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:57:28.691666-00:00	   38 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:57:28.692238-00:00	   38 Close stmt	
+2021-11-11T04:57:28.922984-00:00	   38 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:57:28.923345-00:00	   38 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/就活の教科書さんに取材していただきました！.png', '2021-11-11 04:57:28', '2021-11-11 04:57:28')
+2021-11-11T04:57:28.925333-00:00	   38 Close stmt	
+2021-11-11T04:57:28.963491-00:00	   38 Quit	
+2021-11-11T04:57:33.811066-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T04:58:31.451589-00:00	   39 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:58:31.452515-00:00	   39 Query	use `laravel`
+2021-11-11T04:58:31.453189-00:00	   39 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:58:31.453536-00:00	   39 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:58:31.454072-00:00	   39 Close stmt	
+2021-11-11T04:58:31.454458-00:00	   39 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:58:31.454766-00:00	   39 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:58:31.455263-00:00	   39 Close stmt	
+2021-11-11T04:58:31.455671-00:00	   39 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:58:31.459095-00:00	   39 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:58:31.459749-00:00	   39 Close stmt	
+2021-11-11T04:58:31.505704-00:00	   39 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:58:31.506048-00:00	   39 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:58:31.506603-00:00	   39 Close stmt	
+2021-11-11T04:58:31.513410-00:00	   39 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:31.513675-00:00	   39 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:58:31.514387-00:00	   39 Close stmt	
+2021-11-11T04:58:31.520380-00:00	   39 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:31.520707-00:00	   39 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:58:31.521323-00:00	   39 Close stmt	
+2021-11-11T04:58:31.521743-00:00	   39 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:31.522056-00:00	   39 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:58:31.522925-00:00	   39 Close stmt	
+2021-11-11T04:58:31.523689-00:00	   39 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:31.524215-00:00	   39 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:58:31.525630-00:00	   39 Close stmt	
+2021-11-11T04:58:31.529171-00:00	   39 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:58:31.529528-00:00	   39 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:58:31.530199-00:00	   39 Close stmt	
+2021-11-11T04:58:31.596458-00:00	   39 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:58:31.596847-00:00	   39 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606711, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:58:31.598281-00:00	   39 Close stmt	
+2021-11-11T04:58:31.603954-00:00	   39 Quit	
+2021-11-11T04:58:34.856764-00:00	   40 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:58:34.857426-00:00	   40 Query	use `laravel`
+2021-11-11T04:58:34.858013-00:00	   40 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:58:34.858280-00:00	   40 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:58:34.858921-00:00	   40 Close stmt	
+2021-11-11T04:58:34.859273-00:00	   40 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:58:34.859534-00:00	   40 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:58:34.860107-00:00	   40 Close stmt	
+2021-11-11T04:58:34.860541-00:00	   40 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:58:34.863170-00:00	   40 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:58:34.863985-00:00	   40 Close stmt	
+2021-11-11T04:58:34.909003-00:00	   40 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T04:58:34.909379-00:00	   40 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T04:58:34.909989-00:00	   40 Close stmt	
+2021-11-11T04:58:34.918375-00:00	   40 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:34.918738-00:00	   40 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T04:58:34.919326-00:00	   40 Close stmt	
+2021-11-11T04:58:34.926724-00:00	   40 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:34.927089-00:00	   40 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T04:58:34.927866-00:00	   40 Close stmt	
+2021-11-11T04:58:34.928577-00:00	   40 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:34.929079-00:00	   40 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T04:58:34.929745-00:00	   40 Close stmt	
+2021-11-11T04:58:34.930156-00:00	   40 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T04:58:34.930487-00:00	   40 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T04:58:34.931074-00:00	   40 Close stmt	
+2021-11-11T04:58:34.934090-00:00	   40 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T04:58:34.934375-00:00	   40 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T04:58:34.934905-00:00	   40 Close stmt	
+2021-11-11T04:58:35.003781-00:00	   40 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T04:58:35.004143-00:00	   40 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636606714, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T04:58:35.005672-00:00	   40 Close stmt	
+2021-11-11T04:58:35.010092-00:00	   40 Quit	
+2021-11-11T04:58:50.658027-00:00	   41 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T04:58:50.658574-00:00	   41 Query	use `laravel`
+2021-11-11T04:58:50.659097-00:00	   41 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:58:50.659354-00:00	   41 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T04:58:50.659834-00:00	   41 Close stmt	
+2021-11-11T04:58:50.660189-00:00	   41 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:58:50.660570-00:00	   41 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T04:58:50.661070-00:00	   41 Close stmt	
+2021-11-11T04:58:50.661489-00:00	   41 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T04:58:50.665662-00:00	   41 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T04:58:50.666331-00:00	   41 Close stmt	
+2021-11-11T04:58:50.787082-00:00	   41 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T04:58:50.787510-00:00	   41 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/33/contact-step2.jpg', '2021-11-11 04:58:50', '2021-11-11 04:58:50')
+2021-11-11T04:58:50.788899-00:00	   41 Close stmt	
+2021-11-11T04:58:50.833771-00:00	   41 Quit	
+2021-11-11T04:58:56.547705-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T05:06:13.966480-00:00	   42 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:06:13.967439-00:00	   42 Query	use `laravel`
+2021-11-11T05:06:13.968113-00:00	   42 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:06:13.968472-00:00	   42 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:06:13.968980-00:00	   42 Close stmt	
+2021-11-11T05:06:13.969383-00:00	   42 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:06:13.969705-00:00	   42 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:06:13.970174-00:00	   42 Close stmt	
+2021-11-11T05:06:13.970606-00:00	   42 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:06:13.974183-00:00	   42 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:06:13.974757-00:00	   42 Close stmt	
+2021-11-11T05:06:14.031483-00:00	   42 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:06:14.031836-00:00	   42 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:06:14.032443-00:00	   42 Close stmt	
+2021-11-11T05:06:14.042620-00:00	   42 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:06:14.042926-00:00	   42 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:06:14.043598-00:00	   42 Close stmt	
+2021-11-11T05:06:14.049601-00:00	   42 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:06:14.049955-00:00	   42 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:06:14.050603-00:00	   42 Close stmt	
+2021-11-11T05:06:14.051059-00:00	   42 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:06:14.051371-00:00	   42 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:06:14.052113-00:00	   42 Close stmt	
+2021-11-11T05:06:14.052603-00:00	   42 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:06:14.052973-00:00	   42 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:06:14.053636-00:00	   42 Close stmt	
+2021-11-11T05:06:14.056464-00:00	   42 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:06:14.056744-00:00	   42 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:06:14.057362-00:00	   42 Close stmt	
+2021-11-11T05:06:14.125414-00:00	   42 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:06:14.125798-00:00	   42 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636607174, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:06:14.127490-00:00	   42 Close stmt	
+2021-11-11T05:06:14.132829-00:00	   42 Quit	
+2021-11-11T05:06:25.257073-00:00	   43 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:06:25.257673-00:00	   43 Query	use `laravel`
+2021-11-11T05:06:25.258598-00:00	   43 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:06:25.258896-00:00	   43 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:06:25.259317-00:00	   43 Close stmt	
+2021-11-11T05:06:25.259664-00:00	   43 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:06:25.259919-00:00	   43 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:06:25.260406-00:00	   43 Close stmt	
+2021-11-11T05:06:25.260799-00:00	   43 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:06:25.263992-00:00	   43 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:06:25.264642-00:00	   43 Close stmt	
+2021-11-11T05:06:25.407828-00:00	   43 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T05:06:25.408284-00:00	   43 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/IMG_3591.PNG', '2021-11-11 05:06:25', '2021-11-11 05:06:25')
+2021-11-11T05:06:25.409903-00:00	   43 Close stmt	
+2021-11-11T05:06:25.481610-00:00	   43 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:06:25.482054-00:00	   43 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636607185, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:06:25.483804-00:00	   43 Close stmt	
+2021-11-11T05:06:25.488279-00:00	   43 Quit	
+2021-11-11T05:06:35.397498-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T05:30:18.168021-00:00	   44 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:30:18.170391-00:00	   44 Query	use `laravel`
+2021-11-11T05:30:18.170990-00:00	   44 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:30:18.171265-00:00	   44 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:30:18.171690-00:00	   44 Close stmt	
+2021-11-11T05:30:18.172252-00:00	   44 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:30:18.172697-00:00	   44 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:30:18.173235-00:00	   44 Close stmt	
+2021-11-11T05:30:18.173667-00:00	   44 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:30:18.178286-00:00	   44 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:30:18.178906-00:00	   44 Close stmt	
+2021-11-11T05:30:18.239565-00:00	   44 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:30:18.239879-00:00	   44 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:30:18.240467-00:00	   44 Close stmt	
+2021-11-11T05:30:18.249224-00:00	   44 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:30:18.249542-00:00	   44 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:30:18.250202-00:00	   44 Close stmt	
+2021-11-11T05:30:18.256365-00:00	   44 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:30:18.256721-00:00	   44 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:30:18.257487-00:00	   44 Close stmt	
+2021-11-11T05:30:18.257903-00:00	   44 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:30:18.258247-00:00	   44 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:30:18.258837-00:00	   44 Close stmt	
+2021-11-11T05:30:18.259219-00:00	   44 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:30:18.259503-00:00	   44 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:30:18.260025-00:00	   44 Close stmt	
+2021-11-11T05:30:18.262150-00:00	   44 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:30:18.262474-00:00	   44 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:30:18.263055-00:00	   44 Close stmt	
+2021-11-11T05:30:18.337318-00:00	   44 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:30:18.337687-00:00	   44 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636608618, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:30:18.340292-00:00	   44 Close stmt	
+2021-11-11T05:30:18.346057-00:00	   44 Quit	
+2021-11-11T05:30:22.152968-00:00	   45 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:30:22.153518-00:00	   45 Query	use `laravel`
+2021-11-11T05:30:22.153992-00:00	   45 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:30:22.154229-00:00	   45 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:30:22.154585-00:00	   45 Close stmt	
+2021-11-11T05:30:22.154897-00:00	   45 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:30:22.155219-00:00	   45 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:30:22.155673-00:00	   45 Close stmt	
+2021-11-11T05:30:22.156105-00:00	   45 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:30:22.162000-00:00	   45 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:30:22.162657-00:00	   45 Close stmt	
+2021-11-11T05:30:22.323311-00:00	   45 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T05:30:22.323635-00:00	   45 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/IMG_3591.PNG', '2021-11-11 05:30:22', '2021-11-11 05:30:22')
+2021-11-11T05:30:22.325321-00:00	   45 Close stmt	
+2021-11-11T05:30:22.401968-00:00	   45 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:30:22.402269-00:00	   45 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636608622, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:30:22.403901-00:00	   45 Close stmt	
+2021-11-11T05:30:22.409961-00:00	   45 Quit	
+2021-11-11T05:30:25.937025-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T05:37:40.494495-00:00	   46 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:37:40.495318-00:00	   46 Query	use `laravel`
+2021-11-11T05:37:40.496075-00:00	   46 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:37:40.496478-00:00	   46 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:37:40.497012-00:00	   46 Close stmt	
+2021-11-11T05:37:40.497403-00:00	   46 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:37:40.497776-00:00	   46 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:37:40.498229-00:00	   46 Close stmt	
+2021-11-11T05:37:40.498693-00:00	   46 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:37:40.503342-00:00	   46 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:37:40.504005-00:00	   46 Close stmt	
+2021-11-11T05:37:40.568296-00:00	   46 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:37:40.568679-00:00	   46 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:37:40.569323-00:00	   46 Close stmt	
+2021-11-11T05:37:40.579402-00:00	   46 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:37:40.579765-00:00	   46 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:37:40.580450-00:00	   46 Close stmt	
+2021-11-11T05:37:40.586614-00:00	   46 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:37:40.586933-00:00	   46 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:37:40.587502-00:00	   46 Close stmt	
+2021-11-11T05:37:40.587922-00:00	   46 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:37:40.588236-00:00	   46 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:37:40.588845-00:00	   46 Close stmt	
+2021-11-11T05:37:40.589249-00:00	   46 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:37:40.589540-00:00	   46 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:37:40.590083-00:00	   46 Close stmt	
+2021-11-11T05:37:40.592867-00:00	   46 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:37:40.593162-00:00	   46 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:37:40.593740-00:00	   46 Close stmt	
+2021-11-11T05:37:40.671065-00:00	   46 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:37:40.671421-00:00	   46 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609060, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:37:40.673333-00:00	   46 Close stmt	
+2021-11-11T05:37:40.679178-00:00	   46 Quit	
+2021-11-11T05:37:43.781190-00:00	   47 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:37:43.781803-00:00	   47 Query	use `laravel`
+2021-11-11T05:37:43.782240-00:00	   47 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:37:43.782517-00:00	   47 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:37:43.783022-00:00	   47 Close stmt	
+2021-11-11T05:37:43.783441-00:00	   47 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:37:43.783764-00:00	   47 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:37:43.784175-00:00	   47 Close stmt	
+2021-11-11T05:37:43.784517-00:00	   47 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:37:43.788294-00:00	   47 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:37:43.788802-00:00	   47 Close stmt	
+2021-11-11T05:37:43.927524-00:00	   47 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T05:37:43.927846-00:00	   47 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/IMG_3591.PNG', '2021-11-11 05:37:43', '2021-11-11 05:37:43')
+2021-11-11T05:37:43.929559-00:00	   47 Close stmt	
+2021-11-11T05:37:43.994278-00:00	   47 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:37:43.994805-00:00	   47 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609063, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:37:43.996523-00:00	   47 Close stmt	
+2021-11-11T05:37:44.002901-00:00	   47 Quit	
+2021-11-11T05:37:52.489763-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T05:38:03.677546-00:00	   48 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:38:03.678224-00:00	   48 Query	use `laravel`
+2021-11-11T05:38:03.678830-00:00	   48 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:03.679097-00:00	   48 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:03.679544-00:00	   48 Close stmt	
+2021-11-11T05:38:03.679910-00:00	   48 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:03.680256-00:00	   48 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:03.680783-00:00	   48 Close stmt	
+2021-11-11T05:38:03.681207-00:00	   48 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:38:03.683365-00:00	   48 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:38:03.683985-00:00	   48 Close stmt	
+2021-11-11T05:38:03.725630-00:00	   48 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:38:03.726054-00:00	   48 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:38:03.726932-00:00	   48 Close stmt	
+2021-11-11T05:38:03.735118-00:00	   48 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:03.735442-00:00	   48 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:38:03.736024-00:00	   48 Close stmt	
+2021-11-11T05:38:03.739436-00:00	   48 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:03.739725-00:00	   48 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:38:03.740263-00:00	   48 Close stmt	
+2021-11-11T05:38:03.740646-00:00	   48 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:03.740989-00:00	   48 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:38:03.741569-00:00	   48 Close stmt	
+2021-11-11T05:38:03.741974-00:00	   48 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:03.742251-00:00	   48 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:38:03.742851-00:00	   48 Close stmt	
+2021-11-11T05:38:03.745244-00:00	   48 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:38:03.745554-00:00	   48 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:38:03.746144-00:00	   48 Close stmt	
+2021-11-11T05:38:03.799231-00:00	   48 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:38:03.799638-00:00	   48 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609083, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:38:03.801356-00:00	   48 Close stmt	
+2021-11-11T05:38:03.804673-00:00	   48 Quit	
+2021-11-11T05:38:10.529341-00:00	   49 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:38:10.530016-00:00	   49 Query	use `laravel`
+2021-11-11T05:38:10.530623-00:00	   49 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:10.530959-00:00	   49 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:10.531414-00:00	   49 Close stmt	
+2021-11-11T05:38:10.531862-00:00	   49 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:10.532221-00:00	   49 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:10.532700-00:00	   49 Close stmt	
+2021-11-11T05:38:10.533146-00:00	   49 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:38:10.536310-00:00	   49 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:38:10.537068-00:00	   49 Close stmt	
+2021-11-11T05:38:10.585297-00:00	   49 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:38:10.585702-00:00	   49 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:38:10.586385-00:00	   49 Close stmt	
+2021-11-11T05:38:10.595702-00:00	   49 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:10.596115-00:00	   49 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:38:10.596866-00:00	   49 Close stmt	
+2021-11-11T05:38:10.603203-00:00	   49 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:10.603663-00:00	   49 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:38:10.604336-00:00	   49 Close stmt	
+2021-11-11T05:38:10.604838-00:00	   49 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:10.605350-00:00	   49 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:38:10.606209-00:00	   49 Close stmt	
+2021-11-11T05:38:10.606864-00:00	   49 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:10.607328-00:00	   49 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:38:10.608089-00:00	   49 Close stmt	
+2021-11-11T05:38:10.610931-00:00	   49 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:38:10.611293-00:00	   49 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:38:10.612039-00:00	   49 Close stmt	
+2021-11-11T05:38:10.675241-00:00	   49 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:38:10.675697-00:00	   49 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609090, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:38:10.677290-00:00	   49 Close stmt	
+2021-11-11T05:38:10.682352-00:00	   49 Quit	
+2021-11-11T05:38:16.728087-00:00	   50 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:38:16.728712-00:00	   50 Query	use `laravel`
+2021-11-11T05:38:16.729309-00:00	   50 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:16.729649-00:00	   50 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:16.730136-00:00	   50 Close stmt	
+2021-11-11T05:38:16.730628-00:00	   50 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:16.730981-00:00	   50 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:16.731555-00:00	   50 Close stmt	
+2021-11-11T05:38:16.731984-00:00	   50 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:38:16.734382-00:00	   50 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:38:16.734969-00:00	   50 Close stmt	
+2021-11-11T05:38:16.787859-00:00	   50 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:38:16.788281-00:00	   50 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:38:16.788922-00:00	   50 Close stmt	
+2021-11-11T05:38:16.797174-00:00	   50 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:16.797512-00:00	   50 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:38:16.798104-00:00	   50 Close stmt	
+2021-11-11T05:38:16.802885-00:00	   50 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:16.803194-00:00	   50 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:38:16.803764-00:00	   50 Close stmt	
+2021-11-11T05:38:16.804167-00:00	   50 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:16.804514-00:00	   50 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:38:16.805093-00:00	   50 Close stmt	
+2021-11-11T05:38:16.805541-00:00	   50 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:38:16.805837-00:00	   50 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:38:16.806425-00:00	   50 Close stmt	
+2021-11-11T05:38:16.808266-00:00	   50 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:38:16.808570-00:00	   50 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:38:16.809106-00:00	   50 Close stmt	
+2021-11-11T05:38:16.871438-00:00	   50 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:38:16.871778-00:00	   50 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609096, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:38:16.873511-00:00	   50 Close stmt	
+2021-11-11T05:38:16.877761-00:00	   50 Quit	
+2021-11-11T05:38:26.877695-00:00	   51 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:38:26.878290-00:00	   51 Query	use `laravel`
+2021-11-11T05:38:26.879067-00:00	   51 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:26.879370-00:00	   51 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:38:26.879846-00:00	   51 Close stmt	
+2021-11-11T05:38:26.880283-00:00	   51 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:26.880614-00:00	   51 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:38:26.881170-00:00	   51 Close stmt	
+2021-11-11T05:38:26.881689-00:00	   51 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:38:26.885312-00:00	   51 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:38:26.885994-00:00	   51 Close stmt	
+2021-11-11T05:38:26.990740-00:00	   51 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T05:38:26.991186-00:00	   51 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/pickup1.jpg', '2021-11-11 05:38:26', '2021-11-11 05:38:26')
+2021-11-11T05:38:26.992697-00:00	   51 Close stmt	
+2021-11-11T05:38:27.057927-00:00	   51 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:38:27.058332-00:00	   51 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609107, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:38:27.060167-00:00	   51 Close stmt	
+2021-11-11T05:38:27.064859-00:00	   51 Quit	
+2021-11-11T05:38:37.370254-00:00	   18 Query	select * from ImgTestUsers
+2021-11-11T05:40:16.654731-00:00	   52 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:40:16.655384-00:00	   52 Query	use `laravel`
+2021-11-11T05:40:16.656053-00:00	   52 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:40:16.656400-00:00	   52 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:40:16.656921-00:00	   52 Close stmt	
+2021-11-11T05:40:16.657342-00:00	   52 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:40:16.657651-00:00	   52 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:40:16.658147-00:00	   52 Close stmt	
+2021-11-11T05:40:16.658639-00:00	   52 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:40:16.662485-00:00	   52 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:40:16.663118-00:00	   52 Close stmt	
+2021-11-11T05:40:16.727705-00:00	   52 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:40:16.728109-00:00	   52 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:40:16.728747-00:00	   52 Close stmt	
+2021-11-11T05:40:16.740048-00:00	   52 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:40:16.740385-00:00	   52 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:40:16.741031-00:00	   52 Close stmt	
+2021-11-11T05:40:16.746812-00:00	   52 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:40:16.747120-00:00	   52 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:40:16.747773-00:00	   52 Close stmt	
+2021-11-11T05:40:16.748250-00:00	   52 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:40:16.748596-00:00	   52 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:40:16.749152-00:00	   52 Close stmt	
+2021-11-11T05:40:16.749626-00:00	   52 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:40:16.749925-00:00	   52 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:40:16.750479-00:00	   52 Close stmt	
+2021-11-11T05:40:16.752983-00:00	   52 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:40:16.753311-00:00	   52 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:40:16.753924-00:00	   52 Close stmt	
+2021-11-11T05:40:16.829384-00:00	   52 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:40:16.829828-00:00	   52 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609216, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:40:16.831204-00:00	   52 Close stmt	
+2021-11-11T05:40:16.837012-00:00	   52 Quit	
+2021-11-11T05:40:20.836484-00:00	   53 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:40:20.837068-00:00	   53 Query	use `laravel`
+2021-11-11T05:40:20.837593-00:00	   53 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:40:20.837861-00:00	   53 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:40:20.838278-00:00	   53 Close stmt	
+2021-11-11T05:40:20.838637-00:00	   53 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:40:20.838943-00:00	   53 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:40:20.839412-00:00	   53 Close stmt	
+2021-11-11T05:40:20.839880-00:00	   53 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:40:20.843337-00:00	   53 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:40:20.843903-00:00	   53 Close stmt	
+2021-11-11T05:40:20.977725-00:00	   53 Prepare	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-11-11T05:40:20.978052-00:00	   53 Execute	insert into `ImgTestUsers` (`imgpath`, `updated_at`, `created_at`) values ('4/32/pickup1.jpg', '2021-11-11 05:40:20', '2021-11-11 05:40:20')
+2021-11-11T05:40:20.979650-00:00	   53 Close stmt	
+2021-11-11T05:40:20.980682-00:00	   53 Prepare	insert into `ImgTestUsers` (`updated_at`, `created_at`) values (?, ?)
+2021-11-11T05:40:20.981022-00:00	   53 Execute	insert into `ImgTestUsers` (`updated_at`, `created_at`) values ('2021-11-11 05:40:20', '2021-11-11 05:40:20')
+2021-11-11T05:40:20.981713-00:00	   53 Close stmt	
+2021-11-11T05:40:21.187299-00:00	   53 Prepare	SELECT 1
+2021-11-11T05:40:21.187654-00:00	   53 Execute	SELECT 1
+2021-11-11T05:40:21.188135-00:00	   53 Close stmt	
+2021-11-11T05:40:21.230639-00:00	   53 Prepare	SELECT 1
+2021-11-11T05:40:21.231017-00:00	   53 Execute	SELECT 1
+2021-11-11T05:40:21.231567-00:00	   53 Close stmt	
+2021-11-11T05:40:21.496683-00:00	   53 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:40:21.497094-00:00	   53 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609221, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:40:21.498966-00:00	   53 Close stmt	
+2021-11-11T05:40:21.512128-00:00	   53 Quit	
+2021-11-11T05:42:01.012702-00:00	   54 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:42:01.013438-00:00	   54 Query	use `laravel`
+2021-11-11T05:42:01.014601-00:00	   54 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:42:01.014987-00:00	   54 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:42:01.015486-00:00	   54 Close stmt	
+2021-11-11T05:42:01.015903-00:00	   54 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:42:01.016242-00:00	   54 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:42:01.016868-00:00	   54 Close stmt	
+2021-11-11T05:42:01.017343-00:00	   54 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:42:01.019805-00:00	   54 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:42:01.020452-00:00	   54 Close stmt	
+2021-11-11T05:42:01.075439-00:00	   54 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-11-11T05:42:01.075830-00:00	   54 Execute	select * from `QuizyPrefectures` where `id` = '4' limit 1
+2021-11-11T05:42:01.076444-00:00	   54 Close stmt	
+2021-11-11T05:42:01.085387-00:00	   54 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:42:01.085964-00:00	   54 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 0
+2021-11-11T05:42:01.086818-00:00	   54 Close stmt	
+2021-11-11T05:42:01.091626-00:00	   54 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:42:01.092056-00:00	   54 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 1
+2021-11-11T05:42:01.092772-00:00	   54 Close stmt	
+2021-11-11T05:42:01.093204-00:00	   54 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:42:01.093527-00:00	   54 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 2
+2021-11-11T05:42:01.094171-00:00	   54 Close stmt	
+2021-11-11T05:42:01.094990-00:00	   54 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-11-11T05:42:01.095326-00:00	   54 Execute	select * from `quizy` where `prefecture` = 3 and `question_id` = 3
+2021-11-11T05:42:01.095923-00:00	   54 Close stmt	
+2021-11-11T05:42:01.098368-00:00	   54 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-11-11T05:42:01.098738-00:00	   54 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-11-11T05:42:01.099335-00:00	   54 Close stmt	
+2021-11-11T05:42:01.165034-00:00	   54 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:42:01.165401-00:00	   54 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609321, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:42:01.167204-00:00	   54 Close stmt	
+2021-11-11T05:42:01.172621-00:00	   54 Quit	
+2021-11-11T05:42:04.171707-00:00	   55 Connect	laravel@172.19.0.4 on laravel using TCP/IP
+2021-11-11T05:42:04.172259-00:00	   55 Query	use `laravel`
+2021-11-11T05:42:04.173091-00:00	   55 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:42:04.173406-00:00	   55 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-11-11T05:42:04.173925-00:00	   55 Close stmt	
+2021-11-11T05:42:04.174603-00:00	   55 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:42:04.174935-00:00	   55 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-11-11T05:42:04.175424-00:00	   55 Close stmt	
+2021-11-11T05:42:04.175970-00:00	   55 Prepare	select * from `sessions` where `id` = ? limit 1
+2021-11-11T05:42:04.179784-00:00	   55 Execute	select * from `sessions` where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP' limit 1
+2021-11-11T05:42:04.180458-00:00	   55 Close stmt	
+2021-11-11T05:42:04.287545-00:00	   55 Prepare	insert into `ImgTestUsers` (`imgpath`, `question_id`, `updated_at`, `created_at`) values (?, ?, ?, ?)
+2021-11-11T05:42:04.288245-00:00	   55 Execute	insert into `ImgTestUsers` (`imgpath`, `question_id`, `updated_at`, `created_at`) values ('4/32/pickup1.jpg', '32', '2021-11-11 05:42:04', '2021-11-11 05:42:04')
+2021-11-11T05:42:04.291035-00:00	   55 Close stmt	
+2021-11-11T05:42:04.357323-00:00	   55 Prepare	update `sessions` set `payload` = ?, `last_activity` = ?, `user_id` = ?, `ip_address` = ?, `user_agent` = ? where `id` = ?
+2021-11-11T05:42:04.357696-00:00	   55 Execute	update `sessions` set `payload` = 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTzdMSERjaXlrWGFBTk5QVWJQblRMbXBkV0pzaFdQNFM0WWVYUnFNaSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3QvcXVpei9lZGl0LzQiO319', `last_activity` = 1636609324, `user_id` = NULL, `ip_address` = '172.19.0.1', `user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' where `id` = '1f1OjfAPHm0d96ZMo14UqUZyot1mlbUQY2nsrHoP'
+2021-11-11T05:42:04.359413-00:00	   55 Close stmt	
+2021-11-11T05:42:04.363488-00:00	   55 Quit	
+2021-11-11T05:42:10.169996-00:00	   18 Query	select * from ImgTestUsers
