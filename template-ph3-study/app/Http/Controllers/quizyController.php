@@ -126,7 +126,8 @@ class quizyController extends Controller
         // $img_path = DB::table('quizy')
         // ->get();
 
-        $img_path = QuizyQuaestion::find(3);
+        $img_path = QuizyQuaestion::where('prefecture_id', $prefecture)
+                    ->get();
 
 
         // $img_path = DB::table('QuizyQuaestionTable')
@@ -134,7 +135,7 @@ class quizyController extends Controller
         // // ->orderBy('id', 'desc')
         // ->groupBy('question_id')
         // ->get();
-        dd($img_path);
+        // dd($img_path[0]->imgpath);
         // ->join('quizy','quizy.question_id','=','QuizyQuaestionTable.question_id')
         // dd($img_path);
 
@@ -142,9 +143,9 @@ class quizyController extends Controller
 
         foreach ($items as $parent_index => $value) {
             $test[$value->question_id][] = $value->name;
-            if ($value === end($items)) {
-                $test[$value->question_id][] = $img_path[$value->question_id]->imgpath;
-            }
+            // if ($value === end($items)) {
+            //     $test[$value->question_id][] = $img_path[$value->question_id]->imgpath;
+            // }
         }
         // dd($test);
         array_push($question_list, $test);
@@ -158,8 +159,10 @@ class quizyController extends Controller
             // 選択肢セットの末尾に回答を追加
             $question_list[0][$index][] = array_search($answer, $question_list[0][$index]);
             // 最末尾に画像パスを追加
-            $question_list[0][$index][] = $img_path[$index]->imgpath;
+            // dd($img_path[$index-1]->imgpath);
+            $question_list[0][$index][] = $img_path[$index-1]->imgpath;
         }
+        // dd($question_list);
 
         //ユーザークラスのインスタンス化
         // $user = new ImgTestUser();
