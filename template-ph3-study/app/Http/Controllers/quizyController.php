@@ -122,10 +122,31 @@ class quizyController extends Controller
         $test = array();
 
 
+
+        // $img_path = DB::table('quizy')
+        // ->get();
+
+        $img_path = QuizyQuaestion::find(3);
+
+
+        // $img_path = DB::table('QuizyQuaestionTable')
+        // ->where('prefecture_id', $prefecture)
+        // // ->orderBy('id', 'desc')
+        // ->groupBy('question_id')
+        // ->get();
+        dd($img_path);
+        // ->join('quizy','quizy.question_id','=','QuizyQuaestionTable.question_id')
+        // dd($img_path);
+
+
+
         foreach ($items as $parent_index => $value) {
             $test[$value->question_id][] = $value->name;
+            if ($value === end($items)) {
+                $test[$value->question_id][] = $img_path[$value->question_id]->imgpath;
+            }
         }
-
+        // dd($test);
         array_push($question_list, $test);
 
         $dd = array();
@@ -136,7 +157,8 @@ class quizyController extends Controller
             shuffle($question_list[0][$index]);
             // 選択肢セットの末尾に回答を追加
             $question_list[0][$index][] = array_search($answer, $question_list[0][$index]);
-            $dd[] = $index;
+            // 最末尾に画像パスを追加
+            $question_list[0][$index][] = $img_path[$index]->imgpath;
         }
 
         //ユーザークラスのインスタンス化
@@ -145,7 +167,7 @@ class quizyController extends Controller
         //imgpathカラムに画像パスを挿入
         $data = "minnna.png";
 
-        return view('layouts.template', compact('question_list', 'dd', 'prefecture', 'user', 'QuizyQuaestion', 'data'));
+        return view('layouts.template', compact('question_list', 'dd', 'prefecture', 'user', 'QuizyQuaestion', 'data', 'img_path'));
     }
     public function imgUpdateTest()
     {
@@ -160,13 +182,18 @@ class quizyController extends Controller
         $filename = $request->imgpath->getClientOriginalName();
 
         //画像を保存して、そのパスを$imgに保存 第三引数に'public'を指定
-        $img = $request->imgpath->storeAs($prefecture_num.'/'.$question_num, $filename, 'public');
+        $img = $request->imgpath->storeAs('', $filename, 'public');
 
         //ユーザークラスのインスタンス化
-        $user = new ImgTestUser();
+        $user = new QuizyQuaestion();
+
+        $data = $user->updateOrInsert(
+                ['prefecture_id' => $prefecture_num, 'question_id' => $question_num],
+                ['imgpath' => $img]
+            );
 
         //imgpathカラムに画像パスを挿入
-        $data = $user->create(['imgpath' => $img, 'question_id' => $question_num]);
-        return view('imgTest', compact('data'));
+        // $data = $user->create(['imgpath' => $img, 'question_id' => $question_num, 'prefecture_id' => $prefecture_num]);
+        return redirect('quiz/admin');
     }
 }

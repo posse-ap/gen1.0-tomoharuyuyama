@@ -29,7 +29,7 @@
                     <input type='text' name='name' value='{{ $quiz_choice->name }}'>
                     <input type='submit' value='更新'>
                 </form>
-                <form action="/img_update_test/{{ $prefecture_num }}/{{ $quiz_choice->id }}"
+                <form action="/img_update_test/{{ $prefecture_num }}/{{ $quiz_choice->question_id }}"
                     enctype="multipart/form-data" method="post">
                     @csrf
                     <input type="file" name="imgpath">

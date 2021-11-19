@@ -20,13 +20,16 @@
     <div class="main">
         @foreach ($question_list[0] as $question)
             <div class="quiz">
+                @php
+                    // dd($question[4]);
+                @endphp
                 <h1>{{ $loop->index + 1 }}. この地名はなんて読む？</h1>
                 <br>
                 @if ($prefecture == 2 || $prefecture == 1)
                     {{-- <img src="../img/{{$prefecture}}/{{$loop->index+1}}.png"> --}}
                     <img src="{{ asset('storage/' . $user->email . '/unnamed.png') }}">
-                    @else
-                    <img src="{{ asset('storage/' . $prefecture . '/28/image (2).png') }}">
+                @else
+                    <img src="{{ asset('storage/' . $question[4] ) }}">
                     {{-- <p>{{ $QuizyQuaestion[$loop->index]->question_title }}</p> --}}
                 @endif
                 <ul>
@@ -42,7 +45,7 @@
         @endforeach
         <li id="answerbox_{{ $loop->index + 1 }}" class="answerbox">
             <span id="answertext_{{ $loop->index + 1 }}"></span><br>
-            <span>正解は「{{ $question[end($question)] }}」です！</span>
+            <span>正解は「{{ $question[3] }}」です！</span>
         </li>
         </ul>
     </div>

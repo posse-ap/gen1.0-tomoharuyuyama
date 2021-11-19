@@ -8,4 +8,6 @@ class ImgTestUser extends Model
 {
     protected $table = 'ImgTestUsers';
     protected $fillable = ['imgpath', 'question_id'];
+
+    
 }
