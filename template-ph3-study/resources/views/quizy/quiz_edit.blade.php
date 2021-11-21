@@ -19,19 +19,26 @@
                 @php
                     $conter = $quiz_choice->question_id;
                 @endphp
-                {{-- {{dd($question_name[$conter]->question_title)}}<br> --}}
+                {{-- {{dd($quiz_choices)}}<br> --}}
                 <form method="post" action="{{ url('/choice/update') }}">
                     {{ csrf_field() }}
                     {{-- <li>問題：{{ $question_name[$conter]->question_title }}</li> --}}
                     <li>問題：</li>
                     <li>大門ID：{{ $quiz_choice->question_id }}</li>
                     <input type='hidden' name='id' value='{{ $quiz_choice->id }}'>
+                    <input type='hidden' name='prefecture_id' value='{{ $prefecture->id }}'>
+                    <input type='hidden' name='question_id' value='{{ $quiz_choice->question_id }}'>
                     <input type='text' name='name' value='{{ $quiz_choice->name }}'>
+                    @if ($loop->first)
+                    <br>
+                    <span>問題優先度 : </span>
+                    <input type='text' name='priority' value='{{ $quiz_choice->QuestionPriority }}'>
+                    @endif
                     <input type='submit' value='更新'>
                 </form>
                 <form action="/img_update_test/{{ $prefecture_num }}/{{ $quiz_choice->question_id }}"
                     enctype="multipart/form-data" method="post">
-                    @csrf
+                    {{ csrf_field() }}
                     <input type="file" name="imgpath">
                     <input type="submit" value="アップロードする">
                 </form>
@@ -65,8 +72,6 @@
         </ul>
     @endforeach
 
-    <h1>test</h1>
-    <input id="image" type="file" name="image">
 </body>
 
 </html>

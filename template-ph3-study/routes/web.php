@@ -46,7 +46,7 @@ Route::post('board/add', 'BoardController@create');
 Route::resource('rest', 'RestappController');
 
 
-Route::get('quiz', 'quizyController@index');
+Route::get('quiz', 'quizyController@menu');
 Route::get('quiz/admin', 'quizyController@admin');
 Route::post('/add', 'quizyController@add');
 Route::get('quiz/{prefecture}', 'quizyController@quiz');

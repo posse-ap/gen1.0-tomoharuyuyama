@@ -21,7 +21,7 @@
         @foreach ($question_list[0] as $question)
             <div class="quiz">
                 @php
-                    // dd($question[4]);
+                    // dd($question_list[0]);
                 @endphp
                 <h1>{{ $loop->index + 1 }}. この地名はなんて読む？</h1>
                 <br>
@@ -29,15 +29,21 @@
                     {{-- <img src="../img/{{$prefecture}}/{{$loop->index+1}}.png"> --}}
                     <img src="{{ asset('storage/' . $user->email . '/unnamed.png') }}">
                 @else
-                    <img src="{{ asset('storage/' . $question[4] ) }}">
+                    <img src="{{ asset('storage/' . $question[4]) }}">
                     {{-- <p>{{ $QuizyQuaestion[$loop->index]->question_title }}</p> --}}
                 @endif
                 <ul>
+                    @php
+                        $count = 0;
+                    @endphp
                     @foreach ($question as $item)
-                        @if ($loop->last)
+                        @if ($count == 3)
                             {{-- ループ終了 --}}
                         @break
                     @endif
+                        @php
+                            $count++;
+                        @endphp
                     <li id="answerlist_{{ $loop->parent->index + 1 }}_{{ $loop->index + 1 }}"
                         name="answerlist_{{ $loop->parent->index + 1 }}" class="answerlist"
                         onclick="check({{ $loop->parent->index + 1 }}, {{ $loop->index + 1 }}, {{ $question[3] + 1 }})">
@@ -45,7 +51,7 @@
         @endforeach
         <li id="answerbox_{{ $loop->index + 1 }}" class="answerbox">
             <span id="answertext_{{ $loop->index + 1 }}"></span><br>
-            <span>正解は「{{ $question[3] }}」です！</span>
+            <span>正解は「{{ $question[$question[3]] }}」です！</span>
         </li>
         </ul>
     </div>

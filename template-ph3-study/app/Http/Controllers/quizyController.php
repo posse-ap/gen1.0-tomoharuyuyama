@@ -21,6 +21,18 @@ use Illuminate\Support\Facades\Auth;
 
 class quizyController extends Controller
 {
+    public function menu()
+    {
+        // ログインしていたら
+        if (Auth::check()) {
+            $prefectures = DB::table('QuizyPrefectures')
+            ->get();
+            return view('quizy.index', compact('prefectures'));
+        } else {
+            // ログインしていなかったら、Login画面を表示
+            return view('auth/login');
+        }
+    }
     public function index()
     {
         $prefectures = DB::table('QuizyPrefectures')
@@ -66,8 +78,16 @@ class quizyController extends Controller
     {
         $post = quiz::find($request->id);
         $post->name = $request->name;
+        $post->QuestionPriority = $request->priority;
         $post->save();
 
+        $post = QuizyQuaestion::where('prefecture_id', $request->prefecture_id)
+        ->where('question_id', $request->question_id)
+        ->first();
+        $post->QuestionPriority = $request->priority;
+        $post->save();
+
+        
         $prefectures = DB::table('QuizyPrefectures')
             ->get();
         return view('quizy.admin', compact('prefectures'));
@@ -112,43 +132,30 @@ class quizyController extends Controller
 
         $items = DB::table('quizy')
             ->where('prefecture', $prefecture - 1)
+            ->orderBy('QuestionPriority', 'desc')
             ->get();
-        $QuizyQuaestion = DB::table('QuizyQuaestionTable')
+            $QuizyQuaestion = DB::table('QuizyQuaestionTable')
             ->where('prefecture_id', $prefecture - 1)
             ->get();
+            
+            // 配列を準備
+            $question_list = array();
+            $test = array();
+            
+            
+            $img_path = QuizyQuaestion::where('prefecture_id', $prefecture)
+            ->orderBy('QuestionPriority', 'desc')
+            ->get();
 
-        // 配列を準備
-        $question_list = array();
-        $test = array();
-
-
-
-        // $img_path = DB::table('quizy')
-        // ->get();
-
-        $img_path = QuizyQuaestion::where('prefecture_id', $prefecture)
-                    ->get();
-
-
-        // $img_path = DB::table('QuizyQuaestionTable')
-        // ->where('prefecture_id', $prefecture)
-        // // ->orderBy('id', 'desc')
-        // ->groupBy('question_id')
-        // ->get();
-        // dd($img_path[0]->imgpath);
-        // ->join('quizy','quizy.question_id','=','QuizyQuaestionTable.question_id')
-        // dd($img_path);
-
+            // dd($img_path);
 
 
         foreach ($items as $parent_index => $value) {
             $test[$value->question_id][] = $value->name;
-            // if ($value === end($items)) {
-            //     $test[$value->question_id][] = $img_path[$value->question_id]->imgpath;
-            // }
         }
-        // dd($test);
+        
         array_push($question_list, $test);
+        // dd($question_list);
 
         $dd = array();
         foreach ($question_list[0] as $index => $question) {
@@ -159,15 +166,9 @@ class quizyController extends Controller
             // 選択肢セットの末尾に回答を追加
             $question_list[0][$index][] = array_search($answer, $question_list[0][$index]);
             // 最末尾に画像パスを追加
-            // dd($img_path[$index-1]->imgpath);
             $question_list[0][$index][] = $img_path[$index-1]->imgpath;
         }
-        // dd($question_list);
 
-        //ユーザークラスのインスタンス化
-        // $user = new ImgTestUser();
-
-        //imgpathカラムに画像パスを挿入
         $data = "minnna.png";
 
         return view('layouts.template', compact('question_list', 'dd', 'prefecture', 'user', 'QuizyQuaestion', 'data', 'img_path'));
@@ -176,9 +177,6 @@ class quizyController extends Controller
     {
         return view('imgTest');
     }
-    //作成したコントローラーに記述
-    //$request->inputのname属性でつけた名前でデータがとれる。(この場合imgpath)
-
     public function store(Request $request, $prefecture_num, $question_num)
     {
         //画像のオリジナルネームを取得
@@ -195,8 +193,6 @@ class quizyController extends Controller
                 ['imgpath' => $img]
             );
 
-        //imgpathカラムに画像パスを挿入
-        // $data = $user->create(['imgpath' => $img, 'question_id' => $question_num, 'prefecture_id' => $prefecture_num]);
         return redirect('quiz/admin');
     }
 }
