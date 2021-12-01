@@ -295,14 +295,24 @@
     google.setOnLoadCallback(
         function() {
             var data = google.visualization.arrayToDataTable([
-                [       '', '売上高', '営業利益', '経常利益'],
-                ['2004 年',     1000,        400,        380],
-                ['2005 年',     1170,        460,        400],
-                ['2006 年',      660,       1120,        900],
-                ['2007 年',     1030,        540,        480],
-                ['2008 年',     1350,        750,        800]
+                ['', ''],
+                [1, 3],
+                [2, 4],
+                [3, 5],
+                [4, 3],
+                [32, 0]
             ]);
-    
+            
+// [
+//     { "month": 3, "day": 1, "time": 3 },
+//     { "day": 2, "time": 4 },
+//     { "day": 3, "time": 5 },
+//     { "day": 4, "time": 3 },
+//     { "day": 32, "time": 0 },
+//     { "day": 10, "time": 5 }
+// ]
+
+
             // オプション設定
             var options = {
                 // title: 'Age vs. Weight comparison',
