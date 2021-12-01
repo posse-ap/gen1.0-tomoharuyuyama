@@ -16,11 +16,12 @@
 
 <body>
     <!-- loding -->
+    {{-- <div id="target"></div> --}}
     <div id="overlay">
-            <div class="cv-spinner">
-                <span class="spinner"></span>
-            </div>
+        <div class="cv-spinner">
+            <span class="spinner"></span>
         </div>
+    </div>
     <header class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="#"><img class="nav_logo" src="img/logo_2.png" alt=""></a>
         <p class="logo_week">
@@ -53,21 +54,22 @@
                         <div class="col-4">
                             <div class="today_card bg-white original_rounded_lg">
                                 <p class="today_card_top">Today</p>
-                                <p class="today_card_midle h3 font-weight-bold">{{$today}}<span
+                                <p class="today_card_midle h3 font-weight-bold">{{ $today }}<span
                                         class="today_card_bottom d-block pt-2">hour</span></p>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="today_card bg-white original_rounded_lg">
                                 <p class="today_card_top">Month</p>
-                                <p class="today_card_midle h3 font-weight-bold">{{$month}}<span
+                                <p class="today_card_midle h3 font-weight-bold">{{ $month }}<span
                                         class="today_card_bottom d-block pt-2">hour</span></p>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="today_card bg-white original_rounded_lg">
                                 <p class="today_card_top">Total</p>
-                                <p class="today_card_midle h3 font-weight-bold">{{$total}}<span class="today_card_bottom d-block pt-2">hour</span></p>
+                                <p class="today_card_midle h3 font-weight-bold">{{ $total }}<span
+                                        class="today_card_bottom d-block pt-2">hour</span></p>
                             </div>
                         </div>
                     </div>
@@ -75,7 +77,7 @@
                         <div>
                             <div class="left_graph_inner bg-white original_rounded_lg allcenter mb-3">
                                 <div class="studyTime_barGraph_Box">
-                                    <div id="bargraph"></div>
+                                    <div id="target"></div>
                                 </div>
                                 <!-- <img src="img/bar_graph.png" alt="棒グラフ" class="bargraph_img bargraph_img_pc">
                                 <img src="img/bar_graph_sp.png" alt="棒グラフ" class="bargraph_img bargraph_img_sp"> -->
@@ -228,7 +230,9 @@
                                     <div class="mt_15px mb_5px">
                                         <span class="modal_top_letf_text">Twitter用コメント</span>
                                         <div class="study_contens_set mt_5px">
-                                            <textarea id="tweetBox" placeholder="ここにツイート内容が出ます" name="tweet_box" onkeyup="GetTweet(value)" cols="40" rows="8" class="study_hour_input original_rounded_lg original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color modal_twitter_comment_input"></textarea>
+                                            <textarea id="tweetBox" placeholder="ここにツイート内容が出ます" name="tweet_box"
+                                                onkeyup="GetTweet(value)" cols="40" rows="8"
+                                                class="study_hour_input original_rounded_lg original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color modal_twitter_comment_input"></textarea>
                                             <div class="twitter_post d-flex align-items-center">
                                                 <div class="twitter_post_btn d-inline-block">
                                                     <span class="btn_twitter checkmark002"></span>
@@ -241,9 +245,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id = "TWEET" class="mx-auto mt-3 btn_spiner">
-                                    <a class="button" href="https://twitter.com/intent/tweet?text=" target="_blank">
-                                        <button id="記録・投稿" type="button" class="btn btn-lg nav_right_btn nav_right_btn_modal" data-toggle="modal">記録・投稿</button>
+                                <div id="TWEET" class="mx-auto mt-3 btn_spiner">
+                                    <a class="button" href="https://twitter.com/intent/tweet?text="
+                                        target="_blank">
+                                        <button id="記録・投稿" type="button"
+                                            class="btn btn-lg nav_right_btn nav_right_btn_modal"
+                                            data-toggle="modal">記録・投稿</button>
                                         <!-- <button id="記録・投稿" type="button" class="btn btn-lg nav_right_btn nav_right_btn_modal" data-toggle="modal" data-target="#exampleModal">記録・投稿</button> -->
                                     </a>
                                 </div>
@@ -264,25 +271,81 @@
             </div>
         </div>
     </div>
-<script>
-</script>
+    <script>
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
     <!-- <script src="./index.js"></script> -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <script src="posse.js">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(
+        function() {
+            var data = google.visualization.arrayToDataTable([
+                [       '', '売上高', '営業利益', '経常利益'],
+                ['2004 年',     1000,        400,        380],
+                ['2005 年',     1170,        460,        400],
+                ['2006 年',      660,       1120,        900],
+                ['2007 年',     1030,        540,        480],
+                ['2008 年',     1350,        750,        800]
+            ]);
+    
+            // オプション設定
+            var options = {
+                // title: 'Age vs. Weight comparison',
+                //hAxis: { title: 'Age', minValue: 0, maxValue: 15 },
+                //vAxis: { title: 'Weight', minValue: 0, maxValue: 15 },
+                legend: 'none',
+                'chartArea': { top: 10, 'width': '80%', 'height': '80%' },
+                //hAxis:{showTextEvery:2}
+                //vAxis:{gridlined:{count:7}}
+                // legend:{position:'bottom'}
+                // baselineColor: 'none',
+                // gridlines: 'none',
+
+                // baselineColor: "transparent",
+                // gridlines: {
+                //     color: "transparent"
+                // },
+                // textPosition: "none",
+                // vAxes: {
+                //     gridLines: {
+                //         color: '#fffffff'
+                //     }
+                // },
+                vAxis: {
+                    gridlines: {
+                        color: "#ffffff"
+                    },
+                    format: "0h"
+                },
+                hAxis: {
+                    gridlines: {
+                        color: "#ffffff"
+                    }
+                },
+                baselineColor: "transparent",
+
+                colors: ['#1754EF', '#0F71BD', '#20BDDE']
+
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('target'));
+            chart.draw(data, options);
+        }
+    );
     </script>
 </body>
 
