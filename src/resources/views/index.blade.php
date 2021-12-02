@@ -269,6 +269,19 @@
                 </div>
             </div>
         </div>
+        <span id="js-getVariable" data-name="{{ $studyContents_month[0]->total_learning_hour }}"></span>
+        <span id="js-getVariable2" data-name="{{ $studyContents_month[1]->total_learning_hour }}"></span>
+        <span id="js-getVariable3" data-name="{{ $studyContents_month[2]->total_learning_hour }}"></span>
+        <span id="js-getVariable4" data-name="{{ $studyContents_month[3]->total_learning_hour }}"></span>
+        <span id="js-getVariable5" data-name="{{ $studyContents_month[4]->total_learning_hour }}"></span>
+        {{-- <span id="js-getVariable6" data-name="{{ $studyContents_month[5]->total_learning_hour }}"></span>
+        <span id="js-getVariable7" data-name="{{ $studyContents_month[6]->total_learning_hour }}"></span>
+        <span id="js-getVariable8" data-name="{{ $studyContents_month[7]->total_learning_hour }}"></span>
+        <span id="js-getVariable9" data-name="{{ $studyContents_month[8]->total_learning_hour }}"></span>
+        <span id="js-getVariable10" data-name="{{ $studyContents_month[9]->total_learning_hour }}"></span>
+        <span id="js-getVariable11" data-name="{{ $studyContents_month[10]->total_learning_hour }}"></span> --}}
+        {{-- <p>{{ $studyDays[0] }}</p> --}}
+        {{-- <span id="js-getVariable" data-name="{{ $studyDays }}"></span> --}}
     </div>
     <script>
     </script>
@@ -296,52 +309,34 @@
             });
             google.setOnLoadCallback(
                 function() {
-                    var data = google.visualization.arrayToDataTable([
-                        ['', ''],
-                        [1, 3],
-                        [2, 4],
-                        [3, 5],
-                        [4, 3],
-                        [32, 0]
-                    ]);
-
-                    // [
-                    //     { "month": 3, "day": 1, "time": 3 },
-                    //     { "day": 2, "time": 4 },
-                    //     { "day": 3, "time": 5 },
-                    //     { "day": 4, "time": 3 },
-                    //     { "day": 32, "time": 0 },
-                    //     { "day": 10, "time": 5 }
-                    // ]
+                    // var data = google.visualization.arrayToDataTable([
+                    //     ['', ''],
+                    //     [01, 3],
+                    //     [02, 4],
+                    //     [03, 5],
+                    //     [04, 3],
+                    //     [32, 0]
+                    // ]);
+                    // ■laravelで上記の形の配列を準備する
+                    // 「年」「月」の2条件でwhereをかけて月の学習をまとめる(laravelから年と月の情報をもらう)
+                    // 「日」でwhereをかけて同じ日の学習を足し合わせる
+                    // 学習した日の分、[{日}, {学習時間}]の配列を作る
+                    var array = @json($studyDays);
+                    data2 = JSON.stringify(array);
+                    data3 = JSON.parse(data2);
+                    data = google.visualization.arrayToDataTable(data3);
+                    console.log(typeof(data3));
+                    console.log(data3);
 
 
                     // オプション設定
                     var options = {
-                        // title: 'Age vs. Weight comparison',
-                        //hAxis: { title: 'Age', minValue: 0, maxValue: 15 },
-                        //vAxis: { title: 'Weight', minValue: 0, maxValue: 15 },
                         legend: 'none',
                         'chartArea': {
                             top: 10,
                             'width': '80%',
                             'height': '80%'
                         },
-                        //hAxis:{showTextEvery:2}
-                        //vAxis:{gridlined:{count:7}}
-                        // legend:{position:'bottom'}
-                        // baselineColor: 'none',
-                        // gridlines: 'none',
-
-                        // baselineColor: "transparent",
-                        // gridlines: {
-                        //     color: "transparent"
-                        // },
-                        // textPosition: "none",
-                        // vAxes: {
-                        //     gridLines: {
-                        //         color: '#fffffff'
-                        //     }
-                        // },
                         vAxis: {
                             gridlines: {
                                 color: "#ffffff"
@@ -373,26 +368,29 @@
             function drawChart() {
                 var df = $.Deferred();
 
-                var sum_1 = 2;
-                var sum_2 = 4;
-                var sum_3 = 5;
+                var sum_1 = $('#js-getVariable').data();
+                var sum_2 = $('#js-getVariable2').data();
+                var sum_3 = $('#js-getVariable3').data();
+                console.log(sum_1.name); //yamada
+                console.log(sum_2.name); //yamada
+                console.log(sum_3.name); //yamada
+
+                // sum_1 = sum_1.name;
+                // var sum_2 = 4;
+                // var sum_3 = 5;
 
                 df.resolve();
 
                 df.done(function() {
                     var chartdata_2 = google.visualization.arrayToDataTable([
                         ['day', 'contents'],
-                        ['N予備校', sum_1],
-                        ['ドットインストール', sum_2],
-                        ['posse課題', sum_3]
+                        ['N予備校', sum_1.name],
+                        ['ドットインストール', sum_2.name],
+                        ['posse課題', sum_3.name]
                     ]);
                     console.log(chartdata_2);
                     var options = {
-                        // title: 'Age vs. Weight comparison',
-                        //hAxis: { title: 'Age', minValue: 0, maxValue: 15 },
-                        //vAxis: { title: 'Weight', minValue: 0, maxValue: 15 },
                         legend: 'none',
-                        //legend:{position:'bottom'},
 
                         'chartArea': {
                             top: 0,
@@ -420,33 +418,39 @@
             function drawChart() {
                 var df = $.Deferred();
 
-                var sum_1 = 10;
-                var sum_2 = 20;
-                var sum_3 = 6;
-                var sum_4 = 5;
-                var sum_5 = 9;
-                var sum_6 = 21;
-                var sum_7 = 11;
-                var sum_8 = 17;
+                var sum_4 = {name: 0};
+                var sum_5 = {name: 0};
+                var sum_6 = {name : 0};
+                var sum_7 = {name: 0};
+                var sum_8 = {name: 0};
+                var sum_9 = {name: 0};
+                var sum_10 = {naem: 0};
+                var sum_11 = {naem: 0};
+
+                sum_4 = $('#js-getVariable4').data();
+                sum_5 = $('#js-getVariable5').data();
+                sum_6 = $('#js-getVariable6').data();
+                sum_7 = $('#js-getVariable7').data();
+                sum_8 = $('#js-getVariable8').data();
+                sum_9 = $('#js-getVariable9').data();
+                sum_10 = $('#js-getVariable10').data();
+                sum_11 = $('#js-getVariable11').data();
 
                 df.resolve();
-                    
+
                 df.done(function() {
                     var chartdata_2 = google.visualization.arrayToDataTable([
                         ['day', 'contents'],
-                        ['HTML', sum_1],
-                        ['CSS', sum_2],
-                        ['JavaScript', sum_3],
-                        ['PHP', sum_4],
-                        ['Laraver', sum_5],
-                        ['SQL', sum_6],
-                        ['SHELL', sum_7],
-                        ['情報基礎知識', sum_8]
+                        ['HTML', sum_4.name],
+                        ['CSS', sum_5.name],
+                        ['JavaScript', 0],
+                        // ['PHP', sum_7.name],
+                        // ['Laraver', sum_8.name],
+                        // ['SQL', sum_9.name],
+                        // ['SHELL', sum_10.name],
+                        // ['情報基礎知識', sum_11.name]
                     ]);
                     var options = {
-                        // title: 'Age vs. Weight comparison',
-                        //hAxis: { title: 'Age', minValue: 0, maxValue: 15 },
-                        //vAxis: { title: 'Weight', minValue: 0, maxValue: 15 },
                         legend: 'none',
                         'chartArea': {
                             top: 0,
