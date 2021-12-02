@@ -11,4 +11,7 @@
 |
 */
 
-Route::get('/', 'TopController@index');
+Auth::routes();
+Route::get('/top', 'TopController@index')->middleware('auth');
+
+Route::get('/', 'HomeController@index')->name('home')->middleware('auth');

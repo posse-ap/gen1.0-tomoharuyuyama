@@ -21,7 +21,7 @@ services:
       - DB_DATABASE=laravel
       - DB_USERNAME=laravel
       - DB_PASSWORD=password
-    depends_on: ["db"]
+    depends_on: ["db", "mailhog"]
   web:
     build:
       context: ./infra/docker/nginx
@@ -30,3 +30,8 @@ services:
     volumes:
       - ./src:/work/backend
     depends_on: ["app"]
+  mailhog:
+      image: mailhog/mailhog
+      ports:
+        - "1025:1025"
+        - "8025:8025"

@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class TopController extends Controller
 {
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
+
     public function index(){
         // ■いろんな合計を出す
         // 今までの合計
