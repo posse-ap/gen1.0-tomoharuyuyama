@@ -269,13 +269,70 @@
                 </div>
             </div>
         </div>
-        <span id="js-getVariable" data-name="{{ $studyContents_month[0]->total_learning_hour }}"></span>
-        <span id="js-getVariable2" data-name="{{ $studyContents_month[1]->total_learning_hour }}"></span>
+        {{-- <span id="js-getVariable" data-name="{{ $studyContents_month[0]->total_learning_hour }}"></span> --}}
+        @php
+            try {
+                echo '<script>var sum_1 = ' . $studyContents_month[0]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_1 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_2 = ' . $studyContents_month[1]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_2 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_3 = ' . $studyContents_month[2]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_3 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_4 = ' . $studyContents_month[3]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_4 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_5 = ' . $studyContents_month[4]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_5 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_6 = ' . $studyContents_month[5]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_6 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_7 = ' . $studyContents_month[6]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_7 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_8 = ' . $studyContents_month[7]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_8 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_9 = ' . $studyContents_month[8]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_9 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_10 = ' . $studyContents_month[9]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_10 = 0</script>';
+            }
+            try {
+                echo '<script>var sum_11 = ' . $studyContents_month[10]->total_learning_hour . '</script>';
+            } catch (Exception $e) {
+                echo '<script>var sum_11 = 0</script>';
+            }
+        @endphp
+        {{-- <span id="js-getVariable2" data-name="{{ $studyContents_month[1]->total_learning_hour }}"></span>
         <span id="js-getVariable3" data-name="{{ $studyContents_month[2]->total_learning_hour }}"></span>
         <span id="js-getVariable4" data-name="{{ $studyContents_month[3]->total_learning_hour }}"></span>
-        <span id="js-getVariable5" data-name="{{ $studyContents_month[4]->total_learning_hour }}"></span>
-        {{-- <span id="js-getVariable6" data-name="{{ $studyContents_month[5]->total_learning_hour }}"></span>
-        <span id="js-getVariable7" data-name="{{ $studyContents_month[6]->total_learning_hour }}"></span>
+        <span id="js-getVariable5" data-name="{{ $studyContents_month[4]->total_learning_hour }}"></span> --}}
+        {{-- <span id="js-getVariable6" data-name="{{ $studyContents_month[5]->total_learning_hour }}"></span> --}}
+        {{-- <span id="js-getVariable7" data-name="{{ $studyContents_month[6]->total_learning_hour }}"></span>
         <span id="js-getVariable8" data-name="{{ $studyContents_month[7]->total_learning_hour }}"></span>
         <span id="js-getVariable9" data-name="{{ $studyContents_month[8]->total_learning_hour }}"></span>
         <span id="js-getVariable10" data-name="{{ $studyContents_month[9]->total_learning_hour }}"></span>
@@ -368,12 +425,12 @@
             function drawChart() {
                 var df = $.Deferred();
 
-                var sum_1 = $('#js-getVariable').data();
-                var sum_2 = $('#js-getVariable2').data();
-                var sum_3 = $('#js-getVariable3').data();
-                console.log(sum_1.name); //yamada
-                console.log(sum_2.name); //yamada
-                console.log(sum_3.name); //yamada
+                // var sum_1 = $('#js-getVariable').data();
+                // var sum_2 = $('#js-getVariable2').data();
+                // var sum_3 = $('#js-getVariable3').data();
+                // console.log(sum_1.name); //yamada
+                // console.log(sum_2.name); //yamada
+                // console.log(sum_3.name); //yamada
 
                 // sum_1 = sum_1.name;
                 // var sum_2 = 4;
@@ -384,9 +441,9 @@
                 df.done(function() {
                     var chartdata_2 = google.visualization.arrayToDataTable([
                         ['day', 'contents'],
-                        ['N予備校', sum_1.name],
-                        ['ドットインストール', sum_2.name],
-                        ['posse課題', sum_3.name]
+                        ['N予備校', sum_1],
+                        ['ドットインストール', sum_2],
+                        ['posse課題', sum_3]
                     ]);
                     console.log(chartdata_2);
                     var options = {
@@ -418,37 +475,58 @@
             function drawChart() {
                 var df = $.Deferred();
 
-                var sum_4 = {name: 0};
-                var sum_5 = {name: 0};
-                var sum_6 = {name : 0};
-                var sum_7 = {name: 0};
-                var sum_8 = {name: 0};
-                var sum_9 = {name: 0};
-                var sum_10 = {naem: 0};
-                var sum_11 = {naem: 0};
+                // var sum_4 = {
+                //     name: 0
+                // };
+                // var sum_5 = {
+                //     name: 0
+                // };
+                // var sum_6 = {
+                //     name: 0
+                // };
+                // var sum_7 = {
+                //     name: 0
+                // };
+                // var sum_8 = {
+                //     name: 0
+                // };
+                // var sum_9 = {
+                //     name: 0
+                // };
+                // var sum_10 = {
+                //     name: 0
+                // };
+                // var sum_11 = {
+                //     name: 0
+                // };
 
-                sum_4 = $('#js-getVariable4').data();
-                sum_5 = $('#js-getVariable5').data();
-                sum_6 = $('#js-getVariable6').data();
-                sum_7 = $('#js-getVariable7').data();
-                sum_8 = $('#js-getVariable8').data();
-                sum_9 = $('#js-getVariable9').data();
-                sum_10 = $('#js-getVariable10').data();
-                sum_11 = $('#js-getVariable11').data();
+                // sum_4 = $('#js-getVariable4').data();
+                // sum_5 = $('#js-getVariable5').data();
+                // sum_6 = $('#js-getVariable6').data();
+                // sum_7 = $('#js-getVariable7').data();
+                // sum_8 = $('#js-getVariable8').data();
+                // sum_9 = $('#js-getVariable9').data();
+                // sum_10 = $('#js-getVariable10').data();
+                // sum_11 = $('#js-getVariable11').data();
 
                 df.resolve();
-
+                console.log("papapa");
+                console.log(sum_1);
+                console.log(sum_2);
+                console.log(sum_3);
+                // console.log(sum_6.name);
+                console.log(typeof(sum_6.name));
                 df.done(function() {
                     var chartdata_2 = google.visualization.arrayToDataTable([
                         ['day', 'contents'],
-                        ['HTML', sum_4.name],
-                        ['CSS', sum_5.name],
-                        ['JavaScript', 0],
-                        // ['PHP', sum_7.name],
-                        // ['Laraver', sum_8.name],
-                        // ['SQL', sum_9.name],
-                        // ['SHELL', sum_10.name],
-                        // ['情報基礎知識', sum_11.name]
+                        ['HTML', sum_4],
+                        ['CSS', sum_5],
+                        ['JavaScript', sum_6.name],
+                        ['PHP', sum_7],
+                        ['Laraver', sum_8],
+                        ['SQL', sum_9],
+                        ['SHELL', sum_10],
+                        ['情報基礎知識', sum_11]
                     ]);
                     var options = {
                         legend: 'none',
