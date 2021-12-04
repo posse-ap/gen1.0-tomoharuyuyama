@@ -19,7 +19,6 @@
         <span v-if="todo.isActive" :class="{done: todo.isDone}">{{ todo.title }}</span>
         <form style="display: inline" v-else @submit.prevent="editItem(index)">
           <input type="text" v-bind:value="todo.title" v-model="todos[index].tmp">
-          <!-- スペもく : submitしたあとに、inputの@click="active(index)"をやりたいけどできない -->
           <input type="submit" value="保存">
         </form>
         <span @click="active(index)" class="command">[edit]</span>

@@ -43,12 +43,9 @@
       },
       editItem: function (index) {
         console.log(this.editItem);
-        // if (confirm('are you sure?')) {
-        // //   // TODOがゴリラになるプログラム↓
-        // console.log(this.todos[index].title);
         this.todos[index].title = this.todos[index].tmp;
         this.todos[index].tmp = "";
-        // }
+        this.todos[index].isActive = !this.todos[index].isActive;
       },
       purge: function () {
         if (!confirm('delete finished?')) {
