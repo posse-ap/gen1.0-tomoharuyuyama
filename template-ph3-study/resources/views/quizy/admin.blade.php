@@ -56,11 +56,11 @@
     <h1>問題の編集</h1>
     <ul>
         @foreach ($prefectures as $prefecture)
-            {{-- {{ $arasuka }} --}}
+            {{-- {{ dd($prefecture) }} --}}
             <form method="post" action="{{ url('/update') }}">
                 {{ csrf_field() }}
                 <li>
-                    <a href="/quiz/edit/{{ $loop->iteration }}">{{ $prefecture->name }}</a>
+                    <a href="/quiz/edit/{{ $prefecture->id }}">{{ $prefecture->name }}</a>
                 </li>
             </form>
         @endforeach

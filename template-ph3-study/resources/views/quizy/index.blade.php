@@ -12,7 +12,7 @@
     <ul>
         @foreach ($prefectures as $prefecture)
             <li>
-                <a href="./quiz/{{ $loop->iteration }}">{{ $prefecture->name }}</a>
+                <a href="./quiz/{{ $prefecture->id }}">{{ $prefecture->name }}</a>
             </li>
         @endforeach
             <li>

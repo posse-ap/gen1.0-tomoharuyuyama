@@ -26,7 +26,7 @@ class ChangeQuizyQuaestionTableTableColumnQuestionPriorityBirthNo extends Migrat
     public function down()
     {
         Schema::table('QuizyQuaestionTable', function (Blueprint $table) {
-            $table->string('fax_name')->default(null)->change();
+            $table->string('QuestionPriority')->default(null)->change();
         });
     }
 }

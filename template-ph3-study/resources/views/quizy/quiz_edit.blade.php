@@ -14,6 +14,7 @@
     <h1>更新</h1>
     @foreach ($quiz_choices_box as $quiz_choices)
         {{-- <h2>{{dd($quiz_choice->question_id)}}</h2> --}}
+        
         <ul>
             @foreach ($quiz_choices as $quiz_choice)
                 @php

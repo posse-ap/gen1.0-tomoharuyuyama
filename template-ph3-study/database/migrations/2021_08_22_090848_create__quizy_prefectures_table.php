@@ -16,7 +16,7 @@ class CreateQuizyPrefecturesTable extends Migration
         Schema::create('QuizyPrefectures', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('imgpath');
+            $table->string('imgpath')->nullable();
             $table->timestamps();
         });
     }

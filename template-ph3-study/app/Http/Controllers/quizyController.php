@@ -105,6 +105,7 @@ class quizyController extends Controller
     {
         $prefecture = DB::table('QuizyPrefectures')
             ->find($prefecture_num);
+        // dd($prefecture);
         $quiz_choices_box = array();
         for ($i = 0; $i <= 3; $i++) {
             //TODO 選択肢数が3以外でも対応できるようにする
@@ -143,7 +144,8 @@ class quizyController extends Controller
             $test = array();
             
             
-            $img_path = QuizyQuaestion::where('prefecture_id', $prefecture)
+            $img_path = QuizyQuaestion::
+            where('prefecture_id', $prefecture)
             ->orderBy('QuestionPriority', 'desc')
             ->get();
 
@@ -155,7 +157,7 @@ class quizyController extends Controller
         }
         
         array_push($question_list, $test);
-        // dd($question_list);
+        // dd($question_list[0]);
 
         $dd = array();
         foreach ($question_list[0] as $index => $question) {
@@ -166,7 +168,8 @@ class quizyController extends Controller
             // 選択肢セットの末尾に回答を追加
             $question_list[0][$index][] = array_search($answer, $question_list[0][$index]);
             // 最末尾に画像パスを追加
-            $question_list[0][$index][] = $img_path[$index-1]->imgpath;
+            $question_list[0][$index][] = $img_path[$index]->imgpath;
+            // dd($question_list[0][$index][4]);
         }
 
         $data = "minnna.png";
@@ -190,7 +193,7 @@ class quizyController extends Controller
 
         $data = $user->updateOrInsert(
                 ['prefecture_id' => $prefecture_num, 'question_id' => $question_num],
-                ['imgpath' => $img]
+                ['imgpath' => $filename]
             );
 
         return redirect('quiz/admin');
