@@ -149,3 +149,5 @@ mbind: Operation not permitted
 mbind: Operation not permitted
 mbind: Operation not permitted
 mbind: Operation not permitted
+2021-12-12T15:29:08.102105-00:00 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.27).
+2021-12-12T15:29:09.201920-00:00 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.27)  MySQL Community Server - GPL.

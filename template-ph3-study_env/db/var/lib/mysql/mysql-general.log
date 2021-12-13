@@ -25783,3 +25783,1468 @@ WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = '
 2021-12-11T20:26:54.245950-00:00	  141 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
 2021-12-11T20:26:54.246537-00:00	  141 Close stmt	
 2021-12-11T20:26:54.302518-00:00	  141 Quit	
+2021-12-11T21:06:15.761813-00:00	  142 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:06:15.779265-00:00	  142 Query	use `laravel`
+2021-12-11T21:06:15.779932-00:00	  142 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:15.780218-00:00	  142 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:15.780685-00:00	  142 Close stmt	
+2021-12-11T21:06:15.781010-00:00	  142 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:15.781279-00:00	  142 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:15.781724-00:00	  142 Close stmt	
+2021-12-11T21:06:15.782158-00:00	  142 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:06:15.794946-00:00	  142 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:06:15.795175-00:00	  142 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:06:15.795984-00:00	  142 Close stmt	
+2021-12-11T21:06:15.826833-00:00	  142 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:06:15.827229-00:00	  142 Execute	select * from `quizy` where `prefecture` = 3 order by `QuestionPriority` desc
+2021-12-11T21:06:15.828029-00:00	  142 Close stmt	
+2021-12-11T21:06:15.828553-00:00	  142 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:06:15.828813-00:00	  142 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-12-11T21:06:15.829408-00:00	  142 Close stmt	
+2021-12-11T21:06:15.832424-00:00	  142 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:06:15.832748-00:00	  142 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
+2021-12-11T21:06:15.833389-00:00	  142 Close stmt	
+2021-12-11T21:06:15.900987-00:00	  142 Quit	
+2021-12-11T21:06:19.241055-00:00	  143 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:06:19.260583-00:00	  143 Query	use `laravel`
+2021-12-11T21:06:19.261626-00:00	  143 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:19.262072-00:00	  143 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:19.262645-00:00	  143 Close stmt	
+2021-12-11T21:06:19.263041-00:00	  143 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:19.263352-00:00	  143 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:19.263851-00:00	  143 Close stmt	
+2021-12-11T21:06:19.264289-00:00	  143 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:06:19.273991-00:00	  143 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:06:19.274314-00:00	  143 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:06:19.274925-00:00	  143 Close stmt	
+2021-12-11T21:06:19.298958-00:00	  143 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:06:19.299266-00:00	  143 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:06:19.299816-00:00	  143 Close stmt	
+2021-12-11T21:06:19.350770-00:00	  143 Quit	
+2021-12-11T21:06:21.468475-00:00	  144 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:06:21.483905-00:00	  144 Query	use `laravel`
+2021-12-11T21:06:21.484421-00:00	  144 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:21.484663-00:00	  144 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:21.485062-00:00	  144 Close stmt	
+2021-12-11T21:06:21.485383-00:00	  144 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:21.485613-00:00	  144 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:21.486036-00:00	  144 Close stmt	
+2021-12-11T21:06:21.486400-00:00	  144 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:06:21.492440-00:00	  144 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:06:21.493063-00:00	  144 Close stmt	
+2021-12-11T21:06:21.550041-00:00	  144 Quit	
+2021-12-11T21:06:42.608548-00:00	  145 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:06:42.618045-00:00	  145 Query	use `laravel`
+2021-12-11T21:06:42.618562-00:00	  145 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:42.618863-00:00	  145 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:42.619517-00:00	  145 Close stmt	
+2021-12-11T21:06:42.619971-00:00	  145 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:42.620239-00:00	  145 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:42.620759-00:00	  145 Close stmt	
+2021-12-11T21:06:42.621176-00:00	  145 Prepare	insert into `QuizyPrefectures` (`name`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-12-11T21:06:42.622755-00:00	  145 Execute	insert into `QuizyPrefectures` (`name`, `updated_at`, `created_at`) values ('happy', '2021-12-11 21:06:42', '2021-12-11 21:06:42')
+2021-12-11T21:06:42.624951-00:00	  145 Close stmt	
+2021-12-11T21:06:42.652090-00:00	  145 Quit	
+2021-12-11T21:06:43.507994-00:00	  146 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:06:43.518753-00:00	  146 Query	use `laravel`
+2021-12-11T21:06:43.519212-00:00	  146 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:43.519596-00:00	  146 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:43.519974-00:00	  146 Close stmt	
+2021-12-11T21:06:43.520308-00:00	  146 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:43.520859-00:00	  146 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:43.521444-00:00	  146 Close stmt	
+2021-12-11T21:06:43.521936-00:00	  146 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:06:43.528934-00:00	  146 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:06:43.529443-00:00	  146 Close stmt	
+2021-12-11T21:06:43.575770-00:00	  146 Quit	
+2021-12-11T21:06:51.704670-00:00	  147 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:06:51.717568-00:00	  147 Query	use `laravel`
+2021-12-11T21:06:51.718156-00:00	  147 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:51.718412-00:00	  147 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:06:51.718850-00:00	  147 Close stmt	
+2021-12-11T21:06:51.719170-00:00	  147 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:51.719428-00:00	  147 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:06:51.719889-00:00	  147 Close stmt	
+2021-12-11T21:06:51.720304-00:00	  147 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-11T21:06:51.732700-00:00	  147 Execute	select * from `QuizyPrefectures` where `id` = '5' limit 1
+2021-12-11T21:06:51.733627-00:00	  147 Close stmt	
+2021-12-11T21:06:51.755064-00:00	  147 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:06:51.755416-00:00	  147 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 0
+2021-12-11T21:06:51.756066-00:00	  147 Close stmt	
+2021-12-11T21:06:51.762941-00:00	  147 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:06:51.763406-00:00	  147 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 1
+2021-12-11T21:06:51.764113-00:00	  147 Close stmt	
+2021-12-11T21:06:51.764531-00:00	  147 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:06:51.764873-00:00	  147 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 2
+2021-12-11T21:06:51.765500-00:00	  147 Close stmt	
+2021-12-11T21:06:51.765989-00:00	  147 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:06:51.766325-00:00	  147 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 3
+2021-12-11T21:06:51.767108-00:00	  147 Close stmt	
+2021-12-11T21:06:51.771044-00:00	  147 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:06:51.771427-00:00	  147 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:06:51.772091-00:00	  147 Close stmt	
+2021-12-11T21:06:51.819260-00:00	  147 Quit	
+2021-12-11T21:07:08.663320-00:00	  148 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:08.674589-00:00	  148 Query	use `laravel`
+2021-12-11T21:07:08.675015-00:00	  148 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:08.675242-00:00	  148 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:08.675620-00:00	  148 Close stmt	
+2021-12-11T21:07:08.675952-00:00	  148 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:08.676174-00:00	  148 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:08.676506-00:00	  148 Close stmt	
+2021-12-11T21:07:08.676917-00:00	  148 Prepare	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)
+2021-12-11T21:07:08.679732-00:00	  148 Execute	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values ('4', 'kusoUI', '1', '1', '2021-12-11 21:07:08', '2021-12-11 21:07:08')
+2021-12-11T21:07:08.681478-00:00	  148 Close stmt	
+2021-12-11T21:07:08.713182-00:00	  148 Quit	
+2021-12-11T21:07:09.463147-00:00	  149 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:09.474072-00:00	  149 Query	use `laravel`
+2021-12-11T21:07:09.474658-00:00	  149 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:09.474960-00:00	  149 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:09.475477-00:00	  149 Close stmt	
+2021-12-11T21:07:09.475905-00:00	  149 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:09.476203-00:00	  149 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:09.476648-00:00	  149 Close stmt	
+2021-12-11T21:07:09.477091-00:00	  149 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:07:09.482114-00:00	  149 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:07:09.482850-00:00	  149 Close stmt	
+2021-12-11T21:07:09.524995-00:00	  149 Quit	
+2021-12-11T21:07:15.585418-00:00	  150 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:15.596893-00:00	  150 Query	use `laravel`
+2021-12-11T21:07:15.597433-00:00	  150 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:15.597745-00:00	  150 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:15.598142-00:00	  150 Close stmt	
+2021-12-11T21:07:15.598488-00:00	  150 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:15.598775-00:00	  150 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:15.599211-00:00	  150 Close stmt	
+2021-12-11T21:07:15.599612-00:00	  150 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-11T21:07:15.608492-00:00	  150 Execute	select * from `QuizyPrefectures` where `id` = '5' limit 1
+2021-12-11T21:07:15.609269-00:00	  150 Close stmt	
+2021-12-11T21:07:15.621409-00:00	  150 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:15.621750-00:00	  150 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 0
+2021-12-11T21:07:15.622393-00:00	  150 Close stmt	
+2021-12-11T21:07:15.629720-00:00	  150 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:15.630112-00:00	  150 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 1
+2021-12-11T21:07:15.630741-00:00	  150 Close stmt	
+2021-12-11T21:07:15.631173-00:00	  150 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:15.631489-00:00	  150 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 2
+2021-12-11T21:07:15.632074-00:00	  150 Close stmt	
+2021-12-11T21:07:15.632492-00:00	  150 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:15.632765-00:00	  150 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 3
+2021-12-11T21:07:15.633383-00:00	  150 Close stmt	
+2021-12-11T21:07:15.636302-00:00	  150 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:07:15.636587-00:00	  150 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:07:15.637137-00:00	  150 Close stmt	
+2021-12-11T21:07:15.680279-00:00	  150 Quit	
+2021-12-11T21:07:32.659144-00:00	  151 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:32.669903-00:00	  151 Query	use `laravel`
+2021-12-11T21:07:32.670476-00:00	  151 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:32.670767-00:00	  151 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:32.671157-00:00	  151 Close stmt	
+2021-12-11T21:07:32.671608-00:00	  151 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:32.672000-00:00	  151 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:32.672452-00:00	  151 Close stmt	
+2021-12-11T21:07:32.672835-00:00	  151 Prepare	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)
+2021-12-11T21:07:32.675418-00:00	  151 Execute	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values ('4', 'zannnen', '1', '0', '2021-12-11 21:07:32', '2021-12-11 21:07:32')
+2021-12-11T21:07:32.677737-00:00	  151 Close stmt	
+2021-12-11T21:07:32.708031-00:00	  151 Quit	
+2021-12-11T21:07:33.580697-00:00	  152 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:33.591157-00:00	  152 Query	use `laravel`
+2021-12-11T21:07:33.591701-00:00	  152 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:33.591979-00:00	  152 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:33.592408-00:00	  152 Close stmt	
+2021-12-11T21:07:33.592737-00:00	  152 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:33.593173-00:00	  152 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:33.593840-00:00	  152 Close stmt	
+2021-12-11T21:07:33.594524-00:00	  152 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:07:33.599544-00:00	  152 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:07:33.600199-00:00	  152 Close stmt	
+2021-12-11T21:07:33.645884-00:00	  152 Quit	
+2021-12-11T21:07:37.643148-00:00	  153 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:37.653344-00:00	  153 Query	use `laravel`
+2021-12-11T21:07:37.653869-00:00	  153 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:37.654190-00:00	  153 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:37.654556-00:00	  153 Close stmt	
+2021-12-11T21:07:37.654866-00:00	  153 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:37.655102-00:00	  153 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:37.655525-00:00	  153 Close stmt	
+2021-12-11T21:07:37.655971-00:00	  153 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-11T21:07:37.662237-00:00	  153 Execute	select * from `QuizyPrefectures` where `id` = '5' limit 1
+2021-12-11T21:07:37.662848-00:00	  153 Close stmt	
+2021-12-11T21:07:37.673832-00:00	  153 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:37.674117-00:00	  153 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 0
+2021-12-11T21:07:37.674708-00:00	  153 Close stmt	
+2021-12-11T21:07:37.677886-00:00	  153 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:37.678148-00:00	  153 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 1
+2021-12-11T21:07:37.678668-00:00	  153 Close stmt	
+2021-12-11T21:07:37.679035-00:00	  153 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:37.679320-00:00	  153 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 2
+2021-12-11T21:07:37.679877-00:00	  153 Close stmt	
+2021-12-11T21:07:37.680350-00:00	  153 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:37.680725-00:00	  153 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 3
+2021-12-11T21:07:37.681403-00:00	  153 Close stmt	
+2021-12-11T21:07:37.683462-00:00	  153 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:07:37.683725-00:00	  153 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:07:37.684293-00:00	  153 Close stmt	
+2021-12-11T21:07:37.721643-00:00	  153 Quit	
+2021-12-11T21:07:50.483727-00:00	  154 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:50.494851-00:00	  154 Query	use `laravel`
+2021-12-11T21:07:50.495587-00:00	  154 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:50.495876-00:00	  154 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:50.496321-00:00	  154 Close stmt	
+2021-12-11T21:07:50.496818-00:00	  154 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:50.497106-00:00	  154 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:50.497575-00:00	  154 Close stmt	
+2021-12-11T21:07:50.497990-00:00	  154 Prepare	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)
+2021-12-11T21:07:50.500448-00:00	  154 Execute	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values ('4', 'arima', '1', '0', '2021-12-11 21:07:50', '2021-12-11 21:07:50')
+2021-12-11T21:07:50.502027-00:00	  154 Close stmt	
+2021-12-11T21:07:50.532495-00:00	  154 Quit	
+2021-12-11T21:07:51.385599-00:00	  155 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:51.397201-00:00	  155 Query	use `laravel`
+2021-12-11T21:07:51.397935-00:00	  155 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:51.398215-00:00	  155 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:51.398689-00:00	  155 Close stmt	
+2021-12-11T21:07:51.398988-00:00	  155 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:51.399226-00:00	  155 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:51.399643-00:00	  155 Close stmt	
+2021-12-11T21:07:51.399965-00:00	  155 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:07:51.404805-00:00	  155 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:07:51.405353-00:00	  155 Close stmt	
+2021-12-11T21:07:51.452993-00:00	  155 Quit	
+2021-12-11T21:07:57.035080-00:00	  156 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:07:57.047613-00:00	  156 Query	use `laravel`
+2021-12-11T21:07:57.048196-00:00	  156 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:57.048446-00:00	  156 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:07:57.048861-00:00	  156 Close stmt	
+2021-12-11T21:07:57.049165-00:00	  156 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:57.049661-00:00	  156 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:07:57.050076-00:00	  156 Close stmt	
+2021-12-11T21:07:57.050429-00:00	  156 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-11T21:07:57.058120-00:00	  156 Execute	select * from `QuizyPrefectures` where `id` = '5' limit 1
+2021-12-11T21:07:57.058704-00:00	  156 Close stmt	
+2021-12-11T21:07:57.071279-00:00	  156 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:57.071523-00:00	  156 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 0
+2021-12-11T21:07:57.072078-00:00	  156 Close stmt	
+2021-12-11T21:07:57.076071-00:00	  156 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:57.076347-00:00	  156 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 1
+2021-12-11T21:07:57.076922-00:00	  156 Close stmt	
+2021-12-11T21:07:57.077295-00:00	  156 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:57.077513-00:00	  156 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 2
+2021-12-11T21:07:57.078129-00:00	  156 Close stmt	
+2021-12-11T21:07:57.078499-00:00	  156 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:07:57.078826-00:00	  156 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 3
+2021-12-11T21:07:57.079344-00:00	  156 Close stmt	
+2021-12-11T21:07:57.081535-00:00	  156 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:07:57.081865-00:00	  156 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:07:57.082363-00:00	  156 Close stmt	
+2021-12-11T21:07:57.124675-00:00	  156 Quit	
+2021-12-11T21:08:09.470448-00:00	  157 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:09.481168-00:00	  157 Query	use `laravel`
+2021-12-11T21:08:09.481594-00:00	  157 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:09.481920-00:00	  157 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:09.482348-00:00	  157 Close stmt	
+2021-12-11T21:08:09.482800-00:00	  157 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:09.483094-00:00	  157 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:09.483523-00:00	  157 Close stmt	
+2021-12-11T21:08:09.483917-00:00	  157 Prepare	select exists(select * from `QuizyQuaestionTable` where (`prefecture_id` = ? and `question_id` = ?)) as `exists`
+2021-12-11T21:08:09.491657-00:00	  157 Execute	select exists(select * from `QuizyQuaestionTable` where (`prefecture_id` = '5' and `question_id` = '1')) as `exists`
+2021-12-11T21:08:09.492306-00:00	  157 Close stmt	
+2021-12-11T21:08:09.496723-00:00	  157 Prepare	insert into `QuizyQuaestionTable` (`prefecture_id`, `question_id`, `imgpath`) values (?, ?, ?)
+2021-12-11T21:08:09.496958-00:00	  157 Execute	insert into `QuizyQuaestionTable` (`prefecture_id`, `question_id`, `imgpath`) values ('5', '1', 'LINE_ALBUM_211208.jpg')
+2021-12-11T21:08:09.498790-00:00	  157 Close stmt	
+2021-12-11T21:08:09.525543-00:00	  157 Quit	
+2021-12-11T21:08:10.377094-00:00	  158 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:10.389499-00:00	  158 Query	use `laravel`
+2021-12-11T21:08:10.390045-00:00	  158 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:10.390294-00:00	  158 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:10.390742-00:00	  158 Close stmt	
+2021-12-11T21:08:10.391251-00:00	  158 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:10.391505-00:00	  158 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:10.391836-00:00	  158 Close stmt	
+2021-12-11T21:08:10.392195-00:00	  158 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:08:10.398112-00:00	  158 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:08:10.398645-00:00	  158 Close stmt	
+2021-12-11T21:08:10.445534-00:00	  158 Quit	
+2021-12-11T21:08:18.548471-00:00	  159 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:18.560938-00:00	  159 Query	use `laravel`
+2021-12-11T21:08:18.561612-00:00	  159 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:18.562080-00:00	  159 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:18.562794-00:00	  159 Close stmt	
+2021-12-11T21:08:18.563275-00:00	  159 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:18.563681-00:00	  159 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:18.564159-00:00	  159 Close stmt	
+2021-12-11T21:08:18.564761-00:00	  159 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:18.574756-00:00	  159 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:18.575058-00:00	  159 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:08:18.575595-00:00	  159 Close stmt	
+2021-12-11T21:08:18.599758-00:00	  159 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:08:18.600062-00:00	  159 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:08:18.600612-00:00	  159 Close stmt	
+2021-12-11T21:08:18.645325-00:00	  159 Quit	
+2021-12-11T21:08:20.988498-00:00	  160 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:21.004897-00:00	  160 Query	use `laravel`
+2021-12-11T21:08:21.005535-00:00	  160 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:21.005854-00:00	  160 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:21.006283-00:00	  160 Close stmt	
+2021-12-11T21:08:21.006624-00:00	  160 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:21.006934-00:00	  160 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:21.007342-00:00	  160 Close stmt	
+2021-12-11T21:08:21.007726-00:00	  160 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:21.017708-00:00	  160 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:21.017938-00:00	  160 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:08:21.018401-00:00	  160 Close stmt	
+2021-12-11T21:08:21.041244-00:00	  160 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:08:21.041556-00:00	  160 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:08:21.042151-00:00	  160 Close stmt	
+2021-12-11T21:08:21.042501-00:00	  160 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:08:21.042779-00:00	  160 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:08:21.043241-00:00	  160 Close stmt	
+2021-12-11T21:08:21.046871-00:00	  160 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:08:21.047301-00:00	  160 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:08:21.048029-00:00	  160 Close stmt	
+2021-12-11T21:08:21.213072-00:00	  160 Prepare	SELECT 1
+2021-12-11T21:08:21.213490-00:00	  160 Execute	SELECT 1
+2021-12-11T21:08:21.214175-00:00	  160 Close stmt	
+2021-12-11T21:08:21.255973-00:00	  160 Prepare	SELECT 1
+2021-12-11T21:08:21.256355-00:00	  160 Execute	SELECT 1
+2021-12-11T21:08:21.256852-00:00	  160 Close stmt	
+2021-12-11T21:08:21.476122-00:00	  160 Quit	
+2021-12-11T21:08:27.343897-00:00	  161 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:27.359431-00:00	  161 Query	use `laravel`
+2021-12-11T21:08:27.360000-00:00	  161 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:27.360238-00:00	  161 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:27.360630-00:00	  161 Close stmt	
+2021-12-11T21:08:27.360922-00:00	  161 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:27.361164-00:00	  161 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:27.361508-00:00	  161 Close stmt	
+2021-12-11T21:08:27.361852-00:00	  161 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:27.372401-00:00	  161 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:27.372657-00:00	  161 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:08:27.373269-00:00	  161 Close stmt	
+2021-12-11T21:08:27.395455-00:00	  161 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:08:27.395703-00:00	  161 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:08:27.396223-00:00	  161 Close stmt	
+2021-12-11T21:08:27.445227-00:00	  161 Quit	
+2021-12-11T21:08:29.852646-00:00	  162 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:29.868125-00:00	  162 Query	use `laravel`
+2021-12-11T21:08:29.868585-00:00	  162 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:29.868877-00:00	  162 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:29.869314-00:00	  162 Close stmt	
+2021-12-11T21:08:29.869651-00:00	  162 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:29.869917-00:00	  162 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:29.870311-00:00	  162 Close stmt	
+2021-12-11T21:08:29.870675-00:00	  162 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:29.880228-00:00	  162 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:29.880658-00:00	  162 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:08:29.881521-00:00	  162 Close stmt	
+2021-12-11T21:08:29.903403-00:00	  162 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:08:29.903729-00:00	  162 Execute	select * from `quizy` where `prefecture` = 3 order by `QuestionPriority` desc
+2021-12-11T21:08:29.904334-00:00	  162 Close stmt	
+2021-12-11T21:08:29.904736-00:00	  162 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:08:29.905321-00:00	  162 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-12-11T21:08:29.906070-00:00	  162 Close stmt	
+2021-12-11T21:08:29.908966-00:00	  162 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:08:29.909322-00:00	  162 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
+2021-12-11T21:08:29.909906-00:00	  162 Close stmt	
+2021-12-11T21:08:29.959917-00:00	  162 Quit	
+2021-12-11T21:08:33.481600-00:00	  163 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:33.494098-00:00	  163 Query	use `laravel`
+2021-12-11T21:08:33.494737-00:00	  163 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:33.495174-00:00	  163 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:33.495870-00:00	  163 Close stmt	
+2021-12-11T21:08:33.496351-00:00	  163 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:33.496640-00:00	  163 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:33.497139-00:00	  163 Close stmt	
+2021-12-11T21:08:33.497525-00:00	  163 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:33.504507-00:00	  163 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:33.504788-00:00	  163 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:08:33.505448-00:00	  163 Close stmt	
+2021-12-11T21:08:33.521075-00:00	  163 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:08:33.521389-00:00	  163 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:08:33.522006-00:00	  163 Close stmt	
+2021-12-11T21:08:33.559379-00:00	  163 Quit	
+2021-12-11T21:08:35.430663-00:00	  164 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:08:35.442592-00:00	  164 Query	use `laravel`
+2021-12-11T21:08:35.443187-00:00	  164 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:35.443461-00:00	  164 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:08:35.443852-00:00	  164 Close stmt	
+2021-12-11T21:08:35.444280-00:00	  164 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:35.444689-00:00	  164 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:08:35.445263-00:00	  164 Close stmt	
+2021-12-11T21:08:35.445840-00:00	  164 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:35.454404-00:00	  164 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:08:35.454893-00:00	  164 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:08:35.455500-00:00	  164 Close stmt	
+2021-12-11T21:08:35.473748-00:00	  164 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:08:35.474105-00:00	  164 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:08:35.474700-00:00	  164 Close stmt	
+2021-12-11T21:08:35.475135-00:00	  164 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:08:35.475431-00:00	  164 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:08:35.475981-00:00	  164 Close stmt	
+2021-12-11T21:08:35.478145-00:00	  164 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:08:35.478455-00:00	  164 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:08:35.479086-00:00	  164 Close stmt	
+2021-12-11T21:08:35.622436-00:00	  164 Prepare	SELECT 1
+2021-12-11T21:08:35.622819-00:00	  164 Execute	SELECT 1
+2021-12-11T21:08:35.623356-00:00	  164 Close stmt	
+2021-12-11T21:08:35.663675-00:00	  164 Prepare	SELECT 1
+2021-12-11T21:08:35.664137-00:00	  164 Execute	SELECT 1
+2021-12-11T21:08:35.664734-00:00	  164 Close stmt	
+2021-12-11T21:08:35.842457-00:00	  164 Quit	
+2021-12-11T21:10:29.286674-00:00	  165 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:29.303210-00:00	  165 Query	use `laravel`
+2021-12-11T21:10:29.303897-00:00	  165 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:29.304236-00:00	  165 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:29.304717-00:00	  165 Close stmt	
+2021-12-11T21:10:29.305086-00:00	  165 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:29.305421-00:00	  165 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:29.305971-00:00	  165 Close stmt	
+2021-12-11T21:10:29.306642-00:00	  165 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:29.335290-00:00	  165 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:29.335588-00:00	  165 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:10:29.336139-00:00	  165 Close stmt	
+2021-12-11T21:10:29.366156-00:00	  165 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:10:29.366509-00:00	  165 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:10:29.367098-00:00	  165 Close stmt	
+2021-12-11T21:10:29.367462-00:00	  165 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:10:29.367760-00:00	  165 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:10:29.368259-00:00	  165 Close stmt	
+2021-12-11T21:10:29.371967-00:00	  165 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:10:29.372459-00:00	  165 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:10:29.373263-00:00	  165 Close stmt	
+2021-12-11T21:10:29.567687-00:00	  165 Prepare	SELECT 1
+2021-12-11T21:10:29.568036-00:00	  165 Execute	SELECT 1
+2021-12-11T21:10:29.568511-00:00	  165 Close stmt	
+2021-12-11T21:10:29.615556-00:00	  165 Prepare	SELECT 1
+2021-12-11T21:10:29.615941-00:00	  165 Execute	SELECT 1
+2021-12-11T21:10:29.616358-00:00	  165 Close stmt	
+2021-12-11T21:10:29.914007-00:00	  165 Quit	
+2021-12-11T21:10:32.332442-00:00	  166 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:32.349752-00:00	  166 Query	use `laravel`
+2021-12-11T21:10:32.350355-00:00	  166 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:32.350635-00:00	  166 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:32.351028-00:00	  166 Close stmt	
+2021-12-11T21:10:32.351361-00:00	  166 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:32.351640-00:00	  166 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:32.352063-00:00	  166 Close stmt	
+2021-12-11T21:10:32.352489-00:00	  166 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:32.363825-00:00	  166 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:32.364078-00:00	  166 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:10:32.364720-00:00	  166 Close stmt	
+2021-12-11T21:10:32.386845-00:00	  166 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:10:32.387129-00:00	  166 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:10:32.387768-00:00	  166 Close stmt	
+2021-12-11T21:10:32.434061-00:00	  166 Quit	
+2021-12-11T21:10:35.077099-00:00	  167 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:35.094406-00:00	  167 Query	use `laravel`
+2021-12-11T21:10:35.095013-00:00	  167 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:35.095364-00:00	  167 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:35.095942-00:00	  167 Close stmt	
+2021-12-11T21:10:35.096415-00:00	  167 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:35.096880-00:00	  167 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:35.098147-00:00	  167 Close stmt	
+2021-12-11T21:10:35.098754-00:00	  167 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:35.110262-00:00	  167 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:35.110639-00:00	  167 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:10:35.111257-00:00	  167 Close stmt	
+2021-12-11T21:10:35.139029-00:00	  167 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:10:35.139459-00:00	  167 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:10:35.140165-00:00	  167 Close stmt	
+2021-12-11T21:10:35.140703-00:00	  167 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:10:35.141129-00:00	  167 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:10:35.141849-00:00	  167 Close stmt	
+2021-12-11T21:10:35.144926-00:00	  167 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:10:35.145331-00:00	  167 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:10:35.145995-00:00	  167 Close stmt	
+2021-12-11T21:10:35.288061-00:00	  167 Prepare	SELECT 1
+2021-12-11T21:10:35.288478-00:00	  167 Execute	SELECT 1
+2021-12-11T21:10:35.288989-00:00	  167 Close stmt	
+2021-12-11T21:10:35.329991-00:00	  167 Prepare	SELECT 1
+2021-12-11T21:10:35.330481-00:00	  167 Execute	SELECT 1
+2021-12-11T21:10:35.331163-00:00	  167 Close stmt	
+2021-12-11T21:10:35.544197-00:00	  167 Quit	
+2021-12-11T21:10:37.513659-00:00	  168 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:37.531032-00:00	  168 Query	use `laravel`
+2021-12-11T21:10:37.531577-00:00	  168 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:37.531965-00:00	  168 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:37.532433-00:00	  168 Close stmt	
+2021-12-11T21:10:37.533017-00:00	  168 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:37.533341-00:00	  168 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:37.533824-00:00	  168 Close stmt	
+2021-12-11T21:10:37.534323-00:00	  168 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:37.543450-00:00	  168 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:37.543779-00:00	  168 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:10:37.544307-00:00	  168 Close stmt	
+2021-12-11T21:10:37.564376-00:00	  168 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:10:37.565130-00:00	  168 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:10:37.566063-00:00	  168 Close stmt	
+2021-12-11T21:10:37.611606-00:00	  168 Quit	
+2021-12-11T21:10:41.031823-00:00	  169 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:41.044130-00:00	  169 Query	use `laravel`
+2021-12-11T21:10:41.044771-00:00	  169 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:41.045078-00:00	  169 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:41.045568-00:00	  169 Close stmt	
+2021-12-11T21:10:41.045954-00:00	  169 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:41.046245-00:00	  169 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:41.046696-00:00	  169 Close stmt	
+2021-12-11T21:10:41.047121-00:00	  169 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:41.055703-00:00	  169 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:41.055985-00:00	  169 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:10:41.056662-00:00	  169 Close stmt	
+2021-12-11T21:10:41.077217-00:00	  169 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:10:41.077577-00:00	  169 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:10:41.078173-00:00	  169 Close stmt	
+2021-12-11T21:10:41.078637-00:00	  169 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:10:41.078929-00:00	  169 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:10:41.079503-00:00	  169 Close stmt	
+2021-12-11T21:10:41.082255-00:00	  169 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:10:41.082574-00:00	  169 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:10:41.083130-00:00	  169 Close stmt	
+2021-12-11T21:10:41.228873-00:00	  169 Prepare	SELECT 1
+2021-12-11T21:10:41.229260-00:00	  169 Execute	SELECT 1
+2021-12-11T21:10:41.229783-00:00	  169 Close stmt	
+2021-12-11T21:10:41.267458-00:00	  169 Prepare	SELECT 1
+2021-12-11T21:10:41.267904-00:00	  169 Execute	SELECT 1
+2021-12-11T21:10:41.268334-00:00	  169 Close stmt	
+2021-12-11T21:10:41.486621-00:00	  169 Quit	
+2021-12-11T21:10:55.232328-00:00	  170 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:55.244138-00:00	  170 Query	use `laravel`
+2021-12-11T21:10:55.244875-00:00	  170 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:55.245188-00:00	  170 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:55.245640-00:00	  170 Close stmt	
+2021-12-11T21:10:55.246047-00:00	  170 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:55.246341-00:00	  170 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:55.246809-00:00	  170 Close stmt	
+2021-12-11T21:10:55.247259-00:00	  170 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:55.256205-00:00	  170 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:10:55.256531-00:00	  170 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:10:55.257133-00:00	  170 Close stmt	
+2021-12-11T21:10:55.275175-00:00	  170 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:10:55.275474-00:00	  170 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:10:55.276509-00:00	  170 Close stmt	
+2021-12-11T21:10:55.319785-00:00	  170 Quit	
+2021-12-11T21:10:57.590650-00:00	  171 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:10:57.602167-00:00	  171 Query	use `laravel`
+2021-12-11T21:10:57.602706-00:00	  171 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:57.603033-00:00	  171 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:10:57.603447-00:00	  171 Close stmt	
+2021-12-11T21:10:57.603875-00:00	  171 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:57.604239-00:00	  171 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:10:57.604771-00:00	  171 Close stmt	
+2021-12-11T21:10:57.605230-00:00	  171 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:10:57.611901-00:00	  171 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:10:57.612567-00:00	  171 Close stmt	
+2021-12-11T21:10:57.664170-00:00	  171 Quit	
+2021-12-11T21:11:01.855724-00:00	  172 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:11:01.868205-00:00	  172 Query	use `laravel`
+2021-12-11T21:11:01.868760-00:00	  172 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:01.869033-00:00	  172 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:01.869439-00:00	  172 Close stmt	
+2021-12-11T21:11:01.869779-00:00	  172 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:01.870051-00:00	  172 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:01.870475-00:00	  172 Close stmt	
+2021-12-11T21:11:01.870849-00:00	  172 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-11T21:11:01.880051-00:00	  172 Execute	select * from `QuizyPrefectures` where `id` = '5' limit 1
+2021-12-11T21:11:01.880799-00:00	  172 Close stmt	
+2021-12-11T21:11:01.894617-00:00	  172 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:11:01.895001-00:00	  172 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 0
+2021-12-11T21:11:01.895640-00:00	  172 Close stmt	
+2021-12-11T21:11:01.899987-00:00	  172 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:11:01.900273-00:00	  172 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 1
+2021-12-11T21:11:01.900823-00:00	  172 Close stmt	
+2021-12-11T21:11:01.901368-00:00	  172 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:11:01.901733-00:00	  172 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 2
+2021-12-11T21:11:01.902383-00:00	  172 Close stmt	
+2021-12-11T21:11:01.902818-00:00	  172 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-11T21:11:01.903153-00:00	  172 Execute	select * from `quizy` where `prefecture` = 4 and `question_id` = 3
+2021-12-11T21:11:01.903700-00:00	  172 Close stmt	
+2021-12-11T21:11:01.905579-00:00	  172 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:11:01.905869-00:00	  172 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:11:01.906378-00:00	  172 Close stmt	
+2021-12-11T21:11:01.950884-00:00	  172 Quit	
+2021-12-11T21:11:14.213255-00:00	  173 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:11:14.225401-00:00	  173 Query	use `laravel`
+2021-12-11T21:11:14.226082-00:00	  173 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:14.226441-00:00	  173 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:14.226873-00:00	  173 Close stmt	
+2021-12-11T21:11:14.227203-00:00	  173 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:14.227477-00:00	  173 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:14.228000-00:00	  173 Close stmt	
+2021-12-11T21:11:14.228372-00:00	  173 Prepare	select exists(select * from `QuizyQuaestionTable` where (`prefecture_id` = ? and `question_id` = ?)) as `exists`
+2021-12-11T21:11:14.236151-00:00	  173 Execute	select exists(select * from `QuizyQuaestionTable` where (`prefecture_id` = '5' and `question_id` = '1')) as `exists`
+2021-12-11T21:11:14.236693-00:00	  173 Close stmt	
+2021-12-11T21:11:14.242285-00:00	  173 Prepare	update `QuizyQuaestionTable` set `imgpath` = ? where (`prefecture_id` = ? and `question_id` = ?) limit 1
+2021-12-11T21:11:14.242747-00:00	  173 Execute	update `QuizyQuaestionTable` set `imgpath` = 'LINE_ALBUM_211208.jpg' where (`prefecture_id` = '5' and `question_id` = '1') limit 1
+2021-12-11T21:11:14.243414-00:00	  173 Close stmt	
+2021-12-11T21:11:14.271050-00:00	  173 Quit	
+2021-12-11T21:11:15.134446-00:00	  174 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:11:15.146485-00:00	  174 Query	use `laravel`
+2021-12-11T21:11:15.147154-00:00	  174 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:15.147612-00:00	  174 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:15.148033-00:00	  174 Close stmt	
+2021-12-11T21:11:15.148369-00:00	  174 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:15.148639-00:00	  174 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:15.149046-00:00	  174 Close stmt	
+2021-12-11T21:11:15.149421-00:00	  174 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:11:15.155814-00:00	  174 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:11:15.156562-00:00	  174 Close stmt	
+2021-12-11T21:11:15.201461-00:00	  174 Quit	
+2021-12-11T21:11:21.207768-00:00	  175 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:11:21.217847-00:00	  175 Query	use `laravel`
+2021-12-11T21:11:21.218535-00:00	  175 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:21.218837-00:00	  175 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:21.219428-00:00	  175 Close stmt	
+2021-12-11T21:11:21.219854-00:00	  175 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:21.220146-00:00	  175 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:21.220602-00:00	  175 Close stmt	
+2021-12-11T21:11:21.221034-00:00	  175 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:11:21.225087-00:00	  175 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:11:21.225616-00:00	  175 Close stmt	
+2021-12-11T21:11:21.264218-00:00	  175 Quit	
+2021-12-11T21:11:25.103647-00:00	  176 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:11:25.115653-00:00	  176 Query	use `laravel`
+2021-12-11T21:11:25.116203-00:00	  176 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:25.116470-00:00	  176 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:25.116893-00:00	  176 Close stmt	
+2021-12-11T21:11:25.117233-00:00	  176 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:25.117672-00:00	  176 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:25.118311-00:00	  176 Close stmt	
+2021-12-11T21:11:25.118869-00:00	  176 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:11:25.127449-00:00	  176 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:11:25.127751-00:00	  176 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:11:25.128305-00:00	  176 Close stmt	
+2021-12-11T21:11:25.146853-00:00	  176 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:11:25.147157-00:00	  176 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:11:25.147660-00:00	  176 Close stmt	
+2021-12-11T21:11:25.187058-00:00	  176 Quit	
+2021-12-11T21:11:27.172351-00:00	  177 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:11:27.182244-00:00	  177 Query	use `laravel`
+2021-12-11T21:11:27.182722-00:00	  177 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:27.182998-00:00	  177 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:11:27.183386-00:00	  177 Close stmt	
+2021-12-11T21:11:27.183724-00:00	  177 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:27.184021-00:00	  177 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:11:27.184495-00:00	  177 Close stmt	
+2021-12-11T21:11:27.184904-00:00	  177 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:11:27.192732-00:00	  177 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:11:27.192985-00:00	  177 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:11:27.193566-00:00	  177 Close stmt	
+2021-12-11T21:11:27.209390-00:00	  177 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:11:27.209747-00:00	  177 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:11:27.210394-00:00	  177 Close stmt	
+2021-12-11T21:11:27.210771-00:00	  177 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:11:27.211049-00:00	  177 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:11:27.211586-00:00	  177 Close stmt	
+2021-12-11T21:11:27.213244-00:00	  177 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:11:27.213529-00:00	  177 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:11:27.214043-00:00	  177 Close stmt	
+2021-12-11T21:11:27.312657-00:00	  177 Prepare	SELECT 1
+2021-12-11T21:11:27.313048-00:00	  177 Execute	SELECT 1
+2021-12-11T21:11:27.313681-00:00	  177 Close stmt	
+2021-12-11T21:11:27.349732-00:00	  177 Prepare	SELECT 1
+2021-12-11T21:11:27.350106-00:00	  177 Execute	SELECT 1
+2021-12-11T21:11:27.350619-00:00	  177 Close stmt	
+2021-12-11T21:11:27.521898-00:00	  177 Quit	
+2021-12-11T21:12:17.253828-00:00	  178 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:12:17.266692-00:00	  178 Query	use `laravel`
+2021-12-11T21:12:17.267317-00:00	  178 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:12:17.267630-00:00	  178 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:12:17.268053-00:00	  178 Close stmt	
+2021-12-11T21:12:17.268401-00:00	  178 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:12:17.268697-00:00	  178 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:12:17.269154-00:00	  178 Close stmt	
+2021-12-11T21:12:17.269566-00:00	  178 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:12:17.276572-00:00	  178 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:12:17.276814-00:00	  178 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:12:17.277443-00:00	  178 Close stmt	
+2021-12-11T21:12:17.294946-00:00	  178 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:12:17.295494-00:00	  178 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:12:17.296188-00:00	  178 Close stmt	
+2021-12-11T21:12:17.296653-00:00	  178 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:12:17.296971-00:00	  178 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:12:17.297489-00:00	  178 Close stmt	
+2021-12-11T21:12:17.299507-00:00	  178 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:12:17.299831-00:00	  178 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:12:17.300401-00:00	  178 Close stmt	
+2021-12-11T21:12:17.436107-00:00	  178 Prepare	SELECT 1
+2021-12-11T21:12:17.436493-00:00	  178 Execute	SELECT 1
+2021-12-11T21:12:17.437008-00:00	  178 Close stmt	
+2021-12-11T21:12:17.474309-00:00	  178 Prepare	SELECT 1
+2021-12-11T21:12:17.474833-00:00	  178 Execute	SELECT 1
+2021-12-11T21:12:17.475354-00:00	  178 Close stmt	
+2021-12-11T21:12:17.684150-00:00	  178 Quit	
+2021-12-11T21:12:40.582454-00:00	  179 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:12:40.599146-00:00	  179 Query	use `laravel`
+2021-12-11T21:12:40.599726-00:00	  179 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:12:40.599974-00:00	  179 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:12:40.600393-00:00	  179 Close stmt	
+2021-12-11T21:12:40.600744-00:00	  179 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:12:40.601077-00:00	  179 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:12:40.601533-00:00	  179 Close stmt	
+2021-12-11T21:12:40.601916-00:00	  179 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:12:40.632721-00:00	  179 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:12:40.633023-00:00	  179 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:12:40.633770-00:00	  179 Close stmt	
+2021-12-11T21:12:40.663473-00:00	  179 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:12:40.663745-00:00	  179 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:12:40.664387-00:00	  179 Close stmt	
+2021-12-11T21:12:40.664770-00:00	  179 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:12:40.665099-00:00	  179 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:12:40.665617-00:00	  179 Close stmt	
+2021-12-11T21:12:40.668161-00:00	  179 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:12:40.668416-00:00	  179 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:12:40.668937-00:00	  179 Close stmt	
+2021-12-11T21:12:40.715110-00:00	  179 Quit	
+2021-12-11T21:14:01.506402-00:00	  180 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:14:01.523449-00:00	  180 Query	use `laravel`
+2021-12-11T21:14:01.524080-00:00	  180 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:14:01.524435-00:00	  180 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:14:01.524828-00:00	  180 Close stmt	
+2021-12-11T21:14:01.525287-00:00	  180 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:14:01.525601-00:00	  180 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:14:01.526142-00:00	  180 Close stmt	
+2021-12-11T21:14:01.526628-00:00	  180 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:14:01.537920-00:00	  180 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:14:01.538233-00:00	  180 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:14:01.538915-00:00	  180 Close stmt	
+2021-12-11T21:14:01.563035-00:00	  180 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:14:01.563405-00:00	  180 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:14:01.564056-00:00	  180 Close stmt	
+2021-12-11T21:14:01.565054-00:00	  180 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:14:01.565381-00:00	  180 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:14:01.565969-00:00	  180 Close stmt	
+2021-12-11T21:14:01.569259-00:00	  180 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:14:01.569574-00:00	  180 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:14:01.570153-00:00	  180 Close stmt	
+2021-12-11T21:14:01.613312-00:00	  180 Quit	
+2021-12-11T21:14:18.363102-00:00	  181 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:14:18.374503-00:00	  181 Query	use `laravel`
+2021-12-11T21:14:18.375061-00:00	  181 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:14:18.375338-00:00	  181 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:14:18.375765-00:00	  181 Close stmt	
+2021-12-11T21:14:18.376136-00:00	  181 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:14:18.376443-00:00	  181 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:14:18.376878-00:00	  181 Close stmt	
+2021-12-11T21:14:18.377358-00:00	  181 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:14:18.386458-00:00	  181 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:14:18.386711-00:00	  181 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:14:18.387290-00:00	  181 Close stmt	
+2021-12-11T21:14:18.404950-00:00	  181 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:14:18.405220-00:00	  181 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:14:18.405775-00:00	  181 Close stmt	
+2021-12-11T21:14:18.406110-00:00	  181 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:14:18.406391-00:00	  181 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:14:18.406893-00:00	  181 Close stmt	
+2021-12-11T21:14:18.409273-00:00	  181 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:14:18.409535-00:00	  181 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:14:18.410082-00:00	  181 Close stmt	
+2021-12-11T21:14:18.442295-00:00	  181 Quit	
+2021-12-11T21:14:48.780853-00:00	  182 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:14:48.797003-00:00	  182 Query	use `laravel`
+2021-12-11T21:14:48.797556-00:00	  182 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:14:48.797912-00:00	  182 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:14:48.798327-00:00	  182 Close stmt	
+2021-12-11T21:14:48.798636-00:00	  182 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:14:48.798980-00:00	  182 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:14:48.799385-00:00	  182 Close stmt	
+2021-12-11T21:14:48.799780-00:00	  182 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:14:48.809376-00:00	  182 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:14:48.809584-00:00	  182 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:14:48.810180-00:00	  182 Close stmt	
+2021-12-11T21:14:48.835045-00:00	  182 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:14:48.835305-00:00	  182 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:14:48.835945-00:00	  182 Close stmt	
+2021-12-11T21:14:48.836272-00:00	  182 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:14:48.836501-00:00	  182 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:14:48.837004-00:00	  182 Close stmt	
+2021-12-11T21:14:48.839817-00:00	  182 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:14:48.840065-00:00	  182 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:14:48.840540-00:00	  182 Close stmt	
+2021-12-11T21:14:48.876184-00:00	  182 Quit	
+2021-12-11T21:16:21.360697-00:00	  183 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:16:21.396634-00:00	  183 Query	use `laravel`
+2021-12-11T21:16:21.397263-00:00	  183 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:21.397592-00:00	  183 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:21.398068-00:00	  183 Close stmt	
+2021-12-11T21:16:21.398511-00:00	  183 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:21.398848-00:00	  183 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:21.399333-00:00	  183 Close stmt	
+2021-12-11T21:16:21.399859-00:00	  183 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:21.420553-00:00	  183 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:21.421856-00:00	  183 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:16:21.423078-00:00	  183 Close stmt	
+2021-12-11T21:16:21.468051-00:00	  183 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:21.468600-00:00	  183 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:16:21.471319-00:00	  183 Close stmt	
+2021-12-11T21:16:21.473926-00:00	  183 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:16:21.475208-00:00	  183 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:16:21.476455-00:00	  183 Close stmt	
+2021-12-11T21:16:21.482316-00:00	  183 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:21.482961-00:00	  183 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:16:21.484005-00:00	  183 Close stmt	
+2021-12-11T21:16:21.537330-00:00	  183 Quit	
+2021-12-11T21:16:30.077187-00:00	  184 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:16:30.095805-00:00	  184 Query	use `laravel`
+2021-12-11T21:16:30.096522-00:00	  184 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:30.096824-00:00	  184 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:30.097215-00:00	  184 Close stmt	
+2021-12-11T21:16:30.097590-00:00	  184 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:30.097882-00:00	  184 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:30.098434-00:00	  184 Close stmt	
+2021-12-11T21:16:30.098923-00:00	  184 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:30.109687-00:00	  184 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:30.110028-00:00	  184 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:16:30.110767-00:00	  184 Close stmt	
+2021-12-11T21:16:30.136020-00:00	  184 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:30.136389-00:00	  184 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-11T21:16:30.137061-00:00	  184 Close stmt	
+2021-12-11T21:16:30.137501-00:00	  184 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:16:30.137792-00:00	  184 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-11T21:16:30.138374-00:00	  184 Close stmt	
+2021-12-11T21:16:30.140985-00:00	  184 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:30.141314-00:00	  184 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-11T21:16:30.141982-00:00	  184 Close stmt	
+2021-12-11T21:16:30.197096-00:00	  184 Quit	
+2021-12-11T21:16:35.463487-00:00	  185 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:16:35.476034-00:00	  185 Query	use `laravel`
+2021-12-11T21:16:35.476600-00:00	  185 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:35.476837-00:00	  185 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:35.477223-00:00	  185 Close stmt	
+2021-12-11T21:16:35.477574-00:00	  185 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:35.477828-00:00	  185 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:35.478251-00:00	  185 Close stmt	
+2021-12-11T21:16:35.478591-00:00	  185 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:35.487621-00:00	  185 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:35.487839-00:00	  185 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:16:35.488396-00:00	  185 Close stmt	
+2021-12-11T21:16:35.527600-00:00	  185 Prepare	select * from `QuizyPrefectures`
+2021-12-11T21:16:35.527931-00:00	  185 Execute	select * from `QuizyPrefectures`
+2021-12-11T21:16:35.528605-00:00	  185 Close stmt	
+2021-12-11T21:16:35.577624-00:00	  185 Quit	
+2021-12-11T21:16:37.459211-00:00	  186 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:16:37.471966-00:00	  186 Query	use `laravel`
+2021-12-11T21:16:37.472557-00:00	  186 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:37.472813-00:00	  186 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:37.473186-00:00	  186 Close stmt	
+2021-12-11T21:16:37.473520-00:00	  186 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:37.473789-00:00	  186 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:37.474181-00:00	  186 Close stmt	
+2021-12-11T21:16:37.474616-00:00	  186 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:37.482860-00:00	  186 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:37.483062-00:00	  186 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:16:37.483662-00:00	  186 Close stmt	
+2021-12-11T21:16:37.543623-00:00	  186 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:37.544027-00:00	  186 Execute	select * from `quizy` where `prefecture` = 3 order by `QuestionPriority` desc
+2021-12-11T21:16:37.544732-00:00	  186 Close stmt	
+2021-12-11T21:16:37.545159-00:00	  186 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:16:37.545537-00:00	  186 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-12-11T21:16:37.546179-00:00	  186 Close stmt	
+2021-12-11T21:16:37.548529-00:00	  186 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:37.548830-00:00	  186 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
+2021-12-11T21:16:37.549442-00:00	  186 Close stmt	
+2021-12-11T21:16:37.711209-00:00	  186 Prepare	SELECT 1
+2021-12-11T21:16:37.711476-00:00	  186 Execute	SELECT 1
+2021-12-11T21:16:37.711941-00:00	  186 Close stmt	
+2021-12-11T21:16:37.753086-00:00	  186 Prepare	SELECT 1
+2021-12-11T21:16:37.753516-00:00	  186 Execute	SELECT 1
+2021-12-11T21:16:37.754152-00:00	  186 Close stmt	
+2021-12-11T21:16:37.978024-00:00	  186 Quit	
+2021-12-11T21:16:54.861501-00:00	  187 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-11T21:16:54.873049-00:00	  187 Query	use `laravel`
+2021-12-11T21:16:54.873611-00:00	  187 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:54.873883-00:00	  187 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-11T21:16:54.874272-00:00	  187 Close stmt	
+2021-12-11T21:16:54.874631-00:00	  187 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:54.874880-00:00	  187 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-11T21:16:54.875222-00:00	  187 Close stmt	
+2021-12-11T21:16:54.875581-00:00	  187 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:54.882886-00:00	  187 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-11T21:16:54.883119-00:00	  187 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-11T21:16:54.883615-00:00	  187 Close stmt	
+2021-12-11T21:16:54.900427-00:00	  187 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:54.900703-00:00	  187 Execute	select * from `quizy` where `prefecture` = 3 order by `QuestionPriority` desc
+2021-12-11T21:16:54.901205-00:00	  187 Close stmt	
+2021-12-11T21:16:54.901552-00:00	  187 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-11T21:16:54.901787-00:00	  187 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-12-11T21:16:54.902184-00:00	  187 Close stmt	
+2021-12-11T21:16:54.904202-00:00	  187 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-11T21:16:54.904699-00:00	  187 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
+2021-12-11T21:16:54.905323-00:00	  187 Close stmt	
+2021-12-11T21:16:54.943565-00:00	  187 Quit	
+2021-12-12T14:25:45.187410-00:00	  188 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:25:45.204356-00:00	  188 Query	use `laravel`
+2021-12-12T14:25:45.204774-00:00	  188 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:45.205010-00:00	  188 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:45.205441-00:00	  188 Close stmt	
+2021-12-12T14:25:45.205830-00:00	  188 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:45.206104-00:00	  188 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:45.206584-00:00	  188 Close stmt	
+2021-12-12T14:25:45.206950-00:00	  188 Prepare	select * from `users` where `email` = ? limit 1
+2021-12-12T14:25:45.217537-00:00	  188 Execute	select * from `users` where `email` = 'tomoharuyuyama@gmail.com' limit 1
+2021-12-12T14:25:45.218103-00:00	  188 Close stmt	
+2021-12-12T14:25:45.352676-00:00	  188 Quit	
+2021-12-12T14:25:46.136853-00:00	  189 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:25:46.149707-00:00	  189 Query	use `laravel`
+2021-12-12T14:25:46.150152-00:00	  189 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:46.150409-00:00	  189 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:46.150735-00:00	  189 Close stmt	
+2021-12-12T14:25:46.150989-00:00	  189 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:46.151242-00:00	  189 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:46.151593-00:00	  189 Close stmt	
+2021-12-12T14:25:46.151961-00:00	  189 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:25:46.160940-00:00	  189 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:25:46.161148-00:00	  189 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:25:46.161710-00:00	  189 Close stmt	
+2021-12-12T14:25:46.182770-00:00	  189 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:25:46.183004-00:00	  189 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:25:46.183490-00:00	  189 Close stmt	
+2021-12-12T14:25:46.216990-00:00	  189 Quit	
+2021-12-12T14:25:48.835411-00:00	  190 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:25:48.846852-00:00	  190 Query	use `laravel`
+2021-12-12T14:25:48.847306-00:00	  190 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:48.847577-00:00	  190 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:48.847945-00:00	  190 Close stmt	
+2021-12-12T14:25:48.848257-00:00	  190 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:48.848496-00:00	  190 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:48.848905-00:00	  190 Close stmt	
+2021-12-12T14:25:48.849364-00:00	  190 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:25:48.856213-00:00	  190 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:25:48.856863-00:00	  190 Close stmt	
+2021-12-12T14:25:48.896273-00:00	  190 Quit	
+2021-12-12T14:25:59.579867-00:00	  191 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:25:59.589809-00:00	  191 Query	use `laravel`
+2021-12-12T14:25:59.590317-00:00	  191 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:59.590554-00:00	  191 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:25:59.590922-00:00	  191 Close stmt	
+2021-12-12T14:25:59.591246-00:00	  191 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:59.591442-00:00	  191 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:25:59.591791-00:00	  191 Close stmt	
+2021-12-12T14:25:59.592127-00:00	  191 Prepare	insert into `QuizyPrefectures` (`name`, `updated_at`, `created_at`) values (?, ?, ?)
+2021-12-12T14:25:59.593551-00:00	  191 Execute	insert into `QuizyPrefectures` (`name`, `updated_at`, `created_at`) values ('やっぴー', '2021-12-12 14:25:59', '2021-12-12 14:25:59')
+2021-12-12T14:25:59.594921-00:00	  191 Close stmt	
+2021-12-12T14:25:59.621858-00:00	  191 Quit	
+2021-12-12T14:26:00.318625-00:00	  192 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:00.328092-00:00	  192 Query	use `laravel`
+2021-12-12T14:26:00.328593-00:00	  192 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:00.328782-00:00	  192 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:00.329100-00:00	  192 Close stmt	
+2021-12-12T14:26:00.329387-00:00	  192 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:00.329636-00:00	  192 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:00.329968-00:00	  192 Close stmt	
+2021-12-12T14:26:00.330253-00:00	  192 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:26:00.334069-00:00	  192 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:26:00.334538-00:00	  192 Close stmt	
+2021-12-12T14:26:00.371308-00:00	  192 Quit	
+2021-12-12T14:26:07.896836-00:00	  193 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:07.908779-00:00	  193 Query	use `laravel`
+2021-12-12T14:26:07.909312-00:00	  193 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:07.909638-00:00	  193 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:07.910030-00:00	  193 Close stmt	
+2021-12-12T14:26:07.910378-00:00	  193 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:07.910659-00:00	  193 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:07.911044-00:00	  193 Close stmt	
+2021-12-12T14:26:07.911410-00:00	  193 Prepare	select * from `QuizyPrefectures` where `QuizyPrefectures`.`id` = ? limit 1
+2021-12-12T14:26:07.919811-00:00	  193 Execute	select * from `QuizyPrefectures` where `QuizyPrefectures`.`id` = '4' limit 1
+2021-12-12T14:26:07.920387-00:00	  193 Close stmt	
+2021-12-12T14:26:07.931141-00:00	  193 Prepare	update `QuizyPrefectures` set `name` = ?, `QuizyPrefectures`.`updated_at` = ? where `id` = ?
+2021-12-12T14:26:07.931555-00:00	  193 Prepare	update `QuizyPrefectures` set `name` = ?, `QuizyPrefectures`.`updated_at` = ? where `id` = ?
+2021-12-12T14:26:07.931799-00:00	  193 Execute	update `QuizyPrefectures` set `name` = 'ゆやま', `QuizyPrefectures`.`updated_at` = '2021-12-12 14:26:07' where `id` = 4
+2021-12-12T14:26:07.933326-00:00	  193 Close stmt	
+2021-12-12T14:26:07.956201-00:00	  193 Quit	
+2021-12-12T14:26:08.775377-00:00	  194 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:08.786056-00:00	  194 Query	use `laravel`
+2021-12-12T14:26:08.786563-00:00	  194 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:08.786834-00:00	  194 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:08.787237-00:00	  194 Close stmt	
+2021-12-12T14:26:08.787598-00:00	  194 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:08.787880-00:00	  194 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:08.788270-00:00	  194 Close stmt	
+2021-12-12T14:26:08.788673-00:00	  194 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:26:08.793482-00:00	  194 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:26:08.794070-00:00	  194 Close stmt	
+2021-12-12T14:26:08.837379-00:00	  194 Quit	
+2021-12-12T14:26:12.892942-00:00	  195 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:12.904777-00:00	  195 Query	use `laravel`
+2021-12-12T14:26:12.905271-00:00	  195 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:12.905608-00:00	  195 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:12.905974-00:00	  195 Close stmt	
+2021-12-12T14:26:12.906345-00:00	  195 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:12.906669-00:00	  195 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:12.907117-00:00	  195 Close stmt	
+2021-12-12T14:26:12.907517-00:00	  195 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-12T14:26:12.915262-00:00	  195 Execute	select * from `QuizyPrefectures` where `id` = '6' limit 1
+2021-12-12T14:26:12.915857-00:00	  195 Close stmt	
+2021-12-12T14:26:12.929746-00:00	  195 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:12.930030-00:00	  195 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 0
+2021-12-12T14:26:12.930650-00:00	  195 Close stmt	
+2021-12-12T14:26:12.935042-00:00	  195 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:12.935353-00:00	  195 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 1
+2021-12-12T14:26:12.935886-00:00	  195 Close stmt	
+2021-12-12T14:26:12.936306-00:00	  195 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:12.936678-00:00	  195 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 2
+2021-12-12T14:26:12.937240-00:00	  195 Close stmt	
+2021-12-12T14:26:12.937662-00:00	  195 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:12.937967-00:00	  195 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 3
+2021-12-12T14:26:12.938472-00:00	  195 Close stmt	
+2021-12-12T14:26:12.941745-00:00	  195 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:26:12.942104-00:00	  195 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:26:12.942605-00:00	  195 Close stmt	
+2021-12-12T14:26:12.983964-00:00	  195 Quit	
+2021-12-12T14:26:26.109978-00:00	  196 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:26.120141-00:00	  196 Query	use `laravel`
+2021-12-12T14:26:26.120683-00:00	  196 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:26.120954-00:00	  196 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:26.121400-00:00	  196 Close stmt	
+2021-12-12T14:26:26.121745-00:00	  196 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:26.121988-00:00	  196 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:26.122353-00:00	  196 Close stmt	
+2021-12-12T14:26:26.122751-00:00	  196 Prepare	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)
+2021-12-12T14:26:26.124676-00:00	  196 Execute	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values ('5', 'ごすごす', '0', '0', '2021-12-12 14:26:26', '2021-12-12 14:26:26')
+2021-12-12T14:26:26.125827-00:00	  196 Close stmt	
+2021-12-12T14:26:26.150715-00:00	  196 Quit	
+2021-12-12T14:26:26.945219-00:00	  197 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:26.957108-00:00	  197 Query	use `laravel`
+2021-12-12T14:26:26.957490-00:00	  197 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:26.957685-00:00	  197 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:26.958046-00:00	  197 Close stmt	
+2021-12-12T14:26:26.958338-00:00	  197 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:26.958557-00:00	  197 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:26.958889-00:00	  197 Close stmt	
+2021-12-12T14:26:26.959307-00:00	  197 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:26:26.965499-00:00	  197 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:26:26.966006-00:00	  197 Close stmt	
+2021-12-12T14:26:27.012707-00:00	  197 Quit	
+2021-12-12T14:26:31.108645-00:00	  198 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:31.120882-00:00	  198 Query	use `laravel`
+2021-12-12T14:26:31.121471-00:00	  198 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:31.121787-00:00	  198 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:31.122306-00:00	  198 Close stmt	
+2021-12-12T14:26:31.122645-00:00	  198 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:31.122893-00:00	  198 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:31.123297-00:00	  198 Close stmt	
+2021-12-12T14:26:31.123662-00:00	  198 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-12T14:26:31.131013-00:00	  198 Execute	select * from `QuizyPrefectures` where `id` = '6' limit 1
+2021-12-12T14:26:31.131670-00:00	  198 Close stmt	
+2021-12-12T14:26:31.143591-00:00	  198 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:31.143944-00:00	  198 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 0
+2021-12-12T14:26:31.144566-00:00	  198 Close stmt	
+2021-12-12T14:26:31.149425-00:00	  198 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:31.149817-00:00	  198 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 1
+2021-12-12T14:26:31.150481-00:00	  198 Close stmt	
+2021-12-12T14:26:31.150916-00:00	  198 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:31.151287-00:00	  198 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 2
+2021-12-12T14:26:31.152005-00:00	  198 Close stmt	
+2021-12-12T14:26:31.152426-00:00	  198 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:31.152737-00:00	  198 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 3
+2021-12-12T14:26:31.153269-00:00	  198 Close stmt	
+2021-12-12T14:26:31.155629-00:00	  198 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:26:31.155948-00:00	  198 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:26:31.156486-00:00	  198 Close stmt	
+2021-12-12T14:26:31.193374-00:00	  198 Quit	
+2021-12-12T14:26:40.853411-00:00	  199 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:40.863046-00:00	  199 Query	use `laravel`
+2021-12-12T14:26:40.863589-00:00	  199 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:40.863856-00:00	  199 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:40.864286-00:00	  199 Close stmt	
+2021-12-12T14:26:40.864616-00:00	  199 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:40.864884-00:00	  199 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:40.865291-00:00	  199 Close stmt	
+2021-12-12T14:26:40.865688-00:00	  199 Prepare	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)
+2021-12-12T14:26:40.867666-00:00	  199 Execute	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values ('5', 'ハリウッド', '0', '0', '2021-12-12 14:26:40', '2021-12-12 14:26:40')
+2021-12-12T14:26:40.868819-00:00	  199 Close stmt	
+2021-12-12T14:26:40.894294-00:00	  199 Quit	
+2021-12-12T14:26:41.508654-00:00	  200 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:41.516466-00:00	  200 Query	use `laravel`
+2021-12-12T14:26:41.516958-00:00	  200 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:41.517194-00:00	  200 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:41.517524-00:00	  200 Close stmt	
+2021-12-12T14:26:41.517777-00:00	  200 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:41.518101-00:00	  200 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:41.518568-00:00	  200 Close stmt	
+2021-12-12T14:26:41.518908-00:00	  200 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:26:41.522669-00:00	  200 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:26:41.523304-00:00	  200 Close stmt	
+2021-12-12T14:26:41.553273-00:00	  200 Quit	
+2021-12-12T14:26:44.991871-00:00	  201 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:45.000969-00:00	  201 Query	use `laravel`
+2021-12-12T14:26:45.001492-00:00	  201 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:45.001819-00:00	  201 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:45.002366-00:00	  201 Close stmt	
+2021-12-12T14:26:45.002820-00:00	  201 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:45.003174-00:00	  201 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:45.003603-00:00	  201 Close stmt	
+2021-12-12T14:26:45.003985-00:00	  201 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-12T14:26:45.010569-00:00	  201 Execute	select * from `QuizyPrefectures` where `id` = '6' limit 1
+2021-12-12T14:26:45.011072-00:00	  201 Close stmt	
+2021-12-12T14:26:45.021655-00:00	  201 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:45.021961-00:00	  201 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 0
+2021-12-12T14:26:45.022559-00:00	  201 Close stmt	
+2021-12-12T14:26:45.026773-00:00	  201 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:45.027071-00:00	  201 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 1
+2021-12-12T14:26:45.027616-00:00	  201 Close stmt	
+2021-12-12T14:26:45.028006-00:00	  201 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:45.028324-00:00	  201 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 2
+2021-12-12T14:26:45.028842-00:00	  201 Close stmt	
+2021-12-12T14:26:45.029348-00:00	  201 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:26:45.029652-00:00	  201 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 3
+2021-12-12T14:26:45.030122-00:00	  201 Close stmt	
+2021-12-12T14:26:45.032239-00:00	  201 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:26:45.032490-00:00	  201 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:26:45.032939-00:00	  201 Close stmt	
+2021-12-12T14:26:45.066526-00:00	  201 Quit	
+2021-12-12T14:26:55.417074-00:00	  202 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:55.425357-00:00	  202 Query	use `laravel`
+2021-12-12T14:26:55.425946-00:00	  202 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:55.426233-00:00	  202 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:55.426677-00:00	  202 Close stmt	
+2021-12-12T14:26:55.427149-00:00	  202 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:55.427445-00:00	  202 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:55.427890-00:00	  202 Close stmt	
+2021-12-12T14:26:55.428266-00:00	  202 Prepare	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)
+2021-12-12T14:26:55.429447-00:00	  202 Execute	insert into `quizy` (`prefecture`, `name`, `question_id`, `valid`, `updated_at`, `created_at`) values ('5', 'ザコシ', '0', '1', '2021-12-12 14:26:55', '2021-12-12 14:26:55')
+2021-12-12T14:26:55.430971-00:00	  202 Close stmt	
+2021-12-12T14:26:55.451129-00:00	  202 Quit	
+2021-12-12T14:26:56.128827-00:00	  203 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:56.139027-00:00	  203 Query	use `laravel`
+2021-12-12T14:26:56.139516-00:00	  203 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:56.139834-00:00	  203 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:56.140295-00:00	  203 Close stmt	
+2021-12-12T14:26:56.140597-00:00	  203 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:56.140844-00:00	  203 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:56.141265-00:00	  203 Close stmt	
+2021-12-12T14:26:56.141625-00:00	  203 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:26:56.145327-00:00	  203 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:26:56.145928-00:00	  203 Close stmt	
+2021-12-12T14:26:56.184647-00:00	  203 Quit	
+2021-12-12T14:26:59.771633-00:00	  204 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:26:59.783388-00:00	  204 Query	use `laravel`
+2021-12-12T14:26:59.783884-00:00	  204 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:59.784122-00:00	  204 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:26:59.784507-00:00	  204 Close stmt	
+2021-12-12T14:26:59.784859-00:00	  204 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:59.785114-00:00	  204 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:26:59.785519-00:00	  204 Close stmt	
+2021-12-12T14:26:59.786005-00:00	  204 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:26:59.794099-00:00	  204 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:26:59.794807-00:00	  204 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:26:59.795351-00:00	  204 Close stmt	
+2021-12-12T14:26:59.813210-00:00	  204 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:26:59.813467-00:00	  204 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:26:59.814046-00:00	  204 Close stmt	
+2021-12-12T14:26:59.852641-00:00	  204 Quit	
+2021-12-12T14:27:01.526312-00:00	  205 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:01.538383-00:00	  205 Query	use `laravel`
+2021-12-12T14:27:01.538934-00:00	  205 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:01.539234-00:00	  205 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:01.539658-00:00	  205 Close stmt	
+2021-12-12T14:27:01.540102-00:00	  205 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:01.540365-00:00	  205 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:01.540876-00:00	  205 Close stmt	
+2021-12-12T14:27:01.541356-00:00	  205 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:01.549365-00:00	  205 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:01.549686-00:00	  205 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:27:01.550293-00:00	  205 Close stmt	
+2021-12-12T14:27:01.569177-00:00	  205 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:01.569553-00:00	  205 Execute	select * from `quizy` where `prefecture` = 5 order by `QuestionPriority` desc
+2021-12-12T14:27:01.570178-00:00	  205 Close stmt	
+2021-12-12T14:27:01.570631-00:00	  205 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:27:01.571103-00:00	  205 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:27:01.571753-00:00	  205 Close stmt	
+2021-12-12T14:27:01.573911-00:00	  205 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:01.574283-00:00	  205 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '6' order by `QuestionPriority` desc
+2021-12-12T14:27:01.574932-00:00	  205 Close stmt	
+2021-12-12T14:27:01.740720-00:00	  205 Prepare	SELECT 1
+2021-12-12T14:27:01.741104-00:00	  205 Execute	SELECT 1
+2021-12-12T14:27:01.741672-00:00	  205 Close stmt	
+2021-12-12T14:27:01.781562-00:00	  205 Prepare	SELECT 1
+2021-12-12T14:27:01.781947-00:00	  205 Execute	SELECT 1
+2021-12-12T14:27:01.782482-00:00	  205 Close stmt	
+2021-12-12T14:27:01.999561-00:00	  205 Quit	
+2021-12-12T14:27:07.190392-00:00	  206 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:07.199575-00:00	  206 Query	use `laravel`
+2021-12-12T14:27:07.200443-00:00	  206 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:07.200672-00:00	  206 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:07.201066-00:00	  206 Close stmt	
+2021-12-12T14:27:07.201395-00:00	  206 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:07.201628-00:00	  206 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:07.201997-00:00	  206 Close stmt	
+2021-12-12T14:27:07.202299-00:00	  206 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:27:07.206698-00:00	  206 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:27:07.207242-00:00	  206 Close stmt	
+2021-12-12T14:27:07.243152-00:00	  206 Quit	
+2021-12-12T14:27:10.945822-00:00	  207 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:10.957248-00:00	  207 Query	use `laravel`
+2021-12-12T14:27:10.957839-00:00	  207 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:10.958134-00:00	  207 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:10.958579-00:00	  207 Close stmt	
+2021-12-12T14:27:10.958921-00:00	  207 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:10.959205-00:00	  207 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:10.959755-00:00	  207 Close stmt	
+2021-12-12T14:27:10.960185-00:00	  207 Prepare	select * from `QuizyPrefectures` where `id` = ? limit 1
+2021-12-12T14:27:10.967882-00:00	  207 Execute	select * from `QuizyPrefectures` where `id` = '6' limit 1
+2021-12-12T14:27:10.968483-00:00	  207 Close stmt	
+2021-12-12T14:27:10.981141-00:00	  207 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:27:10.981501-00:00	  207 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 0
+2021-12-12T14:27:10.982161-00:00	  207 Close stmt	
+2021-12-12T14:27:10.985884-00:00	  207 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:27:10.986162-00:00	  207 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 1
+2021-12-12T14:27:10.986684-00:00	  207 Close stmt	
+2021-12-12T14:27:10.987071-00:00	  207 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:27:10.987353-00:00	  207 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 2
+2021-12-12T14:27:10.987927-00:00	  207 Close stmt	
+2021-12-12T14:27:10.988334-00:00	  207 Prepare	select * from `quizy` where `prefecture` = ? and `question_id` = ?
+2021-12-12T14:27:10.988647-00:00	  207 Execute	select * from `quizy` where `prefecture` = 5 and `question_id` = 3
+2021-12-12T14:27:10.989209-00:00	  207 Close stmt	
+2021-12-12T14:27:10.991118-00:00	  207 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:27:10.991540-00:00	  207 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:27:10.992333-00:00	  207 Close stmt	
+2021-12-12T14:27:11.038078-00:00	  207 Quit	
+2021-12-12T14:27:12.765538-00:00	  208 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:12.775132-00:00	  208 Query	use `laravel`
+2021-12-12T14:27:12.775586-00:00	  208 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:12.775874-00:00	  208 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:12.776317-00:00	  208 Close stmt	
+2021-12-12T14:27:12.776665-00:00	  208 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:12.776973-00:00	  208 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:12.777425-00:00	  208 Close stmt	
+2021-12-12T14:27:12.777880-00:00	  208 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:12.783921-00:00	  208 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:12.784182-00:00	  208 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:27:12.784790-00:00	  208 Close stmt	
+2021-12-12T14:27:12.910392-00:00	  208 Prepare	SELECT 1
+2021-12-12T14:27:12.910901-00:00	  208 Execute	SELECT 1
+2021-12-12T14:27:12.911342-00:00	  208 Close stmt	
+2021-12-12T14:27:12.948404-00:00	  208 Prepare	SELECT 1
+2021-12-12T14:27:12.948812-00:00	  208 Execute	SELECT 1
+2021-12-12T14:27:12.949376-00:00	  208 Close stmt	
+2021-12-12T14:27:13.122168-00:00	  208 Quit	
+2021-12-12T14:27:33.720053-00:00	  209 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:33.731529-00:00	  209 Query	use `laravel`
+2021-12-12T14:27:33.732120-00:00	  209 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:33.732411-00:00	  209 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:33.732948-00:00	  209 Close stmt	
+2021-12-12T14:27:33.733808-00:00	  209 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:33.734165-00:00	  209 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:33.734637-00:00	  209 Close stmt	
+2021-12-12T14:27:33.735092-00:00	  209 Prepare	select exists(select * from `QuizyQuaestionTable` where (`prefecture_id` = ? and `question_id` = ?)) as `exists`
+2021-12-12T14:27:33.742655-00:00	  209 Execute	select exists(select * from `QuizyQuaestionTable` where (`prefecture_id` = '6' and `question_id` = '0')) as `exists`
+2021-12-12T14:27:33.743308-00:00	  209 Close stmt	
+2021-12-12T14:27:33.747238-00:00	  209 Prepare	insert into `QuizyQuaestionTable` (`prefecture_id`, `question_id`, `imgpath`) values (?, ?, ?)
+2021-12-12T14:27:33.747657-00:00	  209 Execute	insert into `QuizyQuaestionTable` (`prefecture_id`, `question_id`, `imgpath`) values ('6', '0', 'contact-step2.jpg')
+2021-12-12T14:27:33.749683-00:00	  209 Close stmt	
+2021-12-12T14:27:33.773822-00:00	  209 Quit	
+2021-12-12T14:27:34.488569-00:00	  210 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:34.498773-00:00	  210 Query	use `laravel`
+2021-12-12T14:27:34.499337-00:00	  210 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:34.499705-00:00	  210 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:34.500110-00:00	  210 Close stmt	
+2021-12-12T14:27:34.500452-00:00	  210 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:34.500730-00:00	  210 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:34.501127-00:00	  210 Close stmt	
+2021-12-12T14:27:34.501478-00:00	  210 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:27:34.505955-00:00	  210 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:27:34.506592-00:00	  210 Close stmt	
+2021-12-12T14:27:34.545769-00:00	  210 Quit	
+2021-12-12T14:27:40.885201-00:00	  211 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:40.896849-00:00	  211 Query	use `laravel`
+2021-12-12T14:27:40.897691-00:00	  211 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:40.898011-00:00	  211 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:40.898432-00:00	  211 Close stmt	
+2021-12-12T14:27:40.898769-00:00	  211 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:40.899142-00:00	  211 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:40.899583-00:00	  211 Close stmt	
+2021-12-12T14:27:40.899971-00:00	  211 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:40.907874-00:00	  211 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:40.908166-00:00	  211 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:27:40.908812-00:00	  211 Close stmt	
+2021-12-12T14:27:40.926163-00:00	  211 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:27:40.926570-00:00	  211 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:27:40.927134-00:00	  211 Close stmt	
+2021-12-12T14:27:40.972341-00:00	  211 Quit	
+2021-12-12T14:27:43.670992-00:00	  212 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:43.683320-00:00	  212 Query	use `laravel`
+2021-12-12T14:27:43.683928-00:00	  212 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:43.684218-00:00	  212 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:43.684703-00:00	  212 Close stmt	
+2021-12-12T14:27:43.685101-00:00	  212 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:43.685393-00:00	  212 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:43.685887-00:00	  212 Close stmt	
+2021-12-12T14:27:43.686356-00:00	  212 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:43.694505-00:00	  212 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:43.694772-00:00	  212 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:27:43.695478-00:00	  212 Close stmt	
+2021-12-12T14:27:43.715334-00:00	  212 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:43.715684-00:00	  212 Execute	select * from `quizy` where `prefecture` = 5 order by `QuestionPriority` desc
+2021-12-12T14:27:43.716463-00:00	  212 Close stmt	
+2021-12-12T14:27:43.716872-00:00	  212 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:27:43.717175-00:00	  212 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:27:43.717719-00:00	  212 Close stmt	
+2021-12-12T14:27:43.719806-00:00	  212 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:43.720141-00:00	  212 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '6' order by `QuestionPriority` desc
+2021-12-12T14:27:43.720869-00:00	  212 Close stmt	
+2021-12-12T14:27:43.771635-00:00	  212 Quit	
+2021-12-12T14:27:55.584626-00:00	  213 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:55.594973-00:00	  213 Query	use `laravel`
+2021-12-12T14:27:55.595439-00:00	  213 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:55.595674-00:00	  213 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:55.596012-00:00	  213 Close stmt	
+2021-12-12T14:27:55.596306-00:00	  213 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:55.596541-00:00	  213 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:55.596879-00:00	  213 Close stmt	
+2021-12-12T14:27:55.597211-00:00	  213 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:55.605152-00:00	  213 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:55.605349-00:00	  213 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:27:55.606012-00:00	  213 Close stmt	
+2021-12-12T14:27:55.623642-00:00	  213 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:55.623999-00:00	  213 Execute	select * from `quizy` where `prefecture` = 4 order by `QuestionPriority` desc
+2021-12-12T14:27:55.624662-00:00	  213 Close stmt	
+2021-12-12T14:27:55.625046-00:00	  213 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:27:55.625415-00:00	  213 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 4
+2021-12-12T14:27:55.626027-00:00	  213 Close stmt	
+2021-12-12T14:27:55.628433-00:00	  213 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:55.628787-00:00	  213 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '5' order by `QuestionPriority` desc
+2021-12-12T14:27:55.629310-00:00	  213 Close stmt	
+2021-12-12T14:27:55.740443-00:00	  213 Prepare	SELECT 1
+2021-12-12T14:27:55.740836-00:00	  213 Execute	SELECT 1
+2021-12-12T14:27:55.741364-00:00	  213 Close stmt	
+2021-12-12T14:27:55.776992-00:00	  213 Prepare	SELECT 1
+2021-12-12T14:27:55.781417-00:00	  213 Execute	SELECT 1
+2021-12-12T14:27:55.782176-00:00	  213 Close stmt	
+2021-12-12T14:27:55.963762-00:00	  213 Quit	
+2021-12-12T14:27:59.855467-00:00	  214 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:27:59.870964-00:00	  214 Query	use `laravel`
+2021-12-12T14:27:59.871607-00:00	  214 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:59.871879-00:00	  214 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:27:59.872252-00:00	  214 Close stmt	
+2021-12-12T14:27:59.872608-00:00	  214 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:59.872898-00:00	  214 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:27:59.873300-00:00	  214 Close stmt	
+2021-12-12T14:27:59.873685-00:00	  214 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:59.883303-00:00	  214 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:27:59.883617-00:00	  214 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:27:59.884194-00:00	  214 Close stmt	
+2021-12-12T14:27:59.907012-00:00	  214 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:59.907252-00:00	  214 Execute	select * from `quizy` where `prefecture` = 3 order by `QuestionPriority` desc
+2021-12-12T14:27:59.907804-00:00	  214 Close stmt	
+2021-12-12T14:27:59.908129-00:00	  214 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:27:59.908361-00:00	  214 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-12-12T14:27:59.908808-00:00	  214 Close stmt	
+2021-12-12T14:27:59.910701-00:00	  214 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-12T14:27:59.910939-00:00	  214 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
+2021-12-12T14:27:59.911395-00:00	  214 Close stmt	
+2021-12-12T14:27:59.953448-00:00	  214 Quit	
+2021-12-12T14:28:07.093022-00:00	  215 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:07.108509-00:00	  215 Query	use `laravel`
+2021-12-12T14:28:07.109013-00:00	  215 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:07.109295-00:00	  215 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:07.109835-00:00	  215 Close stmt	
+2021-12-12T14:28:07.110230-00:00	  215 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:07.110508-00:00	  215 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:07.110948-00:00	  215 Close stmt	
+2021-12-12T14:28:07.111367-00:00	  215 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:28:07.117888-00:00	  215 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:28:07.118402-00:00	  215 Close stmt	
+2021-12-12T14:28:07.164402-00:00	  215 Quit	
+2021-12-12T14:28:12.308520-00:00	  216 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:12.319753-00:00	  216 Query	use `laravel`
+2021-12-12T14:28:12.320228-00:00	  216 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:12.320716-00:00	  216 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:12.321196-00:00	  216 Close stmt	
+2021-12-12T14:28:12.321578-00:00	  216 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:12.321853-00:00	  216 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:12.322297-00:00	  216 Close stmt	
+2021-12-12T14:28:12.322698-00:00	  216 Prepare	select * from `QuizyPrefectures` where `QuizyPrefectures`.`id` = ? limit 1
+2021-12-12T14:28:12.331424-00:00	  216 Execute	select * from `QuizyPrefectures` where `QuizyPrefectures`.`id` = '5' limit 1
+2021-12-12T14:28:12.332133-00:00	  216 Close stmt	
+2021-12-12T14:28:12.342376-00:00	  216 Prepare	delete from `QuizyPrefectures` where `id` = ?
+2021-12-12T14:28:12.342735-00:00	  216 Prepare	delete from `QuizyPrefectures` where `id` = ?
+2021-12-12T14:28:12.342996-00:00	  216 Execute	delete from `QuizyPrefectures` where `id` = 5
+2021-12-12T14:28:12.344600-00:00	  216 Close stmt	
+2021-12-12T14:28:12.367088-00:00	  216 Quit	
+2021-12-12T14:28:13.214646-00:00	  217 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:13.226185-00:00	  217 Query	use `laravel`
+2021-12-12T14:28:13.227020-00:00	  217 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:13.227464-00:00	  217 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:13.228030-00:00	  217 Close stmt	
+2021-12-12T14:28:13.228394-00:00	  217 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:13.228768-00:00	  217 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:13.229545-00:00	  217 Close stmt	
+2021-12-12T14:28:13.230090-00:00	  217 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:28:13.237196-00:00	  217 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:28:13.237948-00:00	  217 Close stmt	
+2021-12-12T14:28:13.285411-00:00	  217 Quit	
+2021-12-12T14:28:16.904900-00:00	  218 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:16.912988-00:00	  218 Query	use `laravel`
+2021-12-12T14:28:16.913590-00:00	  218 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:16.913897-00:00	  218 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:16.914298-00:00	  218 Close stmt	
+2021-12-12T14:28:16.914684-00:00	  218 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:16.914975-00:00	  218 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:16.915350-00:00	  218 Close stmt	
+2021-12-12T14:28:16.915763-00:00	  218 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:16.920072-00:00	  218 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:16.920316-00:00	  218 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:28:16.920906-00:00	  218 Close stmt	
+2021-12-12T14:28:16.933328-00:00	  218 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:28:16.933649-00:00	  218 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:28:16.934306-00:00	  218 Close stmt	
+2021-12-12T14:28:16.960443-00:00	  218 Quit	
+2021-12-12T14:28:19.141256-00:00	  219 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:19.151970-00:00	  219 Query	use `laravel`
+2021-12-12T14:28:19.152553-00:00	  219 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:19.152957-00:00	  219 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:19.153451-00:00	  219 Close stmt	
+2021-12-12T14:28:19.154136-00:00	  219 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:19.154477-00:00	  219 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:19.154895-00:00	  219 Close stmt	
+2021-12-12T14:28:19.155313-00:00	  219 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:19.162870-00:00	  219 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:19.163144-00:00	  219 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:28:19.163758-00:00	  219 Close stmt	
+2021-12-12T14:28:19.179590-00:00	  219 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-12T14:28:19.179877-00:00	  219 Execute	select * from `quizy` where `prefecture` = 3 order by `QuestionPriority` desc
+2021-12-12T14:28:19.180491-00:00	  219 Close stmt	
+2021-12-12T14:28:19.180885-00:00	  219 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:28:19.181194-00:00	  219 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 3
+2021-12-12T14:28:19.181737-00:00	  219 Close stmt	
+2021-12-12T14:28:19.183521-00:00	  219 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-12T14:28:19.183805-00:00	  219 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '4' order by `QuestionPriority` desc
+2021-12-12T14:28:19.184329-00:00	  219 Close stmt	
+2021-12-12T14:28:19.220842-00:00	  219 Quit	
+2021-12-12T14:28:23.511693-00:00	  220 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:23.522658-00:00	  220 Query	use `laravel`
+2021-12-12T14:28:23.523204-00:00	  220 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:23.523517-00:00	  220 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:23.523929-00:00	  220 Close stmt	
+2021-12-12T14:28:23.524255-00:00	  220 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:23.524548-00:00	  220 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:23.525030-00:00	  220 Close stmt	
+2021-12-12T14:28:23.525413-00:00	  220 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:23.532897-00:00	  220 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:23.533232-00:00	  220 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:28:23.533859-00:00	  220 Close stmt	
+2021-12-12T14:28:23.549773-00:00	  220 Prepare	select * from `quizy` where `prefecture` = ? order by `QuestionPriority` desc
+2021-12-12T14:28:23.550069-00:00	  220 Execute	select * from `quizy` where `prefecture` = 5 order by `QuestionPriority` desc
+2021-12-12T14:28:23.550649-00:00	  220 Close stmt	
+2021-12-12T14:28:23.551215-00:00	  220 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ?
+2021-12-12T14:28:23.551571-00:00	  220 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = 5
+2021-12-12T14:28:23.552121-00:00	  220 Close stmt	
+2021-12-12T14:28:23.554030-00:00	  220 Prepare	select * from `QuizyQuaestionTable` where `prefecture_id` = ? order by `QuestionPriority` desc
+2021-12-12T14:28:23.554326-00:00	  220 Execute	select * from `QuizyQuaestionTable` where `prefecture_id` = '6' order by `QuestionPriority` desc
+2021-12-12T14:28:23.554924-00:00	  220 Close stmt	
+2021-12-12T14:28:23.591748-00:00	  220 Quit	
+2021-12-12T14:28:38.036070-00:00	  221 Connect	root@172.19.0.4 on laravel using TCP/IP
+2021-12-12T14:28:38.044083-00:00	  221 Query	use `laravel`
+2021-12-12T14:28:38.044656-00:00	  221 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:38.044967-00:00	  221 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2021-12-12T14:28:38.045314-00:00	  221 Close stmt	
+2021-12-12T14:28:38.045593-00:00	  221 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:38.045888-00:00	  221 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2021-12-12T14:28:38.046220-00:00	  221 Close stmt	
+2021-12-12T14:28:38.046533-00:00	  221 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:38.050165-00:00	  221 Prepare	select * from `users` where `id` = ? limit 1
+2021-12-12T14:28:38.050430-00:00	  221 Execute	select * from `users` where `id` = 1 limit 1
+2021-12-12T14:28:38.050953-00:00	  221 Close stmt	
+2021-12-12T14:28:38.062831-00:00	  221 Prepare	select * from `QuizyPrefectures`
+2021-12-12T14:28:38.063070-00:00	  221 Execute	select * from `QuizyPrefectures`
+2021-12-12T14:28:38.063555-00:00	  221 Close stmt	
+2021-12-12T14:28:38.088611-00:00	  221 Quit	

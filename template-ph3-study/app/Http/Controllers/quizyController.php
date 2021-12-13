@@ -168,8 +168,8 @@ class quizyController extends Controller
             // 選択肢セットの末尾に回答を追加
             $question_list[0][$index][] = array_search($answer, $question_list[0][$index]);
             // 最末尾に画像パスを追加
+            // dd($index);
             $question_list[0][$index][] = $img_path[$index]->imgpath;
-            // dd($question_list[0][$index][4]);
         }
 
         $data = "minnna.png";
