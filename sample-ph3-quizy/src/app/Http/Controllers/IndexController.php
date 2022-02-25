@@ -11,4 +11,9 @@ class IndexController extends Controller
         $big_questions = BigQuestion::all();
         return view('index', compact('big_questions'));
     }
+    public function code()
+    {
+        $big_questions = BigQuestion::all();
+        return view('code', compact('big_questions'));
+    }
 }
