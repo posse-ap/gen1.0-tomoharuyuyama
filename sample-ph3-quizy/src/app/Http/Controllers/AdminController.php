@@ -45,24 +45,28 @@ class AdminController extends Controller
         return view('admin.edit.id', compact('question'));
     }
 
-    public function edit(Request $request, $id)
-    {
-        $choices = Question::findOrFail($id)->choices;
-        foreach ($choices as $index => $choice) {
+    public function edit(Request $request, $id) {
+        if (isset(Question::find($id)->choices)) {
+            $choices = Question::find($id)->choices;
+        } else {
+            abort(404);
+        }
+        $request->validate([
+            'name0' => 'required|string|max:20',
+            'name1' => 'required|string|max:20',
+            'name2' => 'required|string|max:20',
+            'valid' => 'required|integer|max:3|min:0',
+        ]);
 
-            $validated = $choice->name = $request->validate([
-                'name0' => 'required|string|max:20',
-                'name1' => 'required|string|max:20',
-                'name2' => 'required|string|max:20',
-                'valid' => 'required',
-            ]);
-            $choice->name = $request->{'name' . $index};
+        foreach ($choices as $index => $choice) {
+            $choice->name = $request->{'name'.$index};
+
             if ($index === intval($request->valid)) {
                 $choice->valid = true;
             } else {
                 $choice->valid = false;
             }
-            $choice->fill($validated)->save();
+            $choice->save();
         }
         return redirect('/admin');
     }
