@@ -9,4 +9,4 @@ jobs:
           fetch-depth: 0
 
       - name: ハローワールド
-        run: echo "Hello world!"
+        run: echo "Hello world"
