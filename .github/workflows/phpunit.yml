@@ -16,5 +16,5 @@ jobs:
             sleep 1
           done
           cp src/.env.example src/.env
-          docker exec -T app composer install
-          docker exec -T app php artisan key:generate
+          docker-compose exec -T app composer install
+          docker-compose exec -T app php artisan key:generate
