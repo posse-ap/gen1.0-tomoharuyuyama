@@ -64,7 +64,7 @@ class TopController extends Controller
         $validatedData = $request->validate([
             'learned_date' => 'required',
         ]);
-        // dd($request);
+        dd($request);
         $post = new Post();
         $post->learned_date = $request->learned_date;
         $post->learning_content_id = "3";
