@@ -174,7 +174,7 @@
                                             <p class="modal_top_letf_text">学習日</p>
                                             <div class="study_day_input bg-light original_rounded_lg_modal">
                                                 <!-- <p class="study_day_input original_rounded_lg">2020年10月10日</p> -->
-                                                <input class="original_rounded_lg" type="date">
+                                                <input class="original_rounded_lg" type="date" name="learned_date">
                                             </div>
                                         </div>
                                         <div>
@@ -194,9 +194,12 @@
                                         <div class="mt_15px mb_5px">
                                             <span class="modal_top_letf_text">学習言語（複数選択可）</span>
                                             <div class="study_contens_set mt_5px">
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    HTML</p>
+                                                <label for="name1">
+                                                    <input type="checkbox" name="html" value="4" id="name1">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>HTML</span>
+                                                    </p>
+                                                </label>
                                                 <p
                                                     class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                     CSS</p>

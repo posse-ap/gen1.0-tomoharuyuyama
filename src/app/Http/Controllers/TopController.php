@@ -60,10 +60,13 @@ class TopController extends Controller
         return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month'));
     }
 
-    public function post(){
-        // dd("へろ!");
+    public function post(Request $request){
+        $validatedData = $request->validate([
+            'learned_date' => 'required',
+        ]);
+        // dd($request);
         $post = new Post();
-        $post->learned_date = "2022-03-16";
+        $post->learned_date = $request->learned_date;
         $post->learning_content_id = "3";
         $post->learning_hour = "10.00";
         $post->save();

@@ -333,6 +333,29 @@ textarea {
   left: 10px;
   top: 17px;
 }
+label .check {
+  position: relative;
+  display: block;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"] + p {
+  display: block;
+  color: #333333;
+}
+
+input[type="checkbox"]:checked + p {
+  background-color: #0F70BD;
+  color: white;
+}
+
+input[type="checkbox"]:checked + .check:before {
+  background-color: #0F70BD;
+}
 
 .checkedmark002 {
   padding-left: 24px;
@@ -536,6 +559,9 @@ textarea {
   top: -47px;
 }
 
+#name1 {
+
+}
 
 
 /* スマホ版用〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
