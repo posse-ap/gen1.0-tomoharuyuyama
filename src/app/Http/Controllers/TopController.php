@@ -63,13 +63,16 @@ class TopController extends Controller
     public function post(Request $request){
         $validatedData = $request->validate([
             'learned_date' => 'required',
+            'langs' => 'required',
         ]);
-        dd($request);
-        $post = new Post();
-        $post->learned_date = $request->learned_date;
-        $post->learning_content_id = "3";
-        $post->learning_hour = "10.00";
-        $post->save();
+        // dd((float)($request->learn_time / count($request->langs)));
+        foreach ($request->langs as $index => $lang) {
+            $post = new Post();
+            $post->learned_date = $request->learned_date;
+            $post->learning_content_id = $lang;
+            $post->learning_hour = (float)($request->learn_time / count($request->langs));
+            $post->save();
+        }
         dd("OK");
     }
 }
