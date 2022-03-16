@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Post;
+use App\User;
 
 class TopController extends Controller
 {
@@ -58,6 +59,24 @@ class TopController extends Controller
         // dd($studyContents_month);
 
         return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month'));
+    }
+    
+    public function admin(Request $request)
+    {
+        $users = User::all();
+        return view('admin', compact('users'));
+    }
+    
+    public function deleteAccount(Request $request, $id)
+    {
+        $user = new User;
+        $user->where('id', $id)->delete();
+        return redirect('/admin');
+    }
+
+    public function makeAdmin(Request $request)
+    {
+        return redirect('/admin');
     }
 
     public function post(Request $request){

@@ -12,6 +12,9 @@
 */
 
 Auth::routes();
-Route::get('/top', 'TopController@index')->middleware('auth');
-Route::post('/post', 'TopController@post')->middleware('auth');
+Route::get('/top', 'TopController@index')->name('top');
+Route::get('/admin', 'TopController@admin')->name('admin');
+Route::post('/post', 'TopController@post')->name('post');
+Route::get('/delete/{id}', 'TopController@deleteAccount')->name('delete');
+Route::get('/make_admin/{id}', 'TopController@makeAdmin')->name('make.admin');
 Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
