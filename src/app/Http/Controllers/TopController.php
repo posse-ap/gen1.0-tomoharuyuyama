@@ -18,9 +18,9 @@ class TopController extends Controller
         // 今までの合計
         $total = DB::table('posts')->sum("learning_hour");
         // 月の合計
-        $month = DB::table('posts')->where('learned_date', 'LIKE', '2020-10-%')->sum("learning_hour");
+        $month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')->sum("learning_hour");
         // その日の合計
-        $today = DB::table('posts')->where('learned_date', 'LIKE', '2020-10-01')->sum("learning_hour");
+        $today = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-16')->sum("learning_hour");
         // dd($total);
         
         //■月の学習した日を出す(棒グラフを出力する)
@@ -29,7 +29,7 @@ class TopController extends Controller
             ['', '']
         ];
         // 月の学習をごっそり持ってくる(日毎の学習時間をまとめている.また、ソートしてる.)
-        $studyDay_month = DB::table('posts')->where('learned_date', 'LIKE', '2020-10-%')
+        $studyDay_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learned_date'))
         ->groupBy('learned_date')
         ->orderBy('learned_date')
@@ -63,16 +63,17 @@ class TopController extends Controller
     public function post(Request $request){
         $validatedData = $request->validate([
             'learned_date' => 'required',
-            'langs' => 'required',
+            'contents' => 'required',
         ]);
-        // dd((float)($request->learn_time / count($request->langs)));
-        foreach ($request->langs as $index => $lang) {
+        // dd($request->contents);
+        foreach ($request->contents as $index => $content) {
             $post = new Post();
             $post->learned_date = $request->learned_date;
-            $post->learning_content_id = $lang;
-            $post->learning_hour = (float)($request->learn_time / count($request->langs));
+            $post->learning_content_id = $content;
+            $post->learning_hour = (float)($request->learn_time / count($request->contents));
             $post->save();
         }
+
         dd("OK");
     }
 }

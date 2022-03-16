@@ -204,49 +204,49 @@
                                             <span class="modal_top_letf_text">学習言語（複数選択可）</span>
                                             <div class="study_contens_set mt_5px">
                                                 <label for="name4">
-                                                    <input type="checkbox" name="langs[]" value="4" id="name4">
+                                                    <input type="checkbox" name="contents[]" value="4" id="name4">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>HTML</span>
                                                     </p>
                                                 </label>
                                                 <label for="name5">
-                                                    <input type="checkbox" name="langs[]" value="5" id="name5">
+                                                    <input type="checkbox" name="contents[]" value="5" id="name5">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>CSS</span>
                                                     </p>
                                                 </label>
                                                 <label for="name6">
-                                                    <input type="checkbox" name="langs[]" value="6" id="name6">
+                                                    <input type="checkbox" name="contents[]" value="6" id="name6">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>JavaScript</span>
                                                     </p>
                                                 </label><br>
                                                 <label for="name7">
-                                                    <input type="checkbox" name="langs[]" value="7" id="name7">
+                                                    <input type="checkbox" name="contents[]" value="7" id="name7">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>PHP</span>
                                                     </p>
                                                 </label>
                                                 <label for="name8">
-                                                    <input type="checkbox" name="langs[]" value="8" id="name8">
+                                                    <input type="checkbox" name="contents[]" value="8" id="name8">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>Laravel</span>
                                                     </p>
                                                 </label>
                                                 <label for="name9">
-                                                    <input type="checkbox" name="langs[]" value="9" id="name9">
+                                                    <input type="checkbox" name="contents[]" value="9" id="name9">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>SQL</span>
                                                     </p>
                                                 </label>
                                                 <label for="name10">
-                                                    <input type="checkbox" name="langs[]" value="10" id="name10">
+                                                    <input type="checkbox" name="contents[]" value="10" id="name10">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>SHELL</span>
                                                     </p>
                                                 </label><br>
                                                 <label for="name11">
-                                                    <input type="checkbox" name="langs[]" value="11" id="name11">
+                                                    <input type="checkbox" name="contents[]" value="11" id="name11">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>情報システム基礎知識（その他）</span>
                                                     </p>
