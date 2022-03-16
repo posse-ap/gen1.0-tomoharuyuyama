@@ -164,99 +164,102 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body modal_position">
-                        <div class="container w-80 mr0 p_0">
-                            <div class="row w-100 center">
-                                <div class="col-md-6 p_0">
-                                    <form action="" method="post"></form>
-                                    <div class="modal_top_letf">
-                                        <p class="modal_top_letf_text">学習日</p>
-                                        <div class="study_day_input bg-light original_rounded_lg_modal">
-                                            <!-- <p class="study_day_input original_rounded_lg">2020年10月10日</p> -->
-                                            <input class="original_rounded_lg" type="date">
+                    <form action="{{ url("/post") }}" method="post">
+                        {{ csrf_field() }}
+                        <div class="modal-body modal_position">
+                            <div class="container w-80 mr0 p_0">
+                                <div class="row w-100 center">
+                                    <div class="col-md-6 p_0">
+                                        <div class="modal_top_letf">
+                                            <p class="modal_top_letf_text">学習日</p>
+                                            <div class="study_day_input bg-light original_rounded_lg_modal">
+                                                <!-- <p class="study_day_input original_rounded_lg">2020年10月10日</p> -->
+                                                <input class="original_rounded_lg" type="date">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="modal_top_letf_text">学習コンテンツ（学習コンテンツ）</span>
+                                            <div class="study_contens_set mt_5px">
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    N予備校</p>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    ドットインストール</p><br>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    POSSE課題</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt_15px mb_5px">
+                                            <span class="modal_top_letf_text">学習言語（複数選択可）</span>
+                                            <div class="study_contens_set mt_5px">
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    HTML</p>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    CSS</p>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    JavaScript</p><br>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    PHP</p>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    Laravel</p>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    SQL</p>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    SHELL</p><br>
+                                                <p
+                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                    情報システム基礎知識（その他）</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <span class="modal_top_letf_text">学習コンテンツ（学習コンテンツ）</span>
-                                        <div class="study_contens_set mt_5px">
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                N予備校</p>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                ドットインストール</p><br>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                POSSE課題</p>
+                                    <div class="col-md-6 mb-3 p_0">
+                                        <div class="modal_top_right mt_15px mb_5px">
+                                            <span class="modal_top_letf_text">学習時間</span>
+                                            <div class="bg-light original_rounded_lg_modal mt_5px h_60px">
+                                                <input class="" type="text">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt_15px mb_5px">
-                                        <span class="modal_top_letf_text">学習言語（複数選択可）</span>
-                                        <div class="study_contens_set mt_5px">
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                HTML</p>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                CSS</p>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                JavaScript</p><br>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                PHP</p>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                Laravel</p>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                SQL</p>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                SHELL</p><br>
-                                            <p
-                                                class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                情報システム基礎知識（その他）</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3 p_0">
-                                    <div class="modal_top_right mt_15px mb_5px">
-                                        <span class="modal_top_letf_text">学習時間</span>
-                                        <div class="bg-light original_rounded_lg_modal mt_5px h_60px">
-                                            <input class="" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="mt_15px mb_5px">
-                                        <span class="modal_top_letf_text">Twitter用コメント</span>
-                                        <div class="study_contens_set mt_5px">
-                                            <textarea id="tweetBox" placeholder="ここにツイート内容が出ます" name="tweet_box"
-                                                onkeyup="GetTweet(value)" cols="40" rows="8"
-                                                class="study_hour_input original_rounded_lg original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color modal_twitter_comment_input"></textarea>
-                                            <div class="twitter_post d-flex align-items-center">
-                                                <div class="twitter_post_btn d-inline-block">
-                                                    <span class="btn_twitter checkmark002"></span>
-                                                </div>
-                                                <div class="twitter_past_text d-inline-block">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 p-2">
-                                                        Twitterにシェアする</p>
+                                        <div class="mt_15px mb_5px">
+                                            <span class="modal_top_letf_text">Twitter用コメント</span>
+                                            <div class="study_contens_set mt_5px">
+                                                <textarea id="tweetBox" placeholder="ここにツイート内容が出ます" name="tweet_box"
+                                                    onkeyup="GetTweet(value)" cols="40" rows="8"
+                                                    class="study_hour_input original_rounded_lg original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color modal_twitter_comment_input"></textarea>
+                                                <div class="twitter_post d-flex align-items-center">
+                                                    <div class="twitter_post_btn d-inline-block">
+                                                        <span class="btn_twitter checkmark002"></span>
+                                                    </div>
+                                                    <div class="twitter_past_text d-inline-block">
+                                                        <p class="d-inline-block original_rounded_lg_modal mb-1 p-2">
+                                                            Twitterにシェアする</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="TWEET" class="mx-auto mt-3 btn_spiner">
-                                    <a class="button" href="https://twitter.com/intent/tweet?text="
-                                        target="_blank">
-                                        <button id="記録・投稿" type="button"
-                                            class="btn btn-lg nav_right_btn nav_right_btn_modal"
-                                            data-toggle="modal">記録・投稿</button>
-                                        <!-- <button id="記録・投稿" type="button" class="btn btn-lg nav_right_btn nav_right_btn_modal" data-toggle="modal" data-target="#exampleModal">記録・投稿</button> -->
-                                    </a>
+                                    <div id="TWEET" class="mx-auto mt-3 btn_spiner">
+                                        <a class="button"  type="button"
+                                            {{-- href="https://twitter.com/intent/tweet?text=" --}}
+                                            target="_blank">
+                                            <button id="記録・投稿"
+                                                class="btn btn-lg nav_right_btn nav_right_btn_modal"
+                                                data-toggle="modal">記録・投稿</button>
+                                            <!-- <button id="記録・投稿" type="button" class="btn btn-lg nav_right_btn nav_right_btn_modal" data-toggle="modal" data-target="#exampleModal">記録・投稿</button> -->
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                     <div class="done modal_node">
                         <div class="d-flex align-items-center justify-content-center">
                             <div>

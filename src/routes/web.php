@@ -13,5 +13,5 @@
 
 Auth::routes();
 Route::get('/top', 'TopController@index')->middleware('auth');
-
+Route::post('/post', 'TopController@post')->middleware('auth');
 Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
