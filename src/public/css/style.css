@@ -341,6 +341,7 @@ label .check {
 input[type="checkbox"] {
   position: absolute;
   opacity: 0;
+  width: 0;
 }
 
 input[type="checkbox"] + p {
