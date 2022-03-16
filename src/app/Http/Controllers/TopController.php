@@ -19,6 +19,7 @@ class TopController extends Controller
         $month = DB::table('posts')->where('learned_date', 'LIKE', '2020-10-%')->sum("learning_hour");
         // その日の合計
         $today = DB::table('posts')->where('learned_date', 'LIKE', '2020-10-01')->sum("learning_hour");
+        // dd($total);
         
         //■月の学習した日を出す(棒グラフを出力する)
         // 日を詰める配列を準備

@@ -168,6 +168,7 @@
                         <div class="container w-80 mr0 p_0">
                             <div class="row w-100 center">
                                 <div class="col-md-6 p_0">
+                                    <form action="" method="post"></form>
                                     <div class="modal_top_letf">
                                         <p class="modal_top_letf_text">学習日</p>
                                         <div class="study_day_input bg-light original_rounded_lg_modal">
