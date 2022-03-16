@@ -74,6 +74,7 @@ class TopController extends Controller
             $post->save();
         }
 
-        dd("OK");
+        // dd("OK");
+        return redirect('/top');
     }
 }
