@@ -180,47 +180,77 @@
                                         <div>
                                             <span class="modal_top_letf_text">学習コンテンツ（学習コンテンツ）</span>
                                             <div class="study_contens_set mt_5px">
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    N予備校</p>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    ドットインストール</p><br>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    POSSE課題</p>
+                                                <label for="name1">
+                                                    <input type="checkbox" name="html" value="1" id="name1">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>N予備校</span>
+                                                    </p>
+                                                </label>
+                                                <label for="name2">
+                                                    <input type="checkbox" name="html" value="2" id="name2">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>ドットインストール</span>
+                                                    </p>
+                                                </label><br>
+                                                <label for="name3">
+                                                    <input type="checkbox" name="html" value="3" id="name3">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>POSSE課題</span>
+                                                    </p>
+                                                </label>
                                             </div>
                                         </div>
                                         <div class="mt_15px mb_5px">
                                             <span class="modal_top_letf_text">学習言語（複数選択可）</span>
                                             <div class="study_contens_set mt_5px">
-                                                <label for="name1">
-                                                    <input type="checkbox" name="html" value="4" id="name1">
+                                                <label for="name4">
+                                                    <input type="checkbox" name="html" value="4" id="name4">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>HTML</span>
                                                     </p>
                                                 </label>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    CSS</p>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    JavaScript</p><br>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    PHP</p>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    Laravel</p>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    SQL</p>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    SHELL</p><br>
-                                                <p
-                                                    class="d-inline-block original_rounded_lg_modal mb-1 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                    情報システム基礎知識（その他）</p>
+                                                <label for="name5">
+                                                    <input type="checkbox" name="html" value="5" id="name5">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>CSS</span>
+                                                    </p>
+                                                </label>
+                                                <label for="name6">
+                                                    <input type="checkbox" name="html" value="6" id="name6">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>JavaScript</span>
+                                                    </p>
+                                                </label><br>
+                                                <label for="name7">
+                                                    <input type="checkbox" name="html" value="7" id="name7">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>PHP</span>
+                                                    </p>
+                                                </label>
+                                                <label for="name8">
+                                                    <input type="checkbox" name="html" value="8" id="name8">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>Laravel</span>
+                                                    </p>
+                                                </label>
+                                                <label for="name9">
+                                                    <input type="checkbox" name="html" value="9" id="name9">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>SQL</span>
+                                                    </p>
+                                                </label>
+                                                <label for="name10">
+                                                    <input type="checkbox" name="html" value="10" id="name10">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>SHELL</span>
+                                                    </p>
+                                                </label><br>
+                                                <label for="name11">
+                                                    <input type="checkbox" name="html" value="11" id="name11">
+                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                        <span>情報システム基礎知識（その他）</span>
+                                                    </p>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
