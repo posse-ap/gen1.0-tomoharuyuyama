@@ -50,7 +50,7 @@ class TopController extends Controller
         // dd($studyDays);
         
         // ■円グラフを出力する
-        $studyContents_month = DB::table('posts')->where('learned_date', 'LIKE', '2020-10-%')
+        $studyContents_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learning_content_id'))
         ->groupBy('learning_content_id')
         ->orderBy('learning_content_id')
