@@ -34,7 +34,7 @@
             <span class="navbar-nav mr-auto ">
 
             </span>
-            <button type="button" class="btn btn-lg nav_right_btn mr-3" onclick="location.href='{{ route( 'admin' )}}'"
+            <button type="button" class="btn btn-lg nav_right_btn mr-3" onclick="location.href='{{ route( 'top' )}}'"
                 data-target="#exampleModal">ユーザー画面</button>
         </div>
     </header>
