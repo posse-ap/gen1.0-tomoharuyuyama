@@ -46,7 +46,13 @@
                     <div class="info p-1 ml-3">{{ $user->name }}</div>
                     <div class="actions">
                         <button class="action p-2 m-2 border-0 bg-danger text-white rounded shadow-sm" onclick="location.href='{{ route( 'delete' , ['id' => $user->id])}}'">削除</button>
-                        <button class="action p-2 m-2 border-0 bg-primary text-white rounded shadow-sm" onclick="location.href='{{ route( 'make.admin' , ['id' => $user->id])}}'">管理者</button>
+                        <button class="action p-2 m-2 border-0 bg-primary text-white rounded shadow-sm" onclick="location.href='{{ route( 'make.admin' , ['id' => $user->id])}}'">
+                            @if ($user->is_admin == 1)
+                                管理者権限剥奪
+                                @else
+                                管理者権限付与
+                            @endif
+                        </button>
                     </div>
                 </div>
             </div>
