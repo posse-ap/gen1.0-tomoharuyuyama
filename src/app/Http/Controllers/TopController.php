@@ -74,11 +74,16 @@ class TopController extends Controller
         return redirect('/admin');
     }
 
-    public function makeAdmin(Request $request)
+    public function makeAdmin(Request $request, $id)
     {
+        $user = new User;
+        $user_data = $user->find($id);
+        $user_data->is_admin = !$user_data->is_admin;
+        $user_data->save();
+        // $user_data->update(['is_admin' => 1]);
         return redirect('/admin');
     }
-
+    
     public function post(Request $request){
         $validatedData = $request->validate([
             'learned_date' => 'required',
