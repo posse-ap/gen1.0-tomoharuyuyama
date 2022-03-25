@@ -20,4 +20,5 @@ Route::group(['middleware' => 'auth'], function () {
   Route::post('/post', 'TopController@post')->name('post');
   Route::get('/delete/{id}', 'TopController@deleteAccount')->name('delete');
   Route::get('/make_admin/{id}', 'TopController@makeAdmin')->name('make.admin');
+  Route::post('/admin/name/edit', 'TopController@editName')->name('edit.name');
 });

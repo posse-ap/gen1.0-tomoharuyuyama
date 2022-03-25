@@ -104,8 +104,17 @@ class TopController extends Controller
             $post->learning_hour = (float)($request->learn_time / count($request->contents));
             $post->save();
         }
-
+        
         // dd("OK");
         return redirect('/top');
+    }
+    
+    public function editName(Request $request){
+        $user_id = $request->user_id;
+        $user = new User();
+        $user = $user->find($user_id);
+        $user->name = $request->user_name;
+        $user->update();
+        return redirect('/admin');
     }
 }

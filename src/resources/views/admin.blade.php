@@ -43,7 +43,13 @@
         @foreach ($users as $user)
             <div class="wrapper mx-3">
                 <div class="d-flex justify-content-between m-3 bg-white align-items-center rounded shadow-sm">
-                    <div class="info p-1 ml-3">{{ $user->name }}</div>
+                    {{-- <div class="info p-1 ml-3">{{ $user->name }}</div> --}}
+                    <form action="{{ route( 'edit.name')}}" method="post">
+                        @csrf
+                        <input type="hidden" name="user_id" value="{{ $user->id }}">
+                        <input class="info p-1 ml-3" type="text" value="{{ $user->name }}" name="user_name">
+                        {{-- <input type="button" value="更新"> --}}
+                    </form>
                     <div class="actions">
                         <button class="action p-2 m-2 border-0 bg-danger text-white rounded shadow-sm" onclick="location.href='{{ route( 'delete' , ['id' => $user->id])}}'">削除</button>
                         <button class="action p-2 m-2 border-0 bg-primary text-white rounded shadow-sm" onclick="location.href='{{ route( 'make.admin' , ['id' => $user->id])}}'">
