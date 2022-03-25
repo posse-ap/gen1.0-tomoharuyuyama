@@ -95,9 +95,13 @@
                                     <div class="pieChart_box">
                                     </div>
                                     <div id="pieChart_language"></div>
-                                    <!-- <img src="./img/pie_chart_1.png" alt="" class="circle_graph"> -->
                                 </div>
-                                <div class="study_lang container mt-3 d-flex flex-wrap">
+                                @foreach ($langs as $lang)
+                                {{-- @if ($loop->index % 3 == 1) <div class="study_lang container mt-3 d-flex flex-wrap"> @endif --}}
+                                <span class="d-inline study_lang_name study_lang_right_margin"><span class="circle js_color"></span>{{ $lang->name }}</span>
+                                {{-- @if ($loop->index % 3 == 0) </div> @endif --}}
+                                @endforeach
+                                {{-- <div class="study_lang container mt-3 d-flex flex-wrap">
                                     <span class="d-inline study_lang_name study_lang_right_margin"><span
                                             class="circle js_color"></span>JavaScript</span>
                                     <span class="d-inline study_lang_name study_lang_right_margin"><span
@@ -112,15 +116,15 @@
                                             class="circle laravel_color"></span>Laravel</span>
                                     <span class="d-inline study_lang_name"><span
                                             class="circle sql_color"></span>SQL</span>
-                                </div>
-                                <div class="study_lang container pt-0 d-flex flex-wrap">
+                                </div> --}}
+                                {{-- <div class="study_lang container pt-0 d-flex flex-wrap">
                                     <span class="d-inline study_lang_name"><span
                                             class="circle shell_color"></span>SHELL</span>
                                 </div>
                                 <div class="study_lang container pt-0 d-flex flex-wrap pb-4">
                                     <span class="d-inline study_lang_name study_lang_name_ohter"><span
                                             class="circle other_color"></span>情報システム基礎知識(その他)</span>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-6 mb-3 pl-1">
@@ -130,7 +134,13 @@
                                     <div id="pieChart_contents"></div>
                                     <!-- <img src="./img/pie_chart_2.png" alt="" class="circle_graph"> -->
                                 </div>
-                                <div class="study_lang container mt-3 d-flex">
+                                @foreach ($contents as $content)
+                                    <div class="study_lang container mt-3 d-flex">
+                                        <p class="d-inline study_lang_name study_lang_right_margin flex-wrap"><span
+                                                class="circle dotinstall_color"></span>{{ $content->name }}</p>
+                                    </div>
+                                @endforeach
+                                {{-- <div class="study_lang container mt-3 d-flex">
                                     <p class="d-inline study_lang_name study_lang_right_margin flex-wrap"><span
                                             class="circle dotinstall_color"></span>ドットインストール</p>
                                 </div>
@@ -141,7 +151,7 @@
                                 <div class="study_lang container pt-0 d-flex pb-4">
                                     <p class="d-inline study_lang_name flex-wrap"><span
                                             class="circle posse_color"></span>POSSE課題</p>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

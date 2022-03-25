@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Post;
 use App\User;
+use App\Content;
+use Symfony\Component\Mime\Encoder\ContentEncoderInterface;
 
 class TopController extends Controller
 {
@@ -15,6 +17,10 @@ class TopController extends Controller
     // }
 
     public function index(Request $request){
+        $content = Content::all();
+        // dd($content->where('is_lang', '0'));
+        $langs = $content->where('is_lang', '1');
+        $contents = $content->where('is_lang', '0');
         // ID取得
         $id = auth()->id();
         // dd($id);
@@ -61,8 +67,7 @@ class TopController extends Controller
         ->orderBy('learning_content_id')
         ->get();
         // dd($studyContents_month);
-
-        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month'));
+        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs'));
     }
     
     public function admin(Request $request)
