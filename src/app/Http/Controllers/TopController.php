@@ -90,6 +90,7 @@ class TopController extends Controller
     }
     
     public function post(Request $request){
+        $user_id = auth()->id();
         $validatedData = $request->validate([
             'learned_date' => 'required',
             'contents' => 'required',
@@ -99,6 +100,7 @@ class TopController extends Controller
             $post = new Post();
             $post->learned_date = $request->learned_date;
             $post->learning_content_id = $content;
+            $post->user_id = $user_id;
             $post->learning_hour = (float)($request->learn_time / count($request->contents));
             $post->save();
         }
