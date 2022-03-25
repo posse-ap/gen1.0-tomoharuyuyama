@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
                 'name' => 'ゆやま',
                 'email' => 'test@com',
                 'is_admin' => 1,
-                'password' => 'password',
+                'password' => '$2y$10$HCa1w90KdCKb7inbIIXZBeOaDn8/8i1Z0SC1D6eIZHAuGe9rXtRLC',
             ],
         ]);
 
@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
                 'name' => 'ゆやま2',
                 'email' => 'test2@com',
                 'is_admin' => 0,
-                'password' => 'password',
+                'password' => '$2y$10$HCa1w90KdCKb7inbIIXZBeOaDn8/8i1Z0SC1D6eIZHAuGe9rXtRLC',
             ],
         ]);
     }

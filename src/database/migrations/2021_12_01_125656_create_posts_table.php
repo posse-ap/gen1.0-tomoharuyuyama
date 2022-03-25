@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
             $table->date('learned_date');
             $table->integer('learning_content_id');
             $table->double('learning_hour', 4, 2);
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

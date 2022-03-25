@@ -14,14 +14,17 @@ class TopController extends Controller
     //     $this->middleware('auth');
     // }
 
-    public function index(){
+    public function index(Request $request){
+        // ID取得
+        $id = auth()->id();
+        // dd($id);
         // ■いろんな合計を出す
         // 今までの合計
-        $total = DB::table('posts')->sum("learning_hour");
+        $total = DB::table('posts')->where('user_id', $id)->sum("learning_hour");
         // 月の合計
-        $month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')->sum("learning_hour");
+        $month = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-%')->sum("learning_hour");
         // その日の合計
-        $today = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-16')->sum("learning_hour");
+        $today = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-16')->sum("learning_hour");
         // dd($total);
         
         //■月の学習した日を出す(棒グラフを出力する)
@@ -31,6 +34,7 @@ class TopController extends Controller
         ];
         // 月の学習をごっそり持ってくる(日毎の学習時間をまとめている.また、ソートしてる.)
         $studyDay_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')
+        ->where('user_id', $id)
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learned_date'))
         ->groupBy('learned_date')
         ->orderBy('learned_date')
@@ -48,10 +52,10 @@ class TopController extends Controller
             array_push($studyDays, $tmp);
         }
         array_push($studyDays, [32, 0]);
-        // dd($studyDays);
         
         // ■円グラフを出力する
         $studyContents_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')
+        ->where('user_id', $id)
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learning_content_id'))
         ->groupBy('learning_content_id')
         ->orderBy('learning_content_id')
@@ -76,6 +80,7 @@ class TopController extends Controller
 
     public function makeAdmin(Request $request, $id)
     {
+        Auth::logout();
         $user = new User;
         $user_data = $user->find($id);
         $user_data->is_admin = !$user_data->is_admin;
