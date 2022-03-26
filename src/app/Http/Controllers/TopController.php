@@ -82,6 +82,13 @@ class TopController extends Controller
         $user->where('id', $id)->delete();
         return redirect('/admin');
     }
+    
+    public function deleteContent(Request $request, $id)
+    {
+        $content = new Content;
+        $content->where('id', $id)->delete();
+        return redirect('/admin/contents/edit');
+    }
 
     public function makeAdmin(Request $request, $id)
     {
@@ -121,5 +128,24 @@ class TopController extends Controller
         $user->name = $request->user_name;
         $user->update();
         return redirect('/admin');
+    }
+    
+    public function editContentName(Request $request){
+        $contents = new Content();
+        $content = $contents->find($request->content_id);
+        $content->name = $request->content_name;
+        $content->update();
+        return redirect('/admin/contents/edit');
+    }
+
+    public function editContent(Request $request){
+        // $user_id = $request->user_id;
+        $contents = new Content();
+        // dd($contents->get());
+        $contents = $contents->get();
+        // $user = $user->find($user_id);
+        // $user->name = $request->user_name;
+        // $user->update();
+        return view('edit_content', compact('contents'));
     }
 }
