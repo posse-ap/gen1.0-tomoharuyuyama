@@ -30,7 +30,7 @@ class TopController extends Controller
         // 月の合計
         $month = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-%')->sum("learning_hour");
         // その日の合計
-        $today = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-16')->sum("learning_hour");
+        $today = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-25')->sum("learning_hour");
         // dd($total);
         
         //■月の学習した日を出す(棒グラフを出力する)

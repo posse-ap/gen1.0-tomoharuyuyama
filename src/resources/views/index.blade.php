@@ -192,36 +192,34 @@
                                         <div>
                                             <span class="modal_top_letf_text">学習コンテンツ（学習コンテンツ）</span>
                                             <div class="study_contens_set mt_5px">
-                                                <label for="name1">
-                                                    <input type="checkbox" name="contents[]" value="1" id="name1">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>N予備校</span>
-                                                    </p>
-                                                </label>
-                                                <label for="name2">
-                                                    <input type="checkbox" name="contents[]" value="2" id="name2">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>ドットインストール</span>
-                                                    </p>
-                                                </label><br>
-                                                <label for="name3">
-                                                    <input type="checkbox" name="contents[]" value="3" id="name3">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>POSSE課題</span>
-                                                    </p>
-                                                </label>
+                                                @php
+                                                    $counter = 0;
+                                                @endphp
+                                                @foreach ($contents as $content)
+                                                    <label for="name{{ $loop->index }}">
+                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index }}" id="name{{ $loop->index }}">
+                                                        <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                            <span>{{ $content->name }}</span>
+                                                        </p>
+                                                    </label>
+                                                    @php
+                                                        $counter++;
+                                                    @endphp
+                                                @endforeach
                                             </div>
                                         </div>
                                         <div class="mt_15px mb_5px">
                                             <span class="modal_top_letf_text">学習言語（複数選択可）</span>
                                             <div class="study_contens_set mt_5px">
-                                                <label for="name4">
-                                                    <input type="checkbox" name="contents[]" value="4" id="name4">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>HTML</span>
-                                                    </p>
-                                                </label>
-                                                <label for="name5">
+                                                @foreach ($langs as $lang)
+                                                    <label for="name{{ $loop->index + $counter }}">
+                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index + $counter }}" id="name{{ $loop->index + $counter }}">
+                                                        <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
+                                                            <span>{{ $lang->name }}</span>
+                                                        </p>
+                                                    </label>
+                                                @endforeach
+                                                {{-- <label for="name5">
                                                     <input type="checkbox" name="contents[]" value="5" id="name5">
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>CSS</span>
@@ -262,7 +260,7 @@
                                                     <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                         <span>情報システム基礎知識（その他）</span>
                                                     </p>
-                                                </label>
+                                                </label> --}}
                                             </div>
                                         </div>
                                     </div>
