@@ -16,13 +16,17 @@ Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::group(['middleware' => 'auth'], function () {
   Route::get('/top', 'TopController@index')->name('top');
-  Route::get('/admin', 'TopController@admin')->name('admin');
   Route::post('/post', 'TopController@post')->name('post');
+  Route::get('/logout', 'TopController@logout')->name('logout');
+  
+});
+// 管理者以上
+Route::group(['middleware' => ['auth', 'can:is_admin']], function () {
+  Route::get('/admin', 'TopController@admin')->name('admin');
   Route::get('/delete/{id}', 'TopController@deleteAccount')->name('delete');
   Route::get('/content_delete/{id}', 'TopController@deleteContent')->name('content_delete');
   Route::get('/make_admin/{id}', 'TopController@makeAdmin')->name('make.admin');
   Route::post('/admin/name/edit', 'TopController@editName')->name('edit.name');
   Route::post('/admin/contents/name_edit', 'TopController@editContentName')->name('edit.content_name');
   Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
-  Route::get('/logout', 'TopController@logout')->name('logout');
 });
