@@ -24,4 +24,5 @@ Route::group(['middleware' => 'auth'], function () {
   Route::post('/admin/name/edit', 'TopController@editName')->name('edit.name');
   Route::post('/admin/contents/name_edit', 'TopController@editContentName')->name('edit.content_name');
   Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
+  Route::get('/logout', 'TopController@logout')->name('logout');
 });

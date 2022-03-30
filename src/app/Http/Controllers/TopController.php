@@ -8,6 +8,7 @@ use App\Post;
 use App\User;
 use App\Content;
 use Symfony\Component\Mime\Encoder\ContentEncoderInterface;
+use Illuminate\Support\Facades\Auth;
 
 class TopController extends Controller
 {
@@ -18,12 +19,19 @@ class TopController extends Controller
 
     public function index(Request $request){
         $content = Content::all();
+        $user = User::all();
         // dd($content->where('is_lang', '0'));
-        $langs = $content->where('is_lang', '1');
-        $contents = $content->where('is_lang', '0');
+        $langs = $content
+        ->where('is_show', 1)
+        ->where('is_lang', '1');
+        $contents = $content
+        ->where('is_show', 1)
+        ->where('is_lang', '0');
         // ID取得
         $id = auth()->id();
-        // dd($id);
+        // 管理者かどうか取得
+        $isAdmin = $user->find($id)->is_admin;
+        // dd($user->find($id)->is_admin);
         // ■いろんな合計を出す
         // 今までの合計
         $total = DB::table('posts')->where('user_id', $id)->sum("learning_hour");
@@ -67,7 +75,7 @@ class TopController extends Controller
         ->orderBy('learning_content_id')
         ->get();
         // dd($studyContents_month);
-        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs'));
+        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin'));
     }
     
     public function admin(Request $request)
@@ -86,7 +94,12 @@ class TopController extends Controller
     public function deleteContent(Request $request, $id)
     {
         $content = new Content;
-        $content->where('id', $id)->delete();
+        // $content->where('id', $id)->delete();
+        $content = $content->find($id);
+
+        $content->is_show = 0;
+
+        $content->update();
         return redirect('/admin/contents/edit');
     }
 
@@ -142,10 +155,15 @@ class TopController extends Controller
         // $user_id = $request->user_id;
         $contents = new Content();
         // dd($contents->get());
-        $contents = $contents->get();
+        $contents = $contents->where('is_show', 1)->get();
         // $user = $user->find($user_id);
         // $user->name = $request->user_name;
         // $user->update();
         return view('edit_content', compact('contents'));
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('/login');
     }
 }

@@ -16,46 +16,57 @@ class ContentsTableSeeder extends Seeder
             [
                 'name' => 'ドットインストール',
                 'is_lang' => '0',
+                'is_show' => '1',
             ],
             [
                 'name' => 'N予備校',
                 'is_lang' => '0',
+                'is_show' => '1',
             ],
             [
                 'name' => 'POSSE課題',
                 'is_lang' => '0',
+                'is_show' => '1',
             ],
             [
                 'name' => 'JavaScript',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => 'CSS',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => 'PHP',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => 'HTML',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => 'Laravel',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => 'SQL',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => 'SHELL',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
             [
                 'name' => '情報システム基礎知識(その他)',
                 'is_lang' => '1',
+                'is_show' => '1',
             ],
         ]);
     }

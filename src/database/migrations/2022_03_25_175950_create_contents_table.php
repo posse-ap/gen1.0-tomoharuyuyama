@@ -17,6 +17,7 @@ class CreateContentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('is_lang');
+            $table->integer('is_show');
             $table->timestamps();
         });
     }
