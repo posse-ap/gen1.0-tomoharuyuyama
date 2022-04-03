@@ -18,6 +18,7 @@ class TopController extends Controller
     // }
 
     public function index(Request $request){
+        $error_flag = 0;
         $content = Content::all();
         $user = User::all();
         // dd($content->where('is_lang', '0'));
@@ -75,7 +76,7 @@ class TopController extends Controller
         ->orderBy('learning_content_id')
         ->get();
         // dd($studyContents_month);
-        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin'));
+        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin', 'error_flag'));
     }
     
     public function admin(Request $request)
@@ -152,18 +153,22 @@ class TopController extends Controller
     }
 
     public function editContent(Request $request){
-        // $user_id = $request->user_id;
         $contents = new Content();
-        // dd($contents->get());
         $contents = $contents->where('is_show', 1)->get();
-        // $user = $user->find($user_id);
-        // $user->name = $request->user_name;
-        // $user->update();
         return view('edit_content', compact('contents'));
     }
 
     public function logout(){
         Auth::logout();
         return redirect('/login');
+    }
+
+    public function addContent(Request $request){
+        // dd($request);
+        $content = new Content();
+        $content->is_lang = $request->is_lang;
+        $content->name = $request->new_content_name;
+        $content->save();
+        return redirect('/admin/contents/edit');
     }
 }

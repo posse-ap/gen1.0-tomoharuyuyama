@@ -28,5 +28,6 @@ Route::group(['middleware' => ['auth', 'can:is_admin']], function () {
   Route::get('/make_admin/{id}', 'TopController@makeAdmin')->name('make.admin');
   Route::post('/admin/name/edit', 'TopController@editName')->name('edit.name');
   Route::post('/admin/contents/name_edit', 'TopController@editContentName')->name('edit.content_name');
+  Route::post('/admin/contents/add', 'TopController@addContent')->name('add.content');
   Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
 });

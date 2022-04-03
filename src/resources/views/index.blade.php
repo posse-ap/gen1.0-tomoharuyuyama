@@ -1,57 +1,58 @@
 <!doctype html>
 <html lang="ja">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-    <title>Webアプリ制作</title>
-</head>
-
-<body>
-    <!-- loding -->
-    <div id="overlay">
-        <div class="cv-spinner">
-            <span class="spinner"></span>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        
+        <title>Webアプリ制作</title>
+    </head>
+    
+    <body>
+        <!-- loding -->
+        <div id="overlay">
+            <div class="cv-spinner">
+                <span class="spinner"></span>
+            </div>
         </div>
-    </div>
-    <header class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#"><img class="nav_logo" src="img/logo_2.png" alt=""></a>
-        <p class="logo_week">
-            4th week
-        </p>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button> -->
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <span class="navbar-nav mr-auto ">
-
-            </span>
-            @if ($isAdmin)
+        <header class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#"><img class="nav_logo" src="img/logo_2.png" alt=""></a>
+            <p class="logo_week">
+                4th week
+            </p>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="navbar-nav mr-auto ">
+                    
+                </span>
+                @if ($isAdmin)
                 <button type="button" class="btn btn-lg nav_right_btn mr-3" onclick="location.href='{{ route( 'admin' )}}'"
-                    data-target="#exampleModal">アカウント管理</button>
+                data-target="#exampleModal">アカウント管理</button>
                 <button type="button" class="btn btn-lg nav_right_btn mr-3" onclick="location.href='{{ route( 'admin.contents' )}}'"
-                    data-target="#exampleModal">コンテンツ管理</button>
-            @endif
-            <form class="form-inline">
-                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-                <!-- <button type="button" class="btn btn-lg nav_right_btn">記録・投稿</button> -->
-                <!-- Extra large modal -->
-                <!-- <button type="button" class="btn btn-lg nav_right_btn" data-toggle="modal" data-target=".bd-example-modal-lg">記録・投稿</button> -->
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-lg nav_right_btn" data-toggle="modal"
+                data-target="#exampleModal">コンテンツ管理</button>
+                @endif
+                <form class="form-inline">
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                    <!-- <button type="button" class="btn btn-lg nav_right_btn">記録・投稿</button> -->
+                    <!-- Extra large modal -->
+                    <!-- <button type="button" class="btn btn-lg nav_right_btn" data-toggle="modal" data-target=".bd-example-modal-lg">記録・投稿</button> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-lg nav_right_btn" data-toggle="modal"
                     data-target="#exampleModal">記録・投稿</button>
-            </form>
+                </form>
         </div>
     </header>
     <main class="main">
+        {{-- {{dd($errors->all())}} --}}
         <div class="container my-4">
             <div class="row text-center center">
                 <div class="col-md-6">
@@ -105,30 +106,6 @@
                                 <span class="d-inline study_lang_name study_lang_right_margin"><span class="circle js_color"></span>{{ $lang->name }}</span>
                                 {{-- @if ($loop->index % 3 == 0) </div> @endif --}}
                                 @endforeach
-                                {{-- <div class="study_lang container mt-3 d-flex flex-wrap">
-                                    <span class="d-inline study_lang_name study_lang_right_margin"><span
-                                            class="circle js_color"></span>JavaScript</span>
-                                    <span class="d-inline study_lang_name study_lang_right_margin"><span
-                                            class="circle css_color"></span>CSS</span>
-                                    <span class="d-inline study_lang_name study_lang_right_margin"><span
-                                            class="circle php_color"></span>PHP</span>
-                                </div>
-                                <div class="study_lang container pt-0 d-flex flex-wrap">
-                                    <span class="d-inline study_lang_name study_lang_right_margin"><span
-                                            class="circle html_color"></span>HTML</span>
-                                    <span class="d-inline study_lang_name study_lang_right_margin"><span
-                                            class="circle laravel_color"></span>Laravel</span>
-                                    <span class="d-inline study_lang_name"><span
-                                            class="circle sql_color"></span>SQL</span>
-                                </div> --}}
-                                {{-- <div class="study_lang container pt-0 d-flex flex-wrap">
-                                    <span class="d-inline study_lang_name"><span
-                                            class="circle shell_color"></span>SHELL</span>
-                                </div>
-                                <div class="study_lang container pt-0 d-flex flex-wrap pb-4">
-                                    <span class="d-inline study_lang_name study_lang_name_ohter"><span
-                                            class="circle other_color"></span>情報システム基礎知識(その他)</span>
-                                </div> --}}
                             </div>
                         </div>
                         <div class="col-6 mb-3 pl-1">
@@ -144,18 +121,6 @@
                                                 class="circle dotinstall_color"></span>{{ $content->name }}</p>
                                     </div>
                                 @endforeach
-                                {{-- <div class="study_lang container mt-3 d-flex">
-                                    <p class="d-inline study_lang_name study_lang_right_margin flex-wrap"><span
-                                            class="circle dotinstall_color"></span>ドットインストール</p>
-                                </div>
-                                <div class="study_lang container pt-0 d-flex">
-                                    <p class="d-inline study_lang_name flex-wrap"><span
-                                            class="circle nyobi_color"></span>N予備校</p>
-                                </div>
-                                <div class="study_lang container pt-0 d-flex pb-4">
-                                    <p class="d-inline study_lang_name flex-wrap"><span
-                                            class="circle posse_color"></span>POSSE課題</p>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -167,8 +132,11 @@
         <p class="text-center footer_day font-weight-bold"><span class="arrow-left"></span>2020年 10月<span
                 class="arrow-right"></span></p>
     </div>
+    {{-- {{dd($errors->default)}} --}}
     <button type="button" class="btn btn-lg nav_right_btn sp_button" data-toggle="modal"
         data-target="#exampleModal">記録・投稿</button>
+
+        
     <!-- Modal -->
     <div id="loader-bg">
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -184,8 +152,19 @@
                         {{ csrf_field() }}
                         <div class="modal-body modal_position">
                             <div class="container w-80 mr0 p_0">
-                                <div class="row w-100 center">
+                                <div id="loading">
+                                    <div class="spinner"></div>
+                                </div>
+                                <div class="row w-100 center data_form">
                                     <div class="col-md-6 p_0">
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{$error}}</li>
+                                            @php
+                                                $error_flag = implode(",", $errors->all());
+                                                
+                                                // dd($error_flag);
+                                            @endphp
+                                        @endforeach
                                         <div class="modal_top_letf">
                                             <p class="modal_top_letf_text">学習日</p>
                                             <div class="study_day_input bg-light original_rounded_lg_modal">
@@ -198,9 +177,9 @@
                                             <div class="study_contens_set mt_5px">
                                                 @php
                                                     $counter = 0;
-                                                @endphp
+                                                    @endphp
                                                 @foreach ($contents as $content)
-                                                    <label for="name{{ $loop->index }}">
+                                                <label for="name{{ $loop->index }}">
                                                         <input type="checkbox" name="contents[]" value="{{ $loop->index }}" id="name{{ $loop->index }}">
                                                         <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                             <span>{{ $content->name }}</span>
@@ -223,48 +202,6 @@
                                                         </p>
                                                     </label>
                                                 @endforeach
-                                                {{-- <label for="name5">
-                                                    <input type="checkbox" name="contents[]" value="5" id="name5">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>CSS</span>
-                                                    </p>
-                                                </label>
-                                                <label for="name6">
-                                                    <input type="checkbox" name="contents[]" value="6" id="name6">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>JavaScript</span>
-                                                    </p>
-                                                </label><br>
-                                                <label for="name7">
-                                                    <input type="checkbox" name="contents[]" value="7" id="name7">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>PHP</span>
-                                                    </p>
-                                                </label>
-                                                <label for="name8">
-                                                    <input type="checkbox" name="contents[]" value="8" id="name8">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>Laravel</span>
-                                                    </p>
-                                                </label>
-                                                <label for="name9">
-                                                    <input type="checkbox" name="contents[]" value="9" id="name9">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>SQL</span>
-                                                    </p>
-                                                </label>
-                                                <label for="name10">
-                                                    <input type="checkbox" name="contents[]" value="10" id="name10">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>SHELL</span>
-                                                    </p>
-                                                </label><br>
-                                                <label for="name11">
-                                                    <input type="checkbox" name="contents[]" value="11" id="name11">
-                                                    <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
-                                                        <span>情報システム基礎知識（その他）</span>
-                                                    </p>
-                                                </label> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -298,8 +235,9 @@
                                             {{-- href="https://twitter.com/intent/tweet?text=" --}}
                                             target="_blank">
                                             <button id="記録・投稿"
-                                                class="btn btn-lg nav_right_btn nav_right_btn_modal"
-                                                data-toggle="modal">記録・投稿</button>
+                                            onclick="buttonClick()"
+                                            class="btn btn-lg nav_right_btn nav_right_btn_modal"
+                                            data-toggle="modal">記録・投稿</button>
                                             <!-- <button id="記録・投稿" type="button" class="btn btn-lg nav_right_btn nav_right_btn_modal" data-toggle="modal" data-target="#exampleModal">記録・投稿</button> -->
                                         </a>
                                     </div>
@@ -317,99 +255,120 @@
                             </div>
                         </div>
                     </div>
+                    <div class="done modal_not_node">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div>
+                                <div class="modal_done_top_text text-center mb-5 pb-5 mt-5 pt-5">ERROR!</div>
+                                <div class="checkedmark003"></div>
+                                <div class="mt-5 pt-5 text-center">記録・投稿</div>
+                                <div class="mb-5 pb-5">エラーが発生しました</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        {{-- <span id="js-getVariable" data-name="{{ $studyContents_month[0]->total_learning_hour }}"></span> --}}
         @php
-            try {
-                echo '<script>var sum_1 = ' . $studyContents_month[0]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_1 = 0</script>';
+            $contents_sum = count($langs) + count($contents);
+            // dd($contents_sum);
+            for ($i=0; $i <= $contents_sum; $i++) { 
+                try {
+                    echo '<script>var sum_' . ($i + 1) . ' = ' . $studyContents_month[$i]->total_learning_hour . '</script>';
+                } catch (Exception $e) {
+                    echo '<script>var sum_' . ($i + 1) . ' = 0</script>';
+                }
             }
-            try {
-                echo '<script>var sum_2 = ' . $studyContents_month[1]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_2 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_3 = ' . $studyContents_month[2]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_3 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_4 = ' . $studyContents_month[3]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_4 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_5 = ' . $studyContents_month[4]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_5 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_6 = ' . $studyContents_month[5]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_6 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_7 = ' . $studyContents_month[6]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_7 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_8 = ' . $studyContents_month[7]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_8 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_9 = ' . $studyContents_month[8]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_9 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_10 = ' . $studyContents_month[9]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_10 = 0</script>';
-            }
-            try {
-                echo '<script>var sum_11 = ' . $studyContents_month[10]->total_learning_hour . '</script>';
-            } catch (Exception $e) {
-                echo '<script>var sum_11 = 0</script>';
-            }
+            echo '<script>var error_flag = ' . $error_flag . '</script>';
+            // echo '<script></script>';
         @endphp
-        {{-- <span id="js-getVariable2" data-name="{{ $studyContents_month[1]->total_learning_hour }}"></span>
-        <span id="js-getVariable3" data-name="{{ $studyContents_month[2]->total_learning_hour }}"></span>
-        <span id="js-getVariable4" data-name="{{ $studyContents_month[3]->total_learning_hour }}"></span>
-        <span id="js-getVariable5" data-name="{{ $studyContents_month[4]->total_learning_hour }}"></span> --}}
-        {{-- <span id="js-getVariable6" data-name="{{ $studyContents_month[5]->total_learning_hour }}"></span> --}}
-        {{-- <span id="js-getVariable7" data-name="{{ $studyContents_month[6]->total_learning_hour }}"></span>
-        <span id="js-getVariable8" data-name="{{ $studyContents_month[7]->total_learning_hour }}"></span>
-        <span id="js-getVariable9" data-name="{{ $studyContents_month[8]->total_learning_hour }}"></span>
-        <span id="js-getVariable10" data-name="{{ $studyContents_month[9]->total_learning_hour }}"></span>
-        <span id="js-getVariable11" data-name="{{ $studyContents_month[10]->total_learning_hour }}"></span> --}}
-        {{-- <p>{{ $studyDays[0] }}</p> --}}
-        {{-- <span id="js-getVariable" data-name="{{ $studyDays }}"></span> --}}
     </div>
     <script>
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <!-- <script src="./index.js"></script> -->
-
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        const spinner = document.getElementById('loading');
+        spinner.classList.add('loaded');
+        // $('.loaded').css('display', 'none');
+        // alert("l");
+        function buttonClick(){
+            // $('.data_form').css('display', 'none');
+            // // spinner.classList.remove('loaded');
+            // // const spinner = document.getElementById('loading');
+            // // $('.data_form').delay(600);
+            // // spinner = document.getElementById('loading');
+            // // setTimeout("spinner.classList.add('loaded')", 1200);
+            // if (error_flag) {
+            //     setTimeout("$('.modal_not_node').css('display', 'block')", 12);
+            // } else {
+            //     setTimeout("$('.modal_node').css('display', 'block')", 12);
+            // }
+            // // spinner.classList.add('loaded');
+            // // $('.modal_node').css('display', 'none');
+            // // $('.data_form').css('display', 'block');
+                // Loading 画像を表示
+    dispLoading("処理中...");
+
+        // 非同期処理(例)
+        $.ajax({
+            async : true,
+            url : "localhost/post",
+            type:"POST",
+            dataType:"html"
+        })
+        // 通信成功時
+        .done(function(data) {
+            console.log("成功しました");
+        })
+        // 通信失敗時
+        .fail( function(data) {
+            console.log("失敗しました");
+        })
+        // 処理終了時
+        .always( function(data) {
+            // Loading 画像を消す
+            removeLoading();
+        });  
+        }
+        $(function() {
+            var h = $(window).height();
+
+            // $('#wrap').css('display', 'none');
+            // $('#loader-bg ,#loader').height(h).css('display', 'block');
+        });
+
+        $(window).load(function() { //全ての読み込みが完了したら実行
+            // $('#loader-bg').delay(900).fadeOut(800);
+            // $('#loader').delay(600).fadeOut(300);
+            // $('#wrap').css('display', 'block');
+        });
+
+        //10秒たったら強制的にロード画面を非表示
+        $(function() {
+            // setTimeout('stopload()', 10000);
+        });
+
+        function stopload() {
+            // $('#wrap').css('display', 'block');
+            // $('#loader-bg').delay(900).fadeOut(800);
+            // $('#loader').delay(600).fadeOut(300);
+        }
+    </script>
     <script type="text/javascript">
         function create_chart_1() {
             google.load("visualization", "1", {
@@ -417,18 +376,6 @@
             });
             google.setOnLoadCallback(
                 function() {
-                    // var data = google.visualization.arrayToDataTable([
-                    //     ['', ''],
-                    //     [01, 3],
-                    //     [02, 4],
-                    //     [03, 5],
-                    //     [04, 3],
-                    //     [32, 0]
-                    // ]);
-                    // ■laravelで上記の形の配列を準備する
-                    // 「年」「月」の2条件でwhereをかけて月の学習をまとめる(laravelから年と月の情報をもらう)
-                    // 「日」でwhereをかけて同じ日の学習を足し合わせる
-                    // 学習した日の分、[{日}, {学習時間}]の配列を作る
                     var array = @json($studyDays);
                     data2 = JSON.stringify(array);
                     data3 = JSON.parse(data2);
@@ -561,10 +508,12 @@
                 // sum_11 = $('#js-getVariable11').data();
 
                 df.resolve();
-                console.log("papapa");
+                console.log("papapa~~~");
                 console.log(sum_1);
                 console.log(sum_2);
                 console.log(sum_3);
+                console.log("here");
+                console.log(error_flag);
                 // console.log(sum_6.name);
                 console.log(typeof(sum_6.name));
                 df.done(function() {
