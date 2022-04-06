@@ -50,6 +50,7 @@ class TopController extends Controller
         // 月の学習をごっそり持ってくる(日毎の学習時間をまとめている.また、ソートしてる.)
         $studyDay_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-04-%')
         ->where('user_id', $id)
+        ->orWhere('user_id', 0)
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learned_date'))
         ->groupBy('learned_date')
         ->orderBy('learned_date')
@@ -71,6 +72,7 @@ class TopController extends Controller
         // ■円グラフを出力する
         $studyContents_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-04-%')
         ->where('user_id', $id)
+        ->orWhere('user_id', 0)
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learning_content_id'))
         ->groupBy('learning_content_id')
         ->orderBy('learning_content_id')
@@ -171,11 +173,13 @@ class TopController extends Controller
         $content->name = $request->new_content_name;
         $content->save();
         
+        // $user = User::all();
+        // dd($user);
         
         $post = new Post();
         $post->learned_date = date('Y-m-d H:i:s');
         $post->learning_content_id = $content->id;
-        $post->user_id = 1;
+        $post->user_id = 0;
         $post->learning_hour = 0;
         $post->save();
 
