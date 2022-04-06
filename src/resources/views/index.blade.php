@@ -179,8 +179,8 @@
                                                     $counter = 0;
                                                     @endphp
                                                 @foreach ($contents as $content)
-                                                <label for="name{{ $loop->index }}">
-                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index }}" id="name{{ $loop->index }}">
+                                                <label for="name{{ $loop->index + 1 }}">
+                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index + 1 }}" id="name{{ $loop->index + 1 }}">
                                                         <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                             <span>{{ $content->name }}</span>
                                                         </p>
@@ -195,8 +195,8 @@
                                             <span class="modal_top_letf_text">学習言語（複数選択可）</span>
                                             <div class="study_contens_set mt_5px">
                                                 @foreach ($langs as $lang)
-                                                    <label for="name{{ $loop->index + $counter }}">
-                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index + $counter }}" id="name{{ $loop->index + $counter }}">
+                                                    <label for="name{{ $loop->index + $counter + 1 }}">
+                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index + $counter + 1 }}" id="name{{ $loop->index + $counter + 1 }}">
                                                         <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                             <span>{{ $lang->name }}</span>
                                                         </p>
@@ -270,8 +270,8 @@
         </div>
         @php
             $contents_sum = count($langs) + count($contents);
-            // dd($contents_sum);
-            for ($i=0; $i <= $contents_sum; $i++) { 
+            // dd($studyContents_month[0]->total_learning_hour);
+            for ($i=0; $i < $contents_sum; $i++) { 
                 try {
                     echo '<script>var sum_' . ($i + 1) . ' = ' . $studyContents_month[$i]->total_learning_hour . '</script>';
                 } catch (Exception $e) {
@@ -283,6 +283,17 @@
         @endphp
     </div>
     <script>
+        console.log(sum_1);
+        console.log(sum_2);
+        console.log(sum_3);
+        console.log(sum_4);
+        console.log(sum_5);
+        console.log(sum_6);
+        console.log(sum_7);
+        console.log(sum_8);
+        console.log(sum_9);
+        console.log(sum_10);
+        console.log(sum_11);
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -439,8 +450,8 @@
                 df.done(function() {
                     var chartdata_2 = google.visualization.arrayToDataTable([
                         ['day', 'contents'],
-                        ['N予備校', sum_1],
-                        ['ドットインストール', sum_2],
+                        ['ドットインストール', sum_1],
+                        ['N予備校', sum_2],
                         ['posse課題', sum_3]
                     ]);
                     console.log(chartdata_2);
@@ -508,21 +519,14 @@
                 // sum_11 = $('#js-getVariable11').data();
 
                 df.resolve();
-                console.log("papapa~~~");
-                console.log(sum_1);
-                console.log(sum_2);
-                console.log(sum_3);
-                console.log("here");
-                console.log(error_flag);
-                // console.log(sum_6.name);
                 console.log(typeof(sum_6.name));
                 df.done(function() {
                     var chartdata_2 = google.visualization.arrayToDataTable([
                         ['day', 'contents'],
-                        ['HTML', sum_4],
+                        ['JavaScript', sum_4],
                         ['CSS', sum_5],
-                        ['JavaScript', sum_6.name],
-                        ['PHP', sum_7],
+                        ['PHP', sum_6],
+                        ['HTML', sum_7],
                         ['Laraver', sum_8],
                         ['SQL', sum_9],
                         ['SHELL', sum_10],

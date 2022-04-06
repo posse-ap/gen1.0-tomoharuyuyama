@@ -37,9 +37,9 @@ class TopController extends Controller
         // 今までの合計
         $total = DB::table('posts')->where('user_id', $id)->sum("learning_hour");
         // 月の合計
-        $month = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-%')->sum("learning_hour");
+        $month = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-04-%')->sum("learning_hour");
         // その日の合計
-        $today = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-03-25')->sum("learning_hour");
+        $today = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-04-05')->sum("learning_hour");
         // dd($total);
         
         //■月の学習した日を出す(棒グラフを出力する)
@@ -48,7 +48,7 @@ class TopController extends Controller
             ['', '']
         ];
         // 月の学習をごっそり持ってくる(日毎の学習時間をまとめている.また、ソートしてる.)
-        $studyDay_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')
+        $studyDay_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-04-%')
         ->where('user_id', $id)
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learned_date'))
         ->groupBy('learned_date')
@@ -69,7 +69,7 @@ class TopController extends Controller
         array_push($studyDays, [32, 0]);
         
         // ■円グラフを出力する
-        $studyContents_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-03-%')
+        $studyContents_month = DB::table('posts')->where('learned_date', 'LIKE', '2022-04-%')
         ->where('user_id', $id)
         ->select(DB::raw('sum(learning_hour) as total_learning_hour, learning_content_id'))
         ->groupBy('learning_content_id')
