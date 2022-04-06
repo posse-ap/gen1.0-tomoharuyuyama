@@ -179,8 +179,8 @@
                                                     $counter = 0;
                                                     @endphp
                                                 @foreach ($contents as $content)
-                                                <label for="name{{ $loop->index + 1 }}">
-                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index + 1 }}" id="name{{ $loop->index + 1 }}">
+                                                <label for="name{{ $content->id }}">
+                                                        <input type="checkbox" name="contents[]" value="{{ $content->id }}" id="name{{ $content->id }}">
                                                         <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                             <span>{{ $content->name }}</span>
                                                         </p>
@@ -195,8 +195,8 @@
                                             <span class="modal_top_letf_text">学習言語（複数選択可）</span>
                                             <div class="study_contens_set mt_5px">
                                                 @foreach ($langs as $lang)
-                                                    <label for="name{{ $loop->index + $counter + 1 }}">
-                                                        <input type="checkbox" name="contents[]" value="{{ $loop->index + $counter + 1 }}" id="name{{ $loop->index + $counter + 1 }}">
+                                                    <label for="name{{ $lang->id }}">
+                                                        <input type="checkbox" name="contents[]" value="{{ $lang->id }}" id="name{{ $lang->id }}">
                                                         <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                             <span>{{ $lang->name }}</span>
                                                         </p>
@@ -379,8 +379,36 @@
             // $('#loader-bg').delay(900).fadeOut(800);
             // $('#loader').delay(600).fadeOut(300);
         }
-    </script>
+        </script>
+        <script>
+            var langSet = [
+                ['day', 'contents']
+            ];
+            var contentSet = [
+                ['day', 'contents']
+            ];
+            var contentsChartColor = [];
+            var langsChartColor = [];
+        </script>
+        @php
+            foreach ($contents as $content => $index) {
+                // dd($contents);
+                echo '<script>contentSet.push(["' . $contents[$content]->name . '" , ' . $studyContents_month[$content]->total_learning_hour . '])</script>';
+                echo '<script>contentsChartColor.push("' . $contents[$content]->color . '")</script>';
+            }
+            foreach ($langs as $lang => $index) {
+                // dd($langs);
+                // dd($studyContents_month);
+                // dd($studyContents_month->where('learning_content_id', 2));
+                $num = $studyContents_month->where('learning_content_id', ($lang + 1))[$lang]->total_learning_hour;
+                // dd($num);
+                echo '<script>langSet.push(["' . $langs[$lang]->name . '" , ' . $num . '])</script>';
+                echo '<script>langsChartColor.push("' . $langs[$lang]->color . '")</script>';
+            }
+        @endphp
     <script type="text/javascript">
+        console.log(contentsChartColor);
+        console.log(langsChartColor);
         function create_chart_1() {
             google.load("visualization", "1", {
                 packages: ["corechart"]
@@ -448,12 +476,7 @@
                 df.resolve();
 
                 df.done(function() {
-                    var chartdata_2 = google.visualization.arrayToDataTable([
-                        ['day', 'contents'],
-                        ['ドットインストール', sum_1],
-                        ['N予備校', sum_2],
-                        ['posse課題', sum_3]
-                    ]);
+                    var chartdata_2 = google.visualization.arrayToDataTable(contentSet);
                     console.log(chartdata_2);
                     var options = {
                         legend: 'none',
@@ -464,7 +487,7 @@
                             'height': '100%'
                         },
                         pieHole: 0.5,
-                        colors: ['#1754EF', '#0F71BD', '#20BDDE'],
+                        colors: contentsChartColor,
 
                     };
                     var chart_2 = new google.visualization.PieChart(document.getElementById('pieChart_contents'));
@@ -521,17 +544,7 @@
                 df.resolve();
                 console.log(typeof(sum_6.name));
                 df.done(function() {
-                    var chartdata_2 = google.visualization.arrayToDataTable([
-                        ['day', 'contents'],
-                        ['JavaScript', sum_4],
-                        ['CSS', sum_5],
-                        ['PHP', sum_6],
-                        ['HTML', sum_7],
-                        ['Laraver', sum_8],
-                        ['SQL', sum_9],
-                        ['SHELL', sum_10],
-                        ['情報基礎知識', sum_11]
-                    ]);
+                    var chartdata_2 = google.visualization.arrayToDataTable(langSet);
                     var options = {
                         legend: 'none',
                         'chartArea': {
@@ -540,9 +553,7 @@
                             'height': '100%'
                         },
                         pieHole: 0.5,
-                        colors: ['#1754EF', '#0F71BD', '#20BDDE', '#3CCEFE', '#B29EF3', '#6D46EC', '#4A17EF',
-                            '#3105C0'
-                        ],
+                        colors: langsChartColor,
 
                     };
                     var chart_2 = new google.visualization.PieChart(document.getElementById('pieChart_language'));

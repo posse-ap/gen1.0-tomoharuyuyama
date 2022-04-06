@@ -170,6 +170,16 @@ class TopController extends Controller
         $content->color = $request->new_content_color;
         $content->name = $request->new_content_name;
         $content->save();
+        
+        
+        $post = new Post();
+        $post->learned_date = date('Y-m-d H:i:s');
+        $post->learning_content_id = $content->id;
+        $post->user_id = 1;
+        $post->learning_hour = 0;
+        $post->save();
+
+
         return redirect('/admin/contents/edit');
     }
 }
