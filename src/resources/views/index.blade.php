@@ -103,7 +103,7 @@
                                 </div>
                                 @foreach ($langs as $lang)
                                 {{-- @if ($loop->index % 3 == 1) <div class="study_lang container mt-3 d-flex flex-wrap"> @endif --}}
-                                <span class="d-inline study_lang_name study_lang_right_margin"><span class="circle js_color"></span>{{ $lang->name }}</span>
+                                <span class="d-inline study_lang_name study_lang_right_margin"><span class="circle" style="background-color: {{ $lang->color }};"></span>{{ $lang->name }}</span>
                                 {{-- @if ($loop->index % 3 == 0) </div> @endif --}}
                                 @endforeach
                             </div>
@@ -118,7 +118,7 @@
                                 @foreach ($contents as $content)
                                     <div class="study_lang container mt-3 d-flex">
                                         <p class="d-inline study_lang_name study_lang_right_margin flex-wrap"><span
-                                                class="circle dotinstall_color"></span>{{ $content->name }}</p>
+                                                class="circle" style="background-color: {{ $content->color }};"></span>{{ $content->name }}</p>
                                     </div>
                                 @endforeach
                             </div>

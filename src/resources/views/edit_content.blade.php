@@ -43,13 +43,22 @@
                 <form action="{{ route( 'add.content')}}" method="post" class="d-flex justify-content-between">
                     @csrf
                     {{-- <input type="submit" class="action p-2 m-2 border-0 bg-danger text-white rounded shadow-sm" value="追加"> --}}
-                    <input class="info p-3 text-white w-50" type="text" placeholder="名称を入力" name="new_content_name">
-                    <div class="w-50 d-block">
+                    <input class="info p-3 text-white w-25" type="text" placeholder="名称を入力" name="new_content_name">
+                    <div class="w-25 d-block">
                         <div class="">
                             <input class="w-auto" type="radio" name="is_lang" value="1" checked>言語
                         </div>
                         <div class="">
                             <input class="w-auto" type="radio" name="is_lang" value="0">コンテンツ
+                        </div>
+                    </div>
+                    {{-- <input class="info p-3 text-white w-50" type="color" name="new_content_color"  autocomplete="on"> --}}
+                    <div class="w-25 d-block">
+                        <div>
+                            <label for="new_content_color">color</label>
+                        </div>
+                        <div>
+                            <input type="color" id="new_content_color" name="new_content_color" value="#e66465">
                         </div>
                     </div>
                 </form>

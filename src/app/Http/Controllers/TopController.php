@@ -167,6 +167,7 @@ class TopController extends Controller
         // dd($request);
         $content = new Content();
         $content->is_lang = $request->is_lang;
+        $content->color = $request->new_content_color;
         $content->name = $request->new_content_name;
         $content->save();
         return redirect('/admin/contents/edit');
