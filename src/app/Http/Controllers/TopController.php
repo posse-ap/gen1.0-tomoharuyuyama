@@ -9,6 +9,8 @@ use App\User;
 use App\Content;
 use Symfony\Component\Mime\Encoder\ContentEncoderInterface;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
+use \Symfony\Component\HttpFoundation\Response;
 
 class TopController extends Controller
 {
@@ -158,6 +160,36 @@ class TopController extends Controller
         $contents = new Content();
         $contents = $contents->where('is_show', 1)->get();
         return view('edit_content', compact('contents'));
+    }
+
+    public function news(Request $request){
+        $url = 'https://bkrs3waxwg.execute-api.ap-northeast-1.amazonaws.com/default/news';
+        $client = new \GuzzleHttp\Client();
+
+        $response = $client->request(
+            'GET',
+            $url,
+        );
+        
+        $raw_data = $response->getBody()->getContents();
+        $news = json_decode($raw_data,true);
+
+        return view('news', compact('news'));
+    }
+
+    public function newsDetail(Request $request, $id){
+        $url = 'https://bkrs3waxwg.execute-api.ap-northeast-1.amazonaws.com/default/news/' . $id;
+        $client = new \GuzzleHttp\Client();
+
+        $response = $client->request(
+            'GET',
+            $url,
+        );
+        
+        $raw_data = $response->getBody()->getContents();
+        $newsDetail = json_decode($raw_data,true);
+
+        return view('newsDetail', compact('newsDetail'));
     }
 
     public function logout(){

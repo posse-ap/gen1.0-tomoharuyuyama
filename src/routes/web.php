@@ -18,7 +18,8 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/top', 'TopController@index')->name('top');
   Route::post('/post', 'TopController@post')->name('post');
   Route::get('/logout', 'TopController@logout')->name('logout');
-  
+  Route::get('/news', 'TopController@news')->name('news.contents');
+  Route::get('/news/{id}', 'TopController@newsDetail')->name('news.contents.detail');
 });
 // 管理者以上
 Route::group(['middleware' => ['auth', 'can:is_admin']], function () {
@@ -29,5 +30,6 @@ Route::group(['middleware' => ['auth', 'can:is_admin']], function () {
   Route::post('/admin/name/edit', 'TopController@editName')->name('edit.name');
   Route::post('/admin/contents/name_edit', 'TopController@editContentName')->name('edit.content_name');
   Route::post('/admin/contents/add', 'TopController@addContent')->name('add.content');
+  Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
   Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
 });

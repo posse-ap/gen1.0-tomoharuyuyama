@@ -40,6 +40,8 @@
                 <button type="button" class="btn btn-lg nav_right_btn mr-3" onclick="location.href='{{ route( 'admin.contents' )}}'"
                 data-target="#exampleModal">コンテンツ管理</button>
                 @endif
+                <button type="button" class="btn btn-lg nav_right_btn mr-3" onclick="location.href='{{ route( 'news.contents' )}}'"
+                data-target="#exampleModal">ニュース</button>
                 <form class="form-inline">
                     <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                     <!-- <button type="button" class="btn btn-lg nav_right_btn">記録・投稿</button> -->
