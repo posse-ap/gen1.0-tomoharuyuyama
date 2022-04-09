@@ -20,10 +20,11 @@ class TopController extends Controller
     // }
 
     public function index(Request $request){
+        $islang = Post::find(1);
+        $islang = $islang->islang->is_lang;
         $error_flag = 0;
         $content = Content::all();
         $user = User::all();
-        // dd($content->where('is_lang', '0'));
         $langs = $content
         ->where('is_show', 1)
         ->where('is_lang', '1');
@@ -34,10 +35,9 @@ class TopController extends Controller
         $id = auth()->id();
         // 管理者かどうか取得
         $isAdmin = $user->find($id)->is_admin;
-        // dd($user->find($id)->is_admin);
         // ■いろんな合計を出す
         // 今までの合計
-        $total = DB::table('posts')->where('user_id', $id)->sum("learning_hour");
+        $total = DB::table('posts')->where('user_id', $id)->where('user_id', 0)->sum("learning_hour");
         // 月の合計
         $month = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-04-%')->sum("learning_hour");
         // その日の合計
@@ -80,7 +80,7 @@ class TopController extends Controller
         ->orderBy('learning_content_id')
         ->get();
         // dd($studyContents_month);
-        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin', 'error_flag'));
+        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin', 'error_flag', 'islang'));
     }
     
     public function admin(Request $request)
@@ -132,6 +132,14 @@ class TopController extends Controller
             $post->learning_content_id = $content;
             $post->user_id = $user_id;
             $post->learning_hour = (float)($request->learn_time / count($request->contents));
+            $post->save();
+        }
+        foreach ($request->lang_contents as $index => $content) {
+            $post = new Post();
+            $post->learned_date = $request->learned_date;
+            $post->learning_content_id = $content;
+            $post->user_id = $user_id;
+            $post->learning_hour = (float)($request->learn_time / count($request->lang_contents));
             $post->save();
         }
         

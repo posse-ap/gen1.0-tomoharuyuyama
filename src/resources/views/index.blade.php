@@ -54,7 +54,7 @@
         </div>
     </header>
     <main class="main">
-        {{-- {{dd($errors->all())}} --}}
+        {{dd($islang)}}
         <div class="container my-4">
             <div class="row text-center center">
                 <div class="col-md-6">
@@ -198,7 +198,7 @@
                                             <div class="study_contens_set mt_5px">
                                                 @foreach ($langs as $lang)
                                                     <label for="name{{ $lang->id }}">
-                                                        <input type="checkbox" name="contents[]" value="{{ $lang->id }}" id="name{{ $lang->id }}">
+                                                        <input type="checkbox" name="lang_contents[]" value="{{ $lang->id }}" id="name{{ $lang->id }}">
                                                         <p class="d-inline-block original_rounded_lg_modal mb-1 mr-2 p-2 bg_modal_base_color check pl-4 btn_modal">
                                                             <span>{{ $lang->name }}</span>
                                                         </p>
