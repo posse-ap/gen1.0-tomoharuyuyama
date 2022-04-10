@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Webアプリ制作</title>
     </head>
     
@@ -54,7 +54,7 @@
         </div>
     </header>
     <main class="main">
-        {{dd($islang)}}
+        {{-- {{dd($islang)}} --}}
         <div class="container my-4">
             <div class="row text-center center">
                 <div class="col-md-6">
@@ -150,7 +150,19 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form action="{{ url("/post") }}" method="post">
+                    {{-- <form id="form1" action="{{ url("/post") }}" method="post"> --}}
+                        <form id="form1">
+                            {{-- <input id="contents1" type="checkbox" value="1" name="contents[]">
+                            <input id="contents2" type="checkbox" value="2" name="contents[]">
+                            <input id="contents3" type="checkbox" value="3" name="contents[]">
+                            <input id="language1" type="checkbox" value="1" name="languages[]">
+                            <input id="language2" type="checkbox" value="2" name="languages[]">
+                            <input id="language3" type="checkbox" value="3" name="languages[]">
+                            <input id="language4" type="checkbox" value="4" name="languages[]">
+                            <input id="language5" type="checkbox" value="5" name="languages[]">
+                            <input id="language6" type="checkbox" value="6" name="languages[]">
+                            <input id="language7" type="checkbox" value="7" name="languages[]">
+                            <input id="language8" type="checkbox" value="8" name="languages[]"> --}}
                         {{ csrf_field() }}
                         <div class="modal-body modal_position">
                             <div class="container w-80 mr0 p_0">
@@ -233,20 +245,28 @@
                                         </div>
                                     </div>
                                     <div id="TWEET" class="mx-auto mt-3 btn_spiner">
-                                        <a class="button"  type="button"
+                                        {{-- <a class="button" type="button" --}}
                                             {{-- href="https://twitter.com/intent/tweet?text=" --}}
-                                            target="_blank">
-                                            <button id="記録・投稿"
-                                            onclick="buttonClick()"
-                                            class="btn btn-lg nav_right_btn nav_right_btn_modal"
-                                            data-toggle="modal">記録・投稿</button>
+                                            {{-- target="_blank"> --}}
                                             <!-- <button id="記録・投稿" type="button" class="btn btn-lg nav_right_btn nav_right_btn_modal" data-toggle="modal" data-target="#exampleModal">記録・投稿</button> -->
-                                        </a>
+                                        {{-- </a> --}}
+                                        <div id="button1"
+                                        class="btn btn-lg nav_right_btn nav_right_btn_modal"
+                                        data-toggle="modal">記録・投稿</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div class="done modal_loading">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div>
+                                <div id="loading">
+                                    <div class="spinner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="done modal_node">
                         <div class="d-flex align-items-center justify-content-center">
                             <div>
@@ -261,7 +281,7 @@
                         <div class="d-flex align-items-center justify-content-center">
                             <div>
                                 <div class="modal_done_top_text text-center mb-5 pb-5 mt-5 pt-5">ERROR!</div>
-                                <div class="checkedmark003"></div>
+                                <div class="checkedmark004"></div>
                                 <div class="mt-5 pt-5 text-center">記録・投稿</div>
                                 <div class="mb-5 pb-5">エラーが発生しました</div>
                             </div>
@@ -284,19 +304,6 @@
             // echo '<script></script>';
         @endphp
     </div>
-    <script>
-        console.log(sum_1);
-        console.log(sum_2);
-        console.log(sum_3);
-        console.log(sum_4);
-        console.log(sum_5);
-        console.log(sum_6);
-        console.log(sum_7);
-        console.log(sum_8);
-        console.log(sum_9);
-        console.log(sum_10);
-        console.log(sum_11);
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -318,69 +325,83 @@
         const spinner = document.getElementById('loading');
         spinner.classList.add('loaded');
         // $('.loaded').css('display', 'none');
-        // alert("l");
-        function buttonClick(){
-            // $('.data_form').css('display', 'none');
-            // // spinner.classList.remove('loaded');
-            // // const spinner = document.getElementById('loading');
-            // // $('.data_form').delay(600);
-            // // spinner = document.getElementById('loading');
-            // // setTimeout("spinner.classList.add('loaded')", 1200);
-            // if (error_flag) {
-            //     setTimeout("$('.modal_not_node').css('display', 'block')", 12);
-            // } else {
-            //     setTimeout("$('.modal_node').css('display', 'block')", 12);
-            // }
-            // // spinner.classList.add('loaded');
-            // // $('.modal_node').css('display', 'none');
-            // // $('.data_form').css('display', 'block');
-                // Loading 画像を表示
-    dispLoading("処理中...");
-
-        // 非同期処理(例)
-        $.ajax({
-            async : true,
-            url : "localhost/post",
-            type:"POST",
-            dataType:"html"
-        })
-        // 通信成功時
-        .done(function(data) {
-            console.log("成功しました");
-        })
-        // 通信失敗時
-        .fail( function(data) {
-            console.log("失敗しました");
-        })
-        // 処理終了時
-        .always( function(data) {
-            // Loading 画像を消す
-            removeLoading();
-        });  
-        }
         $(function() {
             var h = $(window).height();
-
+    
             // $('#wrap').css('display', 'none');
             // $('#loader-bg ,#loader').height(h).css('display', 'block');
         });
-
+    
         $(window).load(function() { //全ての読み込みが完了したら実行
             // $('#loader-bg').delay(900).fadeOut(800);
             // $('#loader').delay(600).fadeOut(300);
             // $('#wrap').css('display', 'block');
         });
-
+    
         //10秒たったら強制的にロード画面を非表示
         $(function() {
             // setTimeout('stopload()', 10000);
         });
-
+    
         function stopload() {
             // $('#wrap').css('display', 'block');
             // $('#loader-bg').delay(900).fadeOut(800);
             // $('#loader').delay(600).fadeOut(300);
         }
+        $(function(){
+            $('.nav_right_btn').on('click', function(){
+                console.log('！~~~~~~~~~~~~~~~~~~~~');
+                var h = $(window).height();
+                // $('#wrap').css('display', 'none');
+                // $('#loader-bg ,#loader').height(h).css('display', 'block');
+                // $('#modalPost').modal('hide');
+                // $('#modalLoading').modal('show');
+                $('.modal_not_node').css('display', 'none');
+                $('.modal_node').css('display', 'none');
+                $('.modal-backdrop').css('display', 'block');
+                $('#loader-bg').css('display', 'block');
+                $('.modal-body').css('display', 'block');
+            })
+        });
+        $(function(){
+            $('#button1').on('click', function(){
+                console.log('！~~~~~~~~~~~~~~~~~~~~');
+                var h = $(window).height();
+                // $('#wrap').css('display', 'none');
+                // $('#loader-bg ,#loader').height(h).css('display', 'block');
+                // $('#modalPost').modal('hide');
+                // $('#modalLoading').modal('show');
+                $('.modal-body').css('display', 'none');
+                $('.modal_loading').css('display', 'block');
+                
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    },
+                    type: 'POST',
+                    url: 'http://localhost/post',
+                    data: $("#form1").serialize()
+                }).done(function(data1,textStatus,jqXHR){
+                    // alert('成功！');
+                    console.log('成功！');
+                    // $('.modal-backdrop').css('display', 'none');
+                    console.log(data1);
+                    $('.modal_loading').css('display', 'none');
+                    $('.modal_node').css('display', 'block');
+                    // $('#loader-bg ,#loader').height(h).css('display', 'none');
+                    // $('.modal_node').css('display', 'block');
+                    // $('#modalLoading').modal('hide');
+                    // $('#modalSuccess').modal('show');
+                }).fail(function(jqXHR, textStatus, errorThrown ){
+                    // alert('成功じゃない！');
+                    console.log('成功じゃない！');
+                    $('.modal_loading').css('display', 'none');
+                    $('.modal_not_node').css('display', 'block');
+                    // $('#modalLoading').modal('hide');
+                    // $('#modalError').modal('show');
+                });
+            })
+        });
         </script>
         <script>
             var langSet = [
@@ -394,16 +415,11 @@
         </script>
         @php
             foreach ($contents as $content => $index) {
-                // dd($contents);
                 echo '<script>contentSet.push(["' . $contents[$content]->name . '" , ' . $studyContents_month[$content]->total_learning_hour . '])</script>';
                 echo '<script>contentsChartColor.push("' . $contents[$content]->color . '")</script>';
             }
             foreach ($langs as $lang => $index) {
-                // dd($langs);
-                // dd($studyContents_month);
-                // dd($studyContents_month->where('learning_content_id', 2));
                 $num = $studyContents_month->where('learning_content_id', ($lang + 1))[$lang]->total_learning_hour;
-                // dd($num);
                 echo '<script>langSet.push(["' . $langs[$lang]->name . '" , ' . $num . '])</script>';
                 echo '<script>langsChartColor.push("' . $langs[$lang]->color . '")</script>';
             }
@@ -464,17 +480,6 @@
             function drawChart() {
                 var df = $.Deferred();
 
-                // var sum_1 = $('#js-getVariable').data();
-                // var sum_2 = $('#js-getVariable2').data();
-                // var sum_3 = $('#js-getVariable3').data();
-                // console.log(sum_1.name); //yamada
-                // console.log(sum_2.name); //yamada
-                // console.log(sum_3.name); //yamada
-
-                // sum_1 = sum_1.name;
-                // var sum_2 = 4;
-                // var sum_3 = 5;
-
                 df.resolve();
 
                 df.done(function() {
@@ -508,40 +513,6 @@
 
             function drawChart() {
                 var df = $.Deferred();
-
-                // var sum_4 = {
-                //     name: 0
-                // };
-                // var sum_5 = {
-                //     name: 0
-                // };
-                // var sum_6 = {
-                //     name: 0
-                // };
-                // var sum_7 = {
-                //     name: 0
-                // };
-                // var sum_8 = {
-                //     name: 0
-                // };
-                // var sum_9 = {
-                //     name: 0
-                // };
-                // var sum_10 = {
-                //     name: 0
-                // };
-                // var sum_11 = {
-                //     name: 0
-                // };
-
-                // sum_4 = $('#js-getVariable4').data();
-                // sum_5 = $('#js-getVariable5').data();
-                // sum_6 = $('#js-getVariable6').data();
-                // sum_7 = $('#js-getVariable7').data();
-                // sum_8 = $('#js-getVariable8').data();
-                // sum_9 = $('#js-getVariable9').data();
-                // sum_10 = $('#js-getVariable10').data();
-                // sum_11 = $('#js-getVariable11').data();
 
                 df.resolve();
                 console.log(typeof(sum_6.name));

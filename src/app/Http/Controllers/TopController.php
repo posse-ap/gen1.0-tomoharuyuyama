@@ -20,8 +20,6 @@ class TopController extends Controller
     // }
 
     public function index(Request $request){
-        $islang = Post::find(1);
-        $islang = $islang->islang->is_lang;
         $error_flag = 0;
         $content = Content::all();
         $user = User::all();
@@ -37,11 +35,26 @@ class TopController extends Controller
         $isAdmin = $user->find($id)->is_admin;
         // ■いろんな合計を出す
         // 今までの合計
-        $total = DB::table('posts')->where('user_id', $id)->where('user_id', 0)->sum("learning_hour");
+        $total = DB::table('posts')
+        ->join('contents', 'posts.learning_content_id', '=', 'contents.id')
+        ->where('contents.is_lang', 0)
+        ->where('user_id', $id)
+        ->whereOr('user_id', 0)
+        ->sum("learning_hour");
         // 月の合計
-        $month = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-04-%')->sum("learning_hour");
+        $month = DB::table('posts')
+        ->join('contents', 'posts.learning_content_id', '=', 'contents.id')
+        ->where('contents.is_lang', 0)
+        ->where('user_id', $id)
+        ->where('learned_date', 'LIKE', '2022-04-%')
+        ->sum("learning_hour");
         // その日の合計
-        $today = DB::table('posts')->where('user_id', $id)->where('learned_date', 'LIKE', '2022-04-05')->sum("learning_hour");
+        $today = DB::table('posts')
+        ->join('contents', 'posts.learning_content_id', '=', 'contents.id')
+        ->where('contents.is_lang', 0)
+        ->where('user_id', $id)
+        ->where('learned_date', 'LIKE', '2022-04-05')
+        ->sum("learning_hour");
         // dd($total);
         
         //■月の学習した日を出す(棒グラフを出力する)
@@ -80,7 +93,7 @@ class TopController extends Controller
         ->orderBy('learning_content_id')
         ->get();
         // dd($studyContents_month);
-        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin', 'error_flag', 'islang'));
+        return view('index', compact('total', 'month', 'today', 'studyDays', 'studyDay_month', 'studyContents_month', 'contents', 'langs', 'isAdmin', 'error_flag'));
     }
     
     public function admin(Request $request)
@@ -121,11 +134,10 @@ class TopController extends Controller
     
     public function post(Request $request){
         $user_id = auth()->id();
-        $validatedData = $request->validate([
-            'learned_date' => 'required',
-            'contents' => 'required',
-        ]);
-        // dd($request->contents);
+        // $validatedData = $request->validate([
+        //     'learned_date' => 'required',
+        //     'contents' => 'required',
+        // ]);
         foreach ($request->contents as $index => $content) {
             $post = new Post();
             $post->learned_date = $request->learned_date;
@@ -144,7 +156,7 @@ class TopController extends Controller
         }
         
         // dd("OK");
-        return redirect('/top');
+        // return redirect('/top');
     }
     
     public function editName(Request $request){
