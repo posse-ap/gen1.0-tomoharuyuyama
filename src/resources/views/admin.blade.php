@@ -22,7 +22,7 @@
         </div>
     </div>
     <header class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#"><img class="nav_logo" src="img/logo_2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="nav_logo" src="{{ asset('img/logo.png') }}" alt=""></a>
         <p class="logo_week">
             管理者画面
         </p>
@@ -39,6 +39,23 @@
         </div>
     </header>
     <main class="main">
+        <div class="wrapper mx-3">
+            <div class="m-3 bg-info align-items-center rounded shadow-sm text-white">
+                {{-- <div class="info p-1 ml-3">{{ $content->name }}</div> --}}
+                <div class="p-2">ユーザーを追加する</div>
+                <form action="{{ route( 'add.user')}}" method="post" class="d-flex justify-content-between">
+                    @csrf
+                    {{-- <input type="submit" class="action p-2 m-2 border-0 bg-danger text-white rounded shadow-sm" value="追加"> --}}
+                    <input class="info p-3 text-white w-25" type="text" placeholder="名前を入力" name="new_user_name">
+                    <input class="info p-3 text-white w-25" type="text" placeholder="メールアドレスを入力" name="new_user_mail">
+                    <input class="info p-3 text-white w-25" type="text" placeholder="パスワードを入力" name="new_user_pass">
+                    <input type="submit" value="作成">
+                </form>
+                {{-- <div class="actions">
+                    <button class="action p-2 m-2 border-0 bg-danger text-white rounded shadow-sm" onclick="location.href='aaaa'">削除</button>
+                </div> --}}
+            </div>
+        </div>
         {{-- {{dd($users)}} --}}
         @foreach ($users as $user)
             <div class="wrapper mx-3">

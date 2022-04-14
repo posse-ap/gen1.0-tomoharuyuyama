@@ -11,6 +11,7 @@ use Symfony\Component\Mime\Encoder\ContentEncoderInterface;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use \Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Hash;
 
 class TopController extends Controller
 {
@@ -237,5 +238,36 @@ class TopController extends Controller
 
 
         return redirect('/admin/contents/edit');
+    }
+
+    public function addUser(Request $request){
+        // dd($request);
+        $contents = new Content();
+        $contents = $contents->get();
+        $post = new Post();
+        // $posts = $posts->get();
+
+        // dd($contents);
+        $user = new User();
+        $user->name = $request->new_user_name;
+        $user->email = $request->new_user_mail;
+        $user->password = Hash::make($request->new_user_pass);
+        $user->save();
+        
+        foreach ($contents as $content) {
+            $post = new Post;
+            $user = User::orderBy('id', 'desc')->first();
+            $post->user_id = $user->id;
+            $post->learning_hour = 0;
+            $post->learning_content_id = $content->id;
+            $post->learned_date = now();
+            
+            // $post = Post::id($content->id);
+            $post->save();
+        }
+// コンテンツの数だけ0が入ったpostをしたい
+
+
+        return redirect('/admin');
     }
 }

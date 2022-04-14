@@ -22,7 +22,7 @@
             </div>
         </div>
         <header class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="#"><img class="nav_logo" src="img/logo_2.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img class="nav_logo" src="{{ asset('img/logo.png') }}" alt=""></a>
             <p class="logo_week">
                 4th week
             </p>

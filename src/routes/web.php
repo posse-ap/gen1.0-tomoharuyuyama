@@ -30,6 +30,7 @@ Route::group(['middleware' => ['auth', 'can:is_admin']], function () {
   Route::post('/admin/name/edit', 'TopController@editName')->name('edit.name');
   Route::post('/admin/contents/name_edit', 'TopController@editContentName')->name('edit.content_name');
   Route::post('/admin/contents/add', 'TopController@addContent')->name('add.content');
+  Route::post('/admin/user/add', 'TopController@addUser')->name('add.user');
   Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
   Route::get('/admin/contents/edit', 'TopController@editContent')->name('admin.contents');
 });
